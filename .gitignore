@@ -1,2 +1,11 @@
 .aider*
 .env
+
+# Backup files
+*~
+
+# LaTeX build files
+*.aux
+*.log
+*.out
+*.pdf
