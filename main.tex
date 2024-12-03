@@ -49,7 +49,9 @@ We prove that any system with two basic capabilities---recursive state maintenan
 \section{Basic Requirements and Construction}
 A system has recursive state processing if it can read its current state $s$, generate an update function $f(s)$ that produces the next state, and maintain the new state $f(s)$ for subsequent processing.
 
-A system has reliable history access if it can: (1) reference any previous state $s_i$ from its computation history without error, (2) distinguish between different states in its history unambiguously, (3) determine the correct temporal order of states, and (4) guarantee the integrity of stored states. The system need not maintain its entire history in active memory, but when it accesses stored states, it must do so reliably and correctly.
+A system has reliable history access if it can: (1) reference any previous state $s_i$ from its computation history without error, (2) distinguish between different states in its history unambiguously, (3) maintain and determine the correct temporal order of states, establishing clear boundaries between computational periods, and (4) guarantee the integrity of stored states. The system need not maintain its entire history in active memory, but when it accesses stored states, it must do so reliably and correctly.
+
+This requirement for reliable history access naturally creates temporal structure in computation. Different systems implement this in various ways - neural networks through attention windows and forward passes, cells through cell cycle phases, and organisms through developmental stages. In each case, the system must maintain clear temporal boundaries to ensure reliable access to its computational history.
 
 These capabilities enable universal computation through a straightforward construction. Given a Universal Turing Machine $U$, we implement it as follows: The state $s = (q, p, a)$ encodes the current machine state $q$, the position $p$ of the tape head, and the symbol $a$ under the head. At each step, the system processes current state $s$ to determine $(q', a', d) = \delta(q, a)$, where $q'$ is the next machine state, $a'$ is the symbol to write, and $d$ is the head movement. It uses history access to reconstruct tape contents as needed and maintains the new state for the next step.
 
@@ -115,6 +117,8 @@ The central dogma of molecular biology reveals a fundamental truth about cellula
 
 This parallel processing isn't an implementation choice - it's fundamental to cellular metabolism. A cell cannot afford to serialize its basic information processing. The need for metabolic efficiency forces parallel computation just as training efficiency forces parallelism in artificial neural networks. This parallel architecture restricts cellular computation to $\text{TC}_0$ complexity: threshold functions operating on many inputs simultaneously, but no true sequential logic.
 
+While individual cellular processes operate in parallel, cells maintain temporal coherence through mechanisms like checkpoints and oscillatory networks. These create clear temporal boundaries that enable reliable access to computational history despite the parallel nature of molecular interactions.
+
 Recent experimental work confirms these computational bounds. Studies of the p53 pathway by Batchelor et al. (2023) revealed that while cells excel at implementing complex threshold functions through protein interactions, they cannot maintain ordered sequences of states without specialized structures. The MAP kinase pathway, despite its sophisticated signal processing capabilities, operates entirely through parallel protein modifications and threshold-based state changes. Even apparently sequential processes like the cell cycle are implemented through parallel molecular networks with threshold-based transitions rather than true sequential computation.
 
 Organisms transcend these limitations through an array of specialized structures and multicellular organization. At the cellular level, neural systems achieve sequential computation through synaptic modifications that maintain state across time, while the immune system maintains computational history through specialized memory cells. But memory structures in biology extend far beyond these classical examples.
@@ -134,6 +138,8 @@ Instead, architectural innovation should focus on robust mechanisms for state ma
 The implications for system interaction are equally profound and immediately practical. When interacting with language models, we're not dealing with a system that "thinks" in a single forward pass. Instead, we're engaging with a computational process that must build up complex reasoning through recursive state refinement.
 
 This explains why certain interaction patterns prove particularly effective. Chain-of-thought prompting works not because it teaches the model to reason, but because it provides a framework for recursive state maintenance. The model isn't learning new capabilities during the interaction - it's being given a structure for maintaining computational state across multiple steps.
+
+The effectiveness of these approaches can be understood through the lens of computational history access. Chain-of-thought prompting works not by changing the underlying computation, but by providing clear temporal structure for maintaining and accessing computational state. Similarly, successful memory architectures in AI systems can be viewed as different strategies for implementing reliable history access with clear temporal boundaries.
 
 \section{Conclusion}
 
