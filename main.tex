@@ -49,7 +49,7 @@ We prove that any system with two basic capabilities---recursive state maintenan
 \section{Basic Requirements and Construction}
 A system has recursive state processing if it can read its current state $s$, generate an update function $f(s)$ that produces the next state, and maintain the new state $f(s)$ for subsequent processing.
 
-A system has reliable history access if it can reference any previous state $s_i$ from its computation history, distinguish between different states in its history, and determine the order of states in its history. The system need not maintain its entire history in active memory, only provide reliable access when needed.
+A system has reliable history access if it can: (1) reference any previous state $s_i$ from its computation history without error, (2) distinguish between different states in its history unambiguously, (3) determine the correct temporal order of states, and (4) guarantee the integrity of stored states. The system need not maintain its entire history in active memory, but when it accesses stored states, it must do so reliably and correctly.
 
 These capabilities enable universal computation through a straightforward construction. Given a Universal Turing Machine $U$, we implement it as follows: The state $s = (q, p, a)$ encodes the current machine state $q$, the position $p$ of the tape head, and the symbol $a$ under the head. At each step, the system processes current state $s$ to determine $(q', a', d) = \delta(q, a)$, where $q'$ is the next machine state, $a'$ is the symbol to write, and $d$ is the head movement. It uses history access to reconstruct tape contents as needed and maintains the new state for the next step.
 
