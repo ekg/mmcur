@@ -38,17 +38,13 @@ Modern AI systems and biological cells share a fundamental computational constra
 \end{abstract}
 
 \section{Introduction}
-To achieve efficient training at scale, modern neural architectures employ various techniques that trade sequential computation for parallel efficiency. In transformers, this manifests through attention mechanisms. Other architectures use different approaches, from structured state spaces to various forms of gated updates. While these approaches are fundamentally different in their implementation, they share a common constraint: to enable parallel training, they must make assumptions about independence between computational channels. As shown rigorously for transformers by Merrill \& Sabharwal (2024), this leads to a fundamental limitation---restriction to $\text{TC}_0$ complexity in a single forward pass.
+Adding memory to even simple computational systems can make them universal. This fundamental insight, dating back to Turing's original analysis of computation, shows that any system capable of basic state transitions becomes Turing-complete when equipped with memory. We demonstrate how this principle manifests in modern computational systems, from neural networks to biological cells.
 
-This limitation helps explain why language models, despite their impressive capabilities, sometimes struggle with basic sequential reasoning tasks that humans find trivial. The models aren't stupid---they're architecturally constrained by the requirements of parallel training. The same limitation appears in biological systems: individual cells process information through biochemical networks but cannot maintain computational history beyond their immediate state.
+The key observation is that memory enables systems to transcend their inherent computational limitations. Neural networks, despite their sophisticated architectures, are fundamentally constrained by the requirements of parallel processing. Similarly, individual cells perform computation through parallel molecular interactions. Yet both types of systems achieve universal computation through memory mechanisms that maintain and access computational state.
 
-These computational limitations can be transcended through two fundamental capabilities that emerge naturally in both modern AI systems and biological organisms:
+This insight has profound implications for understanding computation in practice. In artificial systems, it explains why techniques like chain-of-thought prompting dramatically improve reasoning capabilities---they provide a framework for memory-based recursive computation. In biological systems, it illuminates how organisms achieve complex information processing through specialized memory structures, from neural synapses to immune memory cells.
 
-First, recursive state maintenance: the ability to maintain and update computational state through step-by-step processing. While underlying systems sacrifice true sequential computation for efficiency, they can simulate sequential processing through recursive reasoning.
-
-Second, history access: the ability to reference and utilize previous computational states. This manifests through attention mechanisms in transformers, episodic memory in biological systems, or external memory systems.
-
-These capabilities combine to enable universal computation in a remarkably simple way. When a system can maintain state recursively and access its computational history through any reliable means, it can implement the basic operations of a Universal Turing Machine.
+We prove that any system with two basic capabilities---recursive state maintenance and reliable history access---can implement universal computation. This result unifies our understanding of computation across artificial and biological domains, suggesting new approaches to both AI system design and the analysis of biological information processing.
 
 \section{Basic Requirements and Construction}
 A system has recursive state processing if it can read its current state $s$, generate an update function $f(s)$ that produces the next state, and maintain the new state $f(s)$ for subsequent processing.
