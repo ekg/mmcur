@@ -11,9 +11,11 @@ LATEX_OPTS = -interaction=nonstopmode -halt-on-error
 all: $(TARGET).pdf
 
 # Build PDF
-$(TARGET).pdf: $(TARGET).tex
+$(TARGET).pdf: $(TARGET).tex refs.bib
 	$(LATEX) $(LATEX_OPTS) $(TARGET)
-	$(LATEX) $(LATEX_OPTS) $(TARGET)  # Second run for references
+	bibtex $(TARGET)
+	$(LATEX) $(LATEX_OPTS) $(TARGET)
+	$(LATEX) $(LATEX_OPTS) $(TARGET)  # Final run for references
 
 # Clean auxiliary files
 clean:
