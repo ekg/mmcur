@@ -865,7 +865,7 @@ Key Theoretical Results:
 
 The authors use two different types of complexity arguments (Communication Complexity and Computational Complexity) to explain these limitations. They suggest these findings help explain observed hallucinations and errors in large language models, particularly when dealing with relational reasoning and compositional tasks.
 
-The paper concludes by discussing the implications of these theoretical limitations while acknowledging that complexity-based arguments come with caveats, as they are often asymptotic in nature and may not perfectly reflect practical performance on smaller instances \cite{fu2024memory,yang2013survey}. This understanding of memory system limitations has important implications for both biological and artificial systems - while memory enables universal computation, physical constraints like space and energy usage create fundamental trade-offs that must be carefully managed \cite{jung2020new,zhu2024overcoming}.
+The paper concludes by discussing the implications of these theoretical limitations while acknowledging that complexity-based arguments come with caveats, as they are often asymptotic in nature and may not perfectly reflect practical performance on smaller instances.
 
 ==> litreview.2/13.md <==
 url=https://research.google/blog/measuring-the-limits-of-data-parallel-training-for-neural-networks/
@@ -3972,3 +3972,344 @@ The document explores the concept of Turing completeness in programming language
 The document concludes with an interesting discussion of how Adobe deliberately made PDF less computationally powerful than Postscript by removing recursion and unbounded loops, sacrificing Turing completeness for predictability in printer operations.
 
 The material appears to be written for an upper-level computer science course, combining theoretical concepts with practical programming language analysis. It includes code examples and detailed technical explanations while remaining accessible to students with programming background.
+
+==> litreview.3.fix.md/1.md <==
+litreview.3.fix/GPT3.pdf
+Title: Language Models are Few-Shot Learners
+Authors: Tom B. Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared Kaplan, Prafulla Dhariwal, Arvind Neelakantan, and many others from OpenAI
+Publication Date: July 22, 2020 (arXiv v4)
+arXiv: 2005.14165
+
+This seminal paper introduces GPT-3, a 175 billion parameter language model that demonstrates strong few-shot learning capabilities. The key findings include:
+
+1. Model and Training:
+- GPT-3 is an autoregressive transformer model trained on a diverse corpus of internet text
+- Uses 175B parameters, over 10x larger than previous models
+- Trained on a filtered version of Common Crawl and other high-quality datasets
+
+2. Few-Shot Learning:
+- The model can perform tasks with few or no examples, unlike previous models requiring task-specific fine-tuning
+- Tests three settings: zero-shot (just task description), one-shot (one example), and few-shot (multiple examples)
+- Shows strong performance across many tasks without any gradient updates or fine-tuning
+
+3. Key Results:
+- Strong performance on language tasks like translation, question-answering, and reading comprehension
+- Can perform novel tasks like arithmetic and word unscrambling
+- Approaches or matches state-of-the-art fine-tuned models on some benchmarks
+- Shows smooth scaling of performance with model size
+
+4. Limitations and Concerns:
+- Still struggles with some tasks requiring logical reasoning
+- Shows various biases present in training data
+- Raises concerns about potential misuse
+- High computational cost for training and inference
+
+5. Broader Impacts:
+- Discusses societal implications including potential benefits and risks
+- Analyzes issues of bias and fairness
+- Considers environmental impact of large model training
+
+The paper represents a significant advance in language model capabilities and sparked extensive discussion about the future of AI systems. It demonstrates that scaling up model size and training data can lead to emergent abilities not present in smaller models.
+
+The authors conclude that while GPT-3 has important limitations, it suggests that large language models may be an important step toward more general and adaptable AI systems. They emphasize the importance of considering both the technical and ethical implications of such advances.
+
+==> litreview.3/1.md <==
+url=https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/6396332/874968c0-15a9-4c5f-b7f1-fb2ade52e31f/main.tex
+
+I apologize, but I'm unable to provide the requested information. What you've shared appears to be an XML error message indicating "Access Denied," not a research paper or document. This is likely from attempting to access a protected or restricted resource without proper authorization.
+
+The error message contains:
+- Error Code: AccessDenied
+- Message: Access Denied
+- RequestId: Q7X485K5HM1TC0MY
+- HostId: [long string]
+
+To access the document you're interested in, you may need to:
+1. Ensure you have proper access permissions
+2. Log in to the relevant system
+3. Try accessing through an institutional subscription if it's behind a paywall
+4. Check if the URL is correct
+
+If you share the correct document, I'd be happy to help analyze it and provide the information you're looking for.
+
+==> litreview.3/2.md <==
+url=https://www.semanticscholar.org/paper/Language-Models-are-Few-Shot-Learners-Brown-Mann/90abbc2cf38462b954ae1b772fac9532e2ccd8b0
+
+I don't see any document shared that I could analyze. If you share a document with me, I'll be happy to provide its bibliographic information and a detailed summary of its contents.
+
+==> litreview.3/3.md <==
+url=https://arxiv.org/pdf/2201.11903.pdf
+
+Title: Chain-of-Thought Prompting Elicits Reasoning in Large Language Models
+
+Authors: Jason Wei, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Brian Ichter, Fei Xia, Ed H. Chi, Quoc V. Le, Denny Zhou
+
+Publication: arXiv:2201.11903v6 [cs.CL]
+Date: 10 Jan 2023
+
+This paper explores how generating a chain of thought - a series of intermediate reasoning steps - can significantly improve large language models' ability to perform complex reasoning tasks. The key findings include:
+
+1. Method:
+- Chain-of-thought prompting involves providing few-shot examples that include both the question and step-by-step reasoning process leading to the answer
+- This allows models to break down complex problems into intermediate steps
+- No model fine-tuning is required - it works with off-the-shelf language models
+
+2. Key Results:
+- Demonstrated improvements on:
+  - Arithmetic reasoning (math word problems)
+  - Commonsense reasoning
+  - Symbolic manipulation tasks
+- Performance gains were particularly strong for PaLM 540B model
+- Chain-of-thought ability emerges only in sufficiently large models (generally >100B parameters)
+
+3. Specific Findings:
+- Achieved state-of-the-art performance on GSM8K math word problems using PaLM 540B
+- Enabled better generalization to longer sequences in symbolic reasoning tasks
+- Showed robustness across different annotators and prompt variations
+- Worked best for complex multi-step problems rather than simple one-step tasks
+
+4. Analysis:
+- Manual analysis of model outputs showed chains of thought were generally logically sound when answers were correct
+- Error analysis revealed common failure modes like semantic understanding errors and missing steps
+- Benefits come from actual reasoning rather than just increased computation or knowledge activation
+
+5. Limitations:
+- Only works well with very large models
+- No guarantee of correct reasoning paths
+- Annotation costs could be prohibitive for fine-tuning
+- Generated reasoning may not always be factual
+
+The paper demonstrates that chain-of-thought prompting is a simple but effective method for improving complex reasoning in large language models without requiring model fine-tuning, though the benefits are limited to sufficiently large models.
+
+==> litreview.3/4.md <==
+url=https://dl.acm.org/doi/fullHtml/10.1145/3630106.3658979
+
+Title: Collective Constitutional AI: Aligning a Language Model with Public Input
+
+Authors: Saffron Huang, Divya Siddarth, Liane Lovitt, Thomas I. Liao, Esin Durmus, Alex Tamkin, Deep Ganguli
+
+Publication: FAccT '24: The 2024 ACM Conference on Fairness, Accountability, and Transparency
+
+DOI: https://doi.org/10.1145/3630106.3658979
+
+Summary:
+This paper presents Collective Constitutional AI (CCAI), a novel method for incorporating public input into the development of language models (LMs). The key contributions are:
+
+1. Framework Development:
+- Introduces a multi-stage process for gathering and integrating public preferences into LM behavior
+- Uses the Polis platform for online deliberation to source principles
+- Applies Constitutional AI techniques to fine-tune models based on collected principles
+
+2. Implementation:
+- Created what authors believe is the first LM fine-tuned with collectively sourced public input
+- Gathered input from a representative sample of 1,002 U.S. adults
+- Compared a model trained on public input ("Public" model) against one trained on standard principles ("Standard" model)
+
+3. Key Findings:
+- Public model showed lower bias across nine social dimensions while maintaining equivalent performance on language and math tasks
+- Models differed in handling contentious topics - Public model more likely to reframe positively versus refuse to engage
+- Process produced relatively low polarization in public input
+- Public constitution emphasized objectivity and accessibility more than Standard constitution
+
+4. Methodology:
+- Used screening questions to ensure participants had basic AI familiarity
+- Collected 1,127 statements and 38,252 votes through modified Polis interface
+- Transformed public input into constitutional principles through structured process
+- Evaluated models using multiple benchmarks including MMLU, GSM8K, BBQ
+
+5. Limitations & Future Work:
+- Sample limited to U.S. adults
+- Challenges in measuring direct adherence to constitutional principles
+- Need for more extensive testing with diverse communities
+- Room for improvement in public input methods
+
+The paper demonstrates a practical approach for incorporating public preferences into LM development while maintaining model performance. This work opens up possibilities for more democratic and participatory AI development processes.
+
+The research represents an important step toward making AI development more inclusive and accountable to the public, while highlighting areas needing further research and refinement.
+
+==> litreview.3/5.md <==
+url=https://www.emergentmind.com/papers/2207.05221
+
+Title: Language Models (Mostly) Know What They Know
+Authors: Saurav Kadavath et al. (full author list not provided in excerpt)
+Publication Date: 11 July 2022
+ArXiv: 2207.05221
+Categories: cs.CL, cs.AI, cs.LG
+
+Summary:
+This paper investigates the self-evaluation capabilities of Large Language Models (LLMs), specifically focusing on their ability to assess the validity of their own outputs. Here are the key points and findings:
+
+1. Research Focus:
+- Examines how well LLMs can determine if they "know" the answers to questions
+- Studies models' ability to calibrate probabilities on multiple-choice questions
+- Introduces P(IK) metric to evaluate models' knowledge awareness
+
+2. Key Findings:
+- Large language models demonstrate good calibration on multiple-choice questions
+- Models perform better when answer options are clearly presented in lettered format
+- Calibration improves with model size
+- Models can effectively self-evaluate their outputs using P(True) probability
+
+3. Methodology:
+- Assessed models' performance on multiple-choice and True/False tasks
+- Implemented a system where models could consider multiple samples before making predictions
+- Tested models' ability to adjust predictions when given additional context or hints
+
+4. Implications:
+- Findings suggest potential for creating more reliable and transparent AI systems
+- Demonstrates that LLMs can recognize their knowledge limitations
+- Opens avenues for developing more honest AI systems that can acknowledge uncertainty
+
+5. Future Directions:
+- Need to investigate how capabilities scale with model size
+- Further research required on effects of different training conditions
+- Exploration needed for applications beyond language tasks
+
+The research significantly contributes to understanding how language models can self-assess their knowledge and limitations, which is crucial for developing more reliable and transparent AI systems.
+
+==> litreview.3/6.md <==
+url=https://ar5iv.labs.arxiv.org/html/2204.02311
+
+Here are the key details and a summary of this research paper:
+
+Title: PaLM: Scaling Language Modeling with Pathways
+
+Authors: Aakanksha Chowdhery, Sharan Narang, Jacob Devlin, and many others from Google Research
+
+Publication Date: 2022
+
+arXiv: Available on arXiv but ID not visible in provided text
+
+Summary:
+This paper introduces PaLM (Pathways Language Model), a 540-billion parameter language model that achieves state-of-the-art performance across hundreds of language tasks. Key aspects include:
+
+1. Scale & Architecture:
+- 540B parameter dense Transformer model trained on 780B tokens
+- Trained using Pathways system across 6144 TPU v4 chips
+- Achieves 46.2% model FLOPS utilization efficiency
+
+2. Key Results:
+- State-of-the-art few-shot performance on 28/29 NLP tasks
+- Breakthrough performance on reasoning tasks using chain-of-thought prompting
+- Strong multilingual capabilities despite relatively small non-English training data (22%)
+- Strong performance on code generation/understanding tasks
+
+3. Notable Findings:
+- Demonstrates continued benefits from scaling without plateauing
+- Shows "discontinuous improvements" where certain capabilities emerge only at larger scales
+- Matches or exceeds human performance on many BIG-bench tasks
+- Exhibits strong reasoning capabilities when combined with chain-of-thought prompting
+
+4. Analysis:
+- Includes detailed analysis of bias and toxicity
+- Studies memorization effects
+- Examines dataset contamination
+- Provides comprehensive model card and datasheet
+
+The paper represents a significant advancement in large language models, demonstrating that scaling benefits haven't plateaued and revealing emergent capabilities at large scales, particularly in reasoning tasks.
+
+Let me know if you would like me to expand on any aspect of the paper!
+
+==> litreview.3/7.md <==
+url=https://openreview.net/forum?id=yzkSU5zdwD
+
+Title: Emergent Abilities of Large Language Models
+Authors: Jason Wei, Yi Tay, Rishi Bommasani, Colin Raffel, Barret Zoph, Sebastian Borgeaud, Dani Yogatama, Maarten Bosma, Denny Zhou, Donald Metzler, Ed H. Chi, Tatsunori Hashimoto, Oriol Vinyals, Percy Liang, Jeff Dean, William Fedus
+
+Publication Date: August 31, 2022 (Published), Last Modified: September 17, 2024
+
+Venue: Published in TMLR (Transactions on Machine Learning Research)
+
+Summary:
+This paper explores and catalogues "emergent abilities" in large language models (LLMs) - capabilities that appear suddenly at a certain scale but are not present in smaller models. The key points include:
+
+1. Definition of Emergence: The authors define an ability as "emergent" if it is not present in smaller models but appears in larger ones, making it unpredictable by extrapolating from smaller models' performance.
+
+2. Evidence Collection: The paper surveys various examples of emergent abilities across different tasks and models, providing empirical evidence through performance graphs showing discontinuous improvements at certain model scales.
+
+3. Key Examples:
+- Chain-of-thought reasoning
+- Instruction following
+- Multi-step reasoning tasks
+- Calibration abilities
+- Multilingual capabilities
+
+4. Analysis Framework:
+- Examines emergence across different metrics (FLOPS, model parameters)
+- Studies emergence patterns across different task categories (STEM, humanities, social sciences)
+- Discusses potential explanations for why emergence occurs
+
+5. Broader Implications:
+- Discusses potential risks and benefits of emergent abilities
+- Explores implications for future AI development
+- Considers societal impacts
+
+The paper serves as both a survey of existing work on emergent abilities and a framework for thinking about this phenomenon in language models. It raises important questions about whether further scaling could reveal additional unexpected capabilities, while also discussing limitations and potential risks.
+
+The authors also include substantial analysis in appendices examining specific cases of emergence across different model scales and task types, making it a comprehensive reference for understanding this phenomenon in large language models.
+
+==> litreview.3/8.md <==
+url=https://arxiv.org/abs/2204.05832
+
+Title: What Language Model Architecture and Pretraining Objective Work Best for Zero-Shot Generalization?
+
+Authors: Thomas Wang, Adam Roberts, Daniel Hesslow, Teven Le Scao, Hyung Won Chung, Iz Beltagy, Julien Launay, Colin Raffel
+
+Publication Date: 12 Apr 2022
+
+arXiv: 2204.05832
+DOI: 10.48550/arXiv.2204.05832
+
+Summary:
+This paper presents a comprehensive evaluation of different language model architectures and training approaches to determine what works best for zero-shot generalization (the ability to perform tasks without specific training for them). The researchers conducted large-scale experiments comparing:
+
+Key aspects studied:
+- Three model architectures: causal decoder-only, non-causal decoder-only, and encoder-decoder
+- Two pretraining objectives: autoregressive language modeling and masked language modeling
+- Impact of multitask prompted finetuning
+
+Main findings:
+1. For purely unsupervised pretraining, causal decoder-only models trained with autoregressive language modeling showed the strongest zero-shot generalization.
+
+2. However, the best overall performance came from models with non-causal visibility trained using masked language modeling followed by multitask finetuning.
+
+3. The study revealed interesting adaptation possibilities:
+- Non-causal decoder models can be successfully adapted into generative causal decoder models
+- Causal decoder models can be efficiently converted to non-causal decoder models
+
+The research involved training models with over 5 billion parameters on more than 170 billion tokens to ensure findings would likely scale to larger models. The study provides valuable insights for choosing model architectures and training approaches for zero-shot applications.
+
+The research is particularly significant as it systematically compares different architectural and training choices in large language models, helping to guide future development in the field.
+
+==> litreview.3/9.md <==
+url=https://openreview.net/forum?id=_VjQlMeSB_J
+
+Here are the key details from the paper:
+
+Title: Chain-of-Thought Prompting Elicits Reasoning in Large Language Models
+
+Authors: Jason Wei, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Brian Ichter, Fei Xia, Ed H. Chi, Quoc V Le, Denny Zhou
+
+Publication Date: October 31, 2022
+
+Publication Venue: NeurIPS 2022 Conference
+
+Note: DOI/arxiv number is not provided in the given text.
+
+Summary:
+This paper introduces and examines "chain-of-thought prompting," a technique that enhances large language models' complex reasoning capabilities. The key aspects include:
+
+1. Method: The technique involves providing models with exemplars that demonstrate intermediate reasoning steps (chain of thought) when prompting them for complex tasks.
+
+2. Key Finding: The ability to perform step-by-step reasoning emerges naturally in sufficiently large language models when using this prompting approach.
+
+3. Experimental Validation:
+- Tested on three large language models
+- Evaluated across multiple domains: arithmetic, commonsense, and symbolic reasoning tasks
+- Demonstrated significant performance improvements
+
+4. Notable Achievement: Using just eight chain-of-thought exemplars with a 540B-parameter language model, they achieved state-of-the-art accuracy on the GSM8K benchmark of math word problems, surpassing fine-tuned GPT-3 with a verifier.
+
+5. Significance: The research demonstrates that complex reasoning capabilities can be improved through better prompting strategies, rather than necessarily requiring model architecture changes or additional training.
+
+The paper represents a significant advancement in prompting techniques for large language models, showing how relatively simple changes in prompt design can unlock better reasoning capabilities in existing models.
