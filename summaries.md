@@ -865,7 +865,7 @@ Key Theoretical Results:
 
 The authors use two different types of complexity arguments (Communication Complexity and Computational Complexity) to explain these limitations. They suggest these findings help explain observed hallucinations and errors in large language models, particularly when dealing with relational reasoning and compositional tasks.
 
-The paper concludes by discussing the implications of these theoretical limitations while acknowledging that complexity-based arguments come with caveats, as they are often asymptotic in nature and may not perfectly reflect practical performance on smaller instances.
+The paper concludes by discussing the implications of these theoretical limitations while acknowledging that complexity-based arguments come with caveats, as they are often asymptotic in nature and may not perfectly reflect practical performance on smaller instances \cite{fu2024memory,yang2013survey}. This understanding of memory system limitations has important implications for both biological and artificial systems - while memory enables universal computation, physical constraints like space and energy usage create fundamental trade-offs that must be carefully managed \cite{jung2020new,zhu2024overcoming}.
 
 ==> litreview.2/13.md <==
 url=https://research.google/blog/measuring-the-limits-of-data-parallel-training-for-neural-networks/
