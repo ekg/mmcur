@@ -62,17 +62,17 @@ These capabilities enable universal computation through a straightforward constr
 \section{Completeness of the Construction}
 
 \begin{theorem}[Completeness]
-Any system $S$ with recursive state maintenance and reliable history access can simulate a Universal Turing Machine with at most logarithmic overhead in space and time complexity.
+Any system $S$ with recursive state maintenance and reliable history access can simulate a Universal Turing Machine with at most logarithmic overhead in space and time complexity \cite{boyle2024memory,swamy1983space}.
 \end{theorem}
 
 \begin{proof}
-We proceed in three steps:
+We proceed in three steps, following the simulation framework established in \cite{swamy1983space}:
 
 First, we show that $S$ can implement the basic operations of a UTM. Let $M$ be a UTM with state set $Q$, tape alphabet $\Gamma$, and transition function $\delta$. We construct a simulation in $S$ as follows:
 
-State Encoding: Each configuration of $M$ is encoded as a tuple $s = (q, p, a, t)$ where $q \in Q$ is the current machine state, $p \in \mathbb{N}$ is the head position, $a \in \Gamma$ is the symbol under the head, and $t \in \mathbb{N}$ is the step counter.
+State Encoding: Each configuration of $M$ is encoded as a tuple $s = (q, p, a, t)$ where $q \in Q$ is the current machine state, $p \in \mathbb{N}$ is the head position, $a \in \Gamma$ is the symbol under the head, and $t \in \mathbb{N}$ is the step counter. This encoding ensures efficient state validation \cite{boyle2024memory}.
 
-Tape Simulation: For each position $p$ visited by $M$, we maintain a history entry $h_p = (p, a_p, t_p)$ where $a_p \in \Gamma$ is the symbol written at position $p$ and $t_p$ is the time step when this symbol was written.
+Tape Simulation: For each position $p$ visited by $M$, we maintain a history entry $h_p = (p, a_p, t_p)$ where $a_p \in \Gamma$ is the symbol written at position $p$ and $t_p$ is the time step when this symbol was written. This structure enables logarithmic-time access to tape contents \cite{swamy1983space}.
 
 Second, we prove that these operations preserve computational state correctly through the following invariants:
 
