@@ -36,9 +36,9 @@
 \begin{abstract}
 We prove that memory mechanisms are sufficient to enable universal computation in parallel systems.
 While parallel architectures like neural networks and biological cells are inherently limited to threshold computations, they achieve universal computation through state maintenance across multiple steps.
-This explains how language models perform step-by-step reasoning and how cells process complex information---not through sophisticated processing units, but through memory systems that maintain computational state.
-Current AI systems demonstrate this principle by learning to replicate human computational patterns through exposure to our written traces, suggesting their future development depends more on improved memory architectures than on larger models.
-This theoretical framework unifies our understanding of computation across minds, machines, and living systems while offering practical insights for AI development.
+We argue that current AI systems learn to replicate human computational patterns by acquiring the basic transition functions embedded in language---our primary tool for maintaining and manipulating computational state.
+This explains how language models perform step-by-step reasoning: not through sophisticated processing units, but by learning to use language itself as a memory system.
+This theoretical framework unifies our understanding of computation across minds, machines, and living systems while suggesting that AI capabilities emerge from learning human patterns of state maintenance through language.
 \end{abstract}
 
 \section{Introduction}
@@ -247,9 +247,9 @@ The effectiveness of these approaches can be understood through the lens of comp
 Chain-of-thought prompting works not by changing the underlying computation, but by providing clear temporal structure for maintaining and accessing computational state \cite{wei2022chain}.
 Similarly, successful memory architectures in AI systems can be viewed as different strategies for implementing reliable history access with clear temporal boundaries \cite{yang2013survey}.
 
-The success of large language models, particularly autoregressive models \cite{schuurmans2024autoregressive}, demonstrates how systems can achieve complex computation by learning transition functions from observed computational processes.
-These models are trained on vast collections of text that represent traces of human computation---written explanations, logical arguments, mathematical derivations, and other records of human information processing \cite{brown2020language}.
-This training enables them to internalize the basic transition functions that humans apply when processing information \cite{wei2022chain}.
+The success of large language models, particularly autoregressive models \cite{schuurmans2024autoregressive}, demonstrates how systems achieve universal computation by learning the fundamental transition functions humans use with language.
+These models are trained on vast collections of text that capture how humans use language as a memory system---written explanations, logical arguments, mathematical derivations, and other records of human computational processes \cite{brown2020language}.
+This training enables them to internalize not just patterns, but the basic transition functions that humans use to maintain and manipulate computational state through language \cite{wei2022chain}.
 
 When presented with prompts containing examples, LLMs can effectively apply learned patterns to break down complex problems into steps, implementing a form of recursive reasoning \cite{wei2022chain}.
 This reasoning occurs without weight updates, suggesting the models have internalized generalizable computational patterns from their training data.
