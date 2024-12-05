@@ -101,7 +101,6 @@ This encoding ensures efficient state validation and access \cite{boyle2024memor
 \vspace{0.5em}
 \noindent\textbf{Tape Simulation:} For each position $p$ visited by $M$, we maintain a history entry $h_p = (p, a_p, t_p)$ where $a_p \in \Gamma$ is the symbol written at position $p$ and $t_p$ is the time step when this symbol was written.
 This structure enables logarithmic-time access to tape contents \cite{swamy1983space,liskiewicz1994complexity}.
-
 Second, we prove that these operations preserve computational state correctly through the following invariants:
 
 \begin{lemma}[State Coherence]
