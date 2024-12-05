@@ -4313,3 +4313,106 @@ This paper introduces and examines "chain-of-thought prompting," a technique tha
 5. Significance: The research demonstrates that complex reasoning capabilities can be improved through better prompting strategies, rather than necessarily requiring model architecture changes or additional training.
 
 The paper represents a significant advancement in prompting techniques for large language models, showing how relatively simple changes in prompt design can unlock better reasoning capabilities in existing models.
+==> litreview.4.md/1.md <==
+litreview.4/2310.07923v5.pdf
+Title: The Expressive Power of Transformers with Chain of Thought
+Authors: William Merrill, Ashish Sabharwal
+Publication: Conference paper at ICLR 2024
+ArXiv: arXiv:2310.07923v5 [cs.LG] 11 Apr 2024
+
+Summary:
+This paper analyzes how intermediate generation steps (like chain-of-thought prompting) affect the computational capabilities of transformer models. The authors explore whether allowing transformers to generate and condition on intermediate tokens before producing a final answer fundamentally extends their computational power.
+
+Key findings:
+
+1. The amount of additional computational power depends crucially on the number of intermediate decoding steps allowed:
+
+- Logarithmic steps (O(log n)): Only slightly increases power beyond standard transformers, remaining within log-space (L)
+- Linear steps (O(n)): Enables recognition of all regular languages, which standard transformers cannot do
+- Polynomial steps: Makes transformers equivalent to polynomial-time computation (P)
+
+2. The authors provide both upper and lower bounds:
+- Lower bounds show what problems transformers can solve with different numbers of steps
+- Upper bounds establish limitations on what can be computed
+
+3. Technical contributions:
+- Introduces the "layer-norm hash" technique for building algorithms in transformers
+- Provides first exact characterization of a type of transformer in terms of standard complexity classes
+- Shows transformers with linear steps remain within context-sensitive languages
+
+4. Practical implications:
+- Suggests chain-of-thought prompting needs substantial intermediate steps (linear rather than logarithmic) to meaningfully extend reasoning capabilities
+- Provides theoretical framework for understanding how length of chain-of-thought affects transformer capabilities
+
+The paper combines theoretical computer science and machine learning, using complexity theory to analyze transformer architectures and provide rigorous bounds on their computational capabilities under different constraints on intermediate generation steps.
+
+==> litreview.4.md/2.md <==
+litreview.4/2410.03170v1.pdf
+Title: Autoregressive Large Language Models are Computationally Universal
+
+Authors: Dale Schuurmans, Hanjun Dai, and Francesco Zanini
+
+Publication Date: October 4, 2024 (arXiv v1)
+
+arXiv: 2410.03170v1 [cs.CL]
+
+Summary:
+This paper proves that autoregressive decoding of transformer-based language models can achieve universal computation without external intervention or model weight modifications. The key findings and contents include:
+
+1. Framework Development:
+- Introduces "extended autoregressive decoding" that allows processing of arbitrarily long inputs using a bounded context window
+- Shows this system corresponds to a "Lag system," a classical model of computation known to be universal
+
+2. Key Proofs:
+- Demonstrates that a universal Turing machine can be simulated by a Lag system with 2027 production rules
+- Proves that a single system prompt can drive Gemini-1.5-pro-001 under deterministic (greedy) decoding to correctly apply all 2027 rules
+
+3. Technical Progression:
+- Shows how Lag systems can implement bidirectional memory access control
+- Proves that any Turing machine can be simulated by a restricted (2,2)-Lag system
+- Demonstrates that linear bounded automata can be simulated by restricted (2,1)-Lag systems
+
+4. Practical Implementation:
+- Uses the universal Turing machine U15,2 (with 15 states and 2 tape symbols) as the basis for constructing a universal Lag system
+- Develops a specific prompt for Gemini-1.5-pro-001 that enables simulation of this universal Lag system
+
+5. Key Conclusion:
+- By the Church-Turing thesis, proves that prompted Gemini-1.5-pro-001 with extended autoregressive (greedy) decoding is a general purpose computer
+
+The paper represents a significant theoretical advancement by proving that current large language models are already capable of universal computation without requiring external memory or control mechanisms. This is demonstrated through a careful construction involving Lag systems as an intermediate representation, culminating in a practical implementation using Gemini-1.5-pro-001.
+
+==> litreview.4.md/3.md <==
+litreview.4/2411.01992v1.pdf
+Title: Ask, and It Shall Be Given: Turing Completeness of Prompting
+Authors: Ruizhong Qiu, Zhe Xu, Wenxuan Bao, Hanghang Tong
+Institution: University of Illinois Urbana-Champaign
+Publication: arXiv preprint arXiv:2411.01992v1
+Date: November 4, 2024
+
+Summary:
+This paper provides the first theoretical study demonstrating that prompting large language models (LLMs) is Turing-complete. The key findings include:
+
+1. Main Theorem:
+- There exists a finite-size Transformer such that for any computable function, there exists a corresponding prompt that allows the Transformer to compute that function
+- The Transformer is independent of the function being computed
+- The prompt is independent of the input
+- The input can be arbitrarily long
+
+2. Complexity Results:
+- Can compute any TIME(t(n)) function within O(t(n)log t(n)) chain-of-thought steps
+- Can compute any TIME2(t(n)) function within O(t(n)) steps
+- Achieves O(log(n + t(n))) precision complexity for TIME(t(n)) functions
+- Can decide any P language within log-precision
+
+3. Technical Approach:
+- Introduces a new model of computation called "2-PTMs" (two-tape Post-Turing machines) that can be efficiently encoded into prompts
+- Proves 2-PTMs are nearly as efficient as Turing machines
+- Constructs a Transformer that can execute 2-PTMs through chain-of-thought steps
+- Uses ReLU activation, layer normalization, and causal attention mechanisms
+
+4. Significance:
+- First theoretical framework for understanding the LLM prompting paradigm
+- Shows a single finite-size Transformer with prompting can achieve nearly the same complexity bounds as unbounded-size Transformers
+- Provides theoretical underpinning for prompt engineering in practice
+
+The paper includes detailed proofs and constructions in the appendices, showing how the Transformer executes the encoded computations through chain-of-thought steps while maintaining the claimed complexity bounds.
