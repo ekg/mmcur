@@ -132,9 +132,7 @@ This ensures we always see the most recent write to each position, exactly match
 \end{proof}
 
 \vspace{0.5em}
-\noindent\underline{Third, and finally}, we analyze the complexity bounds: The simulation incurs logarithmic overhead in both space ($O(\log t)$ bits for step counter and $O(\log n)$ bits for position encoding) and time ($O(\log t)$ for history access operations).
-
-These bounds are tight \cite{parzych2024memory,hhan2024new,boyle2024memory}, as demonstrated through recent impossibility results. Therefore, $S$ simulates $M$ with logarithmic overhead in both space and time \cite{savage1994space,vonkorff2019molecular,bennett1989time}.
+\noindent\underline{Third, and finally}, we analyze the complexity bounds: The simulation incurs logarithmic overhead in both space ($O(\log t)$ bits for step counter and $O(\log n)$ bits for position encoding) and time ($O(\log t)$ for history access operations). These bounds are tight \cite{parzych2024memory,hhan2024new,boyle2024memory}, as demonstrated through recent impossibility results. Therefore, $S$ simulates $M$ with logarithmic overhead in both space and time \cite{savage1994space,vonkorff2019molecular,bennett1989time}.
 \end{proof}
 
 \begin{corollary}[Universality]
