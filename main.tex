@@ -247,9 +247,9 @@ The effectiveness of these approaches can be understood through the lens of comp
 Chain-of-thought prompting works not by changing the underlying computation, but by providing clear temporal structure for maintaining and accessing computational state \cite{wei2022chain}.
 Similarly, successful memory architectures in AI systems can be viewed as different strategies for implementing reliable history access with clear temporal boundaries \cite{yang2013survey}.
 
-The success of large language models, particularly autoregressive models \cite{schuurmans2024autoregressive}, demonstrates how systems achieve universal computation by learning the fundamental transition functions humans use with language.
-These models are trained on vast collections of text that capture how humans use language as a memory system---written explanations, logical arguments, mathematical derivations, and other records of human computational processes \cite{brown2020language}.
-This training enables them to internalize not just patterns, but the basic transition functions that humans use to maintain and manipulate computational state through language \cite{wei2022chain}.
+The remarkable leap in language model capabilities emerged from massive overtraining on an unprecedented coverage of human knowledge \cite{schuurmans2024autoregressive}.
+This extensive exposure enabled these systems to learn and internalize the fundamental transition functions that humans use with language.
+When provided with sufficient context (state), these models can achieve human-level performance precisely because they have learned to replicate human computational patterns through exposure to vast collections of text---our recorded explanations, arguments, derivations, and other traces of human thought \cite{brown2020language,wei2022chain}.
 
 When presented with prompts containing examples, LLMs can effectively apply learned patterns to break down complex problems into steps, implementing a form of recursive reasoning \cite{wei2022chain}.
 This reasoning occurs without weight updates, suggesting the models have internalized generalizable computational patterns from their training data.
@@ -260,11 +260,11 @@ The success of these methods depends not on teaching models new reasoning capabi
 
 \section{Conclusion}
 
-Our analysis highlights a critical insight for artificial intelligence.
-While significant progress has been made in training transition functions through exposure to human computational traces in text, we may be approaching fundamental limits of this approach alone.
-Current language models demonstrate this.
-They have effectively learned to replicate human-like information processing patterns, yet their capabilities show diminishing returns from scale.
-The key contribution of this work is to remind us that universal computation requires not just sophisticated transition functions, but also robust memory mechanisms for maintaining and accessing computational state.
+Our analysis highlights a critical insight about the recent advances in artificial intelligence.
+The breakthrough in language model capabilities came not from architectural innovations, but from massive overtraining on an unprecedented coverage of human knowledge, enabling these systems to learn the human transition function itself.
+When combined with sufficient context windows for state maintenance, this allows them to achieve human-level performance across many tasks.
+However, we may be approaching fundamental limits of this approach---simply scaling up training further may yield diminishing returns now that we've achieved good coverage of human knowledge.
+The key contribution of this work is to remind us that universal computation requires both the right transition functions and robust memory mechanisms for maintaining computational state.
 
 This perspective suggests a shift in focus for AI development.
 Rather than solely pursuing more powerful pattern matching through larger models, progress may require equal attention to the memory and state maintenance mechanisms that enable recursive computation.
