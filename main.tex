@@ -164,25 +164,56 @@ The $\text{TC}_0$ bound thus follows directly from parallel trainability require
 
 \section{Computation in biological systems}
 
-The central dogma of molecular biology reveals a fundamental truth about cellular computation: it operates entirely through parallel molecular interactions \cite{wang2023parallel,cai2024efficient,fu2023scgrn}. Every aspect of information processing in the cell occurs through simultaneous reactions governed by concentration thresholds and binding affinities. Ion channels open and close in parallel across membranes based on voltage gradients, while G-protein coupled receptors simultaneously trigger cascades of second messengers. Even direct protein-protein interactions and mechanical signal transduction operate through vast networks of molecules simultaneously changing conformational states \cite{berridge2014cell}.
+The central dogma of molecular biology reveals a fundamental truth about cellular computation: it operates entirely through parallel molecular interactions \cite{wang2023parallel,cai2024efficient,fu2023scgrn}.
+Every aspect of information processing in the cell occurs through simultaneous reactions governed by concentration thresholds and binding affinities.
+Ion channels open and close in parallel across membranes based on voltage gradients, while G-protein coupled receptors simultaneously trigger cascades of second messengers.
+Even direct protein-protein interactions and mechanical signal transduction operate through vast networks of molecules simultaneously changing conformational states \cite{berridge2014cell}.
 
-This parallel processing isn't an implementation choice---it's fundamental to cellular metabolism \cite{cai2024efficient,hoel2020emergence}. A cell cannot afford to serialize its basic information processing, whether through fast ion channels or slower biochemical cascades. The need for metabolic efficiency forces parallel computation just as training efficiency forces parallelism in artificial neural networks \cite{barrett2019analyzing}. This parallel architecture restricts cellular computation to $\text{TC}_0$ complexity: threshold functions operating on many inputs simultaneously, but no true sequential logic \cite{wang2023parallel}.
+This parallel processing isn't an implementation choice---it's fundamental to cellular metabolism \cite{cai2024efficient,hoel2020emergence}.
+A cell cannot afford to serialize its basic information processing, whether through fast ion channels or slower biochemical cascades.
+The need for metabolic efficiency forces parallel computation just as training efficiency forces parallelism in artificial neural networks \cite{barrett2019analyzing}.
+This parallel architecture restricts cellular computation to $\text{TC}_0$ complexity: threshold functions operating on many inputs simultaneously, but no true sequential logic \cite{wang2023parallel}.
 
-The brain transcends these parallel constraints through precise architectural design. In the hippocampal-entorhinal system, dedicated ``time cells'' fire in precise sequences while ramping cells modulate their activity to provide temporal context \cite{quentin2019differential}. The prefrontal cortex coordinates with the hippocampus to organize memories, while the parahippocampal region processes spatial and event details \cite{martini2015information}. This system achieves ordered episodic memories not by making individual neurons sequential processors, but by maintaining state through multiple parallel components orchestrated in time. Even here, the fundamental operations remain parallel---it is the sophisticated maintenance of state across specialized structures that enables sequential processing \cite{bruno2022epigenetic}.
+The brain transcends these parallel constraints through precise architectural design.
+In the hippocampal-entorhinal system, dedicated ``time cells'' fire in precise sequences while ramping cells modulate their activity to provide temporal context \cite{quentin2019differential}.
+The prefrontal cortex coordinates with the hippocampus to organize memories, while the parahippocampal region processes spatial and event details \cite{martini2015information}.
+This system achieves ordered episodic memories not by making individual neurons sequential processors, but by maintaining state through multiple parallel components orchestrated in time.
+Even here, the fundamental operations remain parallel---it is the sophisticated maintenance of state across specialized structures that enables sequential processing \cite{bruno2022epigenetic}.
 
-Different biological systems have evolved various strategies for maintaining computational history \cite{espinosa2024molecular}. At the cellular level, the cell cycle provides natural temporal boundaries for state maintenance. Developmental biology shows how organisms maintain state across multiple timescales, from rapid cellular signaling to long-term morphological changes. Neural systems implement particularly sophisticated memory structures that preserve both state and temporal relationships.
+Different biological systems have evolved various strategies for maintaining computational history \cite{espinosa2024molecular}.
+At the cellular level, the cell cycle provides natural temporal boundaries for state maintenance.
+Developmental biology shows how organisms maintain state across multiple timescales, from rapid cellular signaling to long-term morphological changes.
+Neural systems implement particularly sophisticated memory structures that preserve both state and temporal relationships.
 
-This principle appears repeatedly in biological systems \cite{fu2024memory}. From immune memory to developmental patterning, organisms achieve complex computation not by overcoming the parallel nature of cellular processing, but by building additional layers of organization above it. These solutions all share a common theme: they enable sequential computation through sophisticated mechanisms for maintaining and accessing computational state, rather than by changing the fundamental parallel nature of their constituent cells.
+This principle appears repeatedly in biological systems \cite{fu2024memory}.
+From immune memory to developmental patterning, organisms achieve complex computation not by overcoming the parallel nature of cellular processing, but by building additional layers of organization above it.
+These solutions all share a common theme: they enable sequential computation through sophisticated mechanisms for maintaining and accessing computational state, rather than by changing the fundamental parallel nature of their constituent cells.
 
-Recent experimental work confirms these computational bounds. Studies of the p53 pathway by \cite{batchelor2023dynamic} revealed that while cells excel at implementing complex threshold functions through protein interactions, they cannot maintain ordered sequences of states without specialized structures. The MAP kinase pathway, despite its sophisticated signal processing capabilities, operates entirely through parallel protein modifications and threshold-based state changes. Even apparently sequential processes like the cell cycle are implemented through parallel molecular networks with threshold-based transitions rather than true sequential computation.
+Recent experimental work confirms these computational bounds.
+Studies of the p53 pathway by \cite{batchelor2023dynamic} revealed that while cells excel at implementing complex threshold functions through protein interactions, they cannot maintain ordered sequences of states without specialized structures.
+The MAP kinase pathway, despite its sophisticated signal processing capabilities, operates entirely through parallel protein modifications and threshold-based state changes.
+Even apparently sequential processes like the cell cycle are implemented through parallel molecular networks with threshold-based transitions rather than true sequential computation.
 
-Organisms transcend these limitations through an array of specialized structures and multicellular organization \cite{espinosa2024molecular}. At the cellular level, neural systems achieve sequential computation through synaptic modifications that maintain state across time \cite{fu2024memory}, while the immune system maintains computational history through specialized memory cells \cite{niu2022computational}. But memory structures in biology extend far beyond these classical examples.
+Organisms transcend these limitations through an array of specialized structures and multicellular organization \cite{espinosa2024molecular}.
+At the cellular level, neural systems achieve sequential computation through synaptic modifications that maintain state across time \cite{fu2024memory}, while the immune system maintains computational history through specialized memory cells \cite{niu2022computational}.
+But memory structures in biology extend far beyond these classical examples.
 
-Developmental biology provides striking examples of memory-enabled computation. The apical meristem in plants maintains positional information and developmental state through complex molecular networks, enabling precise control of phyllotaxis (leaf arrangement) and organ formation \cite{lovkvist2021using}. This spatial memory system allows plants to maintain consistent developmental patterns despite environmental perturbations. Similarly, the anterior-posterior axis and segmentation patterns in animal embryos emerge through maintained morphogen gradients and sequential state updates \cite{pastor2020computation}. These patterns demonstrate remarkable robustness, with the ability to regenerate proper proportions even after significant tissue removal or reorganization \cite{lobo2012towards}.
+Developmental biology provides striking examples of memory-enabled computation.
+The apical meristem in plants maintains positional information and developmental state through complex molecular networks, enabling precise control of phyllotaxis (leaf arrangement) and organ formation \cite{lovkvist2021using}.
+This spatial memory system allows plants to maintain consistent developmental patterns despite environmental perturbations.
+Similarly, the anterior-posterior axis and segmentation patterns in animal embryos emerge through maintained morphogen gradients and sequential state updates \cite{pastor2020computation}.
+These patterns demonstrate remarkable robustness, with the ability to regenerate proper proportions even after significant tissue removal or reorganization \cite{lobo2012towards}.
 
-Even seemingly simple organisms like slime molds achieve complex computation through physical memory structures in their multicellular aggregates. These organisms can solve optimization problems and maintain spatial memories of their environment through modifications to their extracellular matrix \cite{hoel2020emergence}. This demonstrates how memory-enabled computation can emerge from basic biological building blocks without requiring specialized neural tissue.
+Even seemingly simple organisms like slime molds achieve complex computation through physical memory structures in their multicellular aggregates.
+These organisms can solve optimization problems and maintain spatial memories of their environment through modifications to their extracellular matrix \cite{hoel2020emergence}.
+This demonstrates how memory-enabled computation can emerge from basic biological building blocks without requiring specialized neural tissue.
 
-These memory mechanisms operate across multiple scales, from molecular to organismal. At the cellular level, epigenetic modifications and protein-based switches maintain cell identity. At the tissue level, developmental patterns are maintained through both cellular memory and tissue organization. At the organism level, the genome itself acts as a form of evolutionary memory, encoding solutions to computational problems faced by ancestors. These diverse solutions share a common principle: they enable complex computation not through more sophisticated basic units, but through maintaining and accessing computational state via specialized structures. This mirrors how artificial systems overcome parallel processing limitations through recursive state maintenance rather than more complex basic units.
+These memory mechanisms operate across multiple scales, from molecular to organismal.
+At the cellular level, epigenetic modifications and protein-based switches maintain cell identity.
+At the tissue level, developmental patterns are maintained through both cellular memory and tissue organization.
+At the organism level, the genome itself acts as a form of evolutionary memory, encoding solutions to computational problems faced by ancestors.
+These diverse solutions share a common principle: they enable complex computation not through more sophisticated basic units, but through maintaining and accessing computational state via specialized structures.
+This mirrors how artificial systems overcome parallel processing limitations through recursive state maintenance rather than more complex basic units.
 
 \section{Practical implications}
 
