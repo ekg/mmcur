@@ -24,7 +24,7 @@
 \newtheorem{corollary}[theorem]{Corollary}
 \newtheorem{definition}[theorem]{Definition}
 
-\title{Memory Makes Computation Universal, Remember?}
+\title{Memory makes computation universal, remember?}
 \author{Erik Garrison\\
   \texttt{egarris5@uthsc.edu}\\[1ex]
   }
@@ -51,7 +51,7 @@ This insight has profound implications for understanding computation in practice
 
 We prove that any system with two basic capabilities---recursive state maintenance and reliable history access---can implement universal computation \cite{bennett1989time,boyle2024memory}. This result unifies our understanding of computation across artificial and biological domains, suggesting new approaches to both AI system design and the analysis of biological information processing.
 
-\section{Basic Requirements and Construction}
+\section{Basic requirements and construction}
 
 A system has recursive state processing if it can read its current state $s$, generate an update function $f(s)$ that produces the next state, and maintain the new state $f(s)$ for subsequent processing \cite{manuri2019state}. This state maintenance must be robust against errors and degradation \cite{yang2013survey}.
 
@@ -61,7 +61,7 @@ This requirement for reliable history access naturally creates temporal structur
 
 These capabilities enable universal computation through a straightforward construction \cite{deutsch1995universality,bennett1989time}. Given a Universal Turing Machine $U$, we implement it as follows: The state $s = (q, p, a)$ encodes the current machine state $q$, the position $p$ of the tape head, and the symbol $a$ under the head. At each step, the system processes current state $s$ to determine $(q', a', d) = \delta(q, a)$, where $q'$ is the next machine state, $a'$ is the symbol to write, and $d$ is the head movement. It uses history access to reconstruct tape contents as needed and maintains the new state for the next step.
 
-\section{Completeness of the Construction}
+\section{Completeness of the construction}
 
 \begin{theorem}[Completeness]
 Any system $S$ with recursive state maintenance and reliable history access can simulate a Universal Turing Machine with at most logarithmic overhead in space and time complexity \cite{boyle2024memory,liskiewicz1994complexity}.
@@ -107,7 +107,7 @@ These bounds are tight \cite{parzych2024memory,hhan2024new,boyle2024memory}, as 
 Any system with recursive state maintenance and reliable history access is Turing-complete.
 \end{corollary}
 
-\section{Fundamental Constraints of Parallel Training}
+\section{Fundamental constraints of parallel training}
 
 The restriction of neural architectures to $\text{TC}_0$ complexity isn't merely an implementation artifact - it emerges necessarily from the requirements of parallel training at scale \cite{merrill2023parallelism,peng2024limitations}. To understand why, we must examine the fundamental independence assumptions required for parallel optimization \cite{shallue2019measuring}.
 
@@ -117,7 +117,7 @@ These independence assumptions, while crucial for training efficiency, fundament
 
 The necessity of these constraints becomes clear when we examine the backwards pass during training \cite{jung2020new}. Consider a hypothetical architecture that could implement arbitrary sequential computation in a single forward pass. The backwards pass would require propagating gradients through this sequential computation, creating an inherently serial process that would negate the benefits of parallel training \cite{zhu2024overcoming}. This demonstrates that the $\text{TC}_0$ limitation isn't just a current engineering constraint - it's a necessary consequence of parallel trainability.
 
-\section{Computation in Biological Systems}
+\section{Computation in biological systems}
 
 The central dogma of molecular biology reveals a fundamental truth about cellular computation: it operates entirely through parallel molecular interactions \cite{wang2023parallel,cai2024efficient,fu2023scgrn}. Every aspect of information processing in the cell occurs through simultaneous reactions governed by concentration thresholds and binding affinities. Ion channels open and close in parallel across membranes based on voltage gradients, while G-protein coupled receptors simultaneously trigger cascades of second messengers. Even direct protein-protein interactions and mechanical signal transduction operate through vast networks of molecules simultaneously changing conformational states \cite{berridge2014cell}.
 
@@ -139,7 +139,7 @@ Even seemingly simple organisms like slime molds achieve complex computation thr
 
 These memory mechanisms operate across multiple scales, from molecular to organismal. At the cellular level, epigenetic modifications and protein-based switches maintain cell identity. At the tissue level, developmental patterns are maintained through both cellular memory and tissue organization. At the organism level, the genome itself acts as a form of evolutionary memory, encoding solutions to computational problems faced by ancestors. These diverse solutions share a common principle: they enable complex computation not through more sophisticated basic units, but through maintaining and accessing computational state via specialized structures. This mirrors how artificial systems overcome parallel processing limitations through recursive state maintenance rather than more complex basic units.
 
-\section{Practical Implications}
+\section{Practical implications}
 
 Understanding computation through the lens of recursive state maintenance fundamentally changes how we should approach both the design and use of AI systems \cite{dickson2024trust,ahn2024recursive}. The parallel processing limitations we've identified aren't engineering obstacles to be overcome - they're fundamental constraints that shape how these systems must operate to achieve complex reasoning \cite{merrill2023parallelism}.
 
