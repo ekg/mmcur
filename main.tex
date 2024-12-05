@@ -83,6 +83,8 @@ It uses history access to reconstruct tape contents as needed and maintains the 
 
 The elegance of these requirements - recursive state maintenance and reliable history access - is demonstrated by a remarkably simple proof of their sufficiency for universal computation. This proof provides the mathematical foundation for our broader discussion of computation across artificial and biological systems. Its simplicity reinforces our central argument: universal computation emerges not from complex processing units, but from basic capabilities for maintaining and accessing computational state.
 
+\vspace{1em}
+
 \begin{theorem}[Completeness]
 Any system $S$ with recursive state maintenance and reliable history access can simulate a Universal Turing Machine with at most logarithmic overhead in space and time complexity \cite{boyle2024memory,liskiewicz1994complexity}.
 \end{theorem}
@@ -92,9 +94,23 @@ We proceed in three steps, following established frameworks for space-time trade
 
 First, we show that $S$ can implement the basic operations of a UTM. Let $M$ be a UTM with state set $Q$, tape alphabet $\Gamma$, and transition function $\delta$. We construct a simulation in $S$ as follows:
 
-State Encoding: Each configuration of $M$ is encoded as a tuple $s = (q, p, a, t)$ where $q \in Q$ is the current machine state, $p \in \mathbb{N}$ is the head position, $a \in \Gamma$ is the symbol under the head, and $t \in \mathbb{N}$ is the step counter. This encoding ensures efficient state validation and access \cite{boyle2024memory,hu2014computational}.
+\vspace{0.5em}
+\noindent\textbf{State Encoding:} Each configuration of $M$ is encoded as a tuple $s = (q, p, a, t)$ where:
+\begin{itemize}
+    \item $q \in Q$ is the current machine state
+    \item $p \in \mathbb{N}$ is the head position
+    \item $a \in \Gamma$ is the symbol under the head
+    \item $t \in \mathbb{N}$ is the step counter
+\end{itemize}
+This encoding ensures efficient state validation and access \cite{boyle2024memory,hu2014computational}.
 
-Tape Simulation: For each position $p$ visited by $M$, we maintain a history entry $h_p = (p, a_p, t_p)$ where $a_p \in \Gamma$ is the symbol written at position $p$ and $t_p$ is the time step when this symbol was written. This structure enables logarithmic-time access to tape contents \cite{swamy1983space,liskiewicz1994complexity}.
+\vspace{0.5em}
+\noindent\textbf{Tape Simulation:} For each position $p$ visited by $M$, we maintain a history entry $h_p = (p, a_p, t_p)$ where:
+\begin{itemize}
+    \item $a_p \in \Gamma$ is the symbol written at position $p$
+    \item $t_p$ is the time step when this symbol was written
+\end{itemize}
+This structure enables logarithmic-time access to tape contents \cite{swamy1983space,liskiewicz1994complexity}.
 
 Second, we prove that these operations preserve computational state correctly through the following invariants:
 
@@ -104,8 +120,21 @@ At each step $t$, the simulated configuration $(q, p, a)$ exactly matches the co
 
 \begin{proof}
 By induction on $t$:
-Base case ($t=0$): The initial configuration matches by construction.
-Inductive step: Assume the invariant holds for step $t$. For step $t+1$: $S$ reads current state $(q, p, a, t)$, computes $(q', a', d) = \delta(q, a)$, updates position $p' = p + d$, uses history access to find $a''$ at $p'$, and maintains new state $(q', p', a'', t+1)$. This exactly mirrors $M$'s transition function, preserving the invariant.
+
+\vspace{0.3em}
+\noindent\textit{Base case} ($t=0$): The initial configuration matches by construction.
+
+\vspace{0.3em}
+\noindent\textit{Inductive step}: Assume the invariant holds for step $t$. 
+For step $t+1$: 
+\begin{itemize}
+    \item $S$ reads current state $(q, p, a, t)$
+    \item Computes $(q', a', d) = \delta(q, a)$
+    \item Updates position $p' = p + d$
+    \item Uses history access to find $a''$ at $p'$
+    \item Maintains new state $(q', p', a'', t+1)$
+\end{itemize}
+This exactly mirrors $M$'s transition function, preserving the invariant.
 \end{proof}
 
 \begin{lemma}[History Consistency]
@@ -113,12 +142,30 @@ For any position $p$ and time $t$, the symbol recorded in history matches what w
 \end{lemma}
 
 \begin{proof}
-We maintain two invariants: each write operation creates a history entry with the current time step, and when reading position $p$, we retrieve the entry with maximum $t_p \leq t$. This ensures we always see the most recent write to each position, exactly matching $M$'s tape contents.
+We maintain two invariants:
+\begin{itemize}
+    \item Each write operation creates a history entry with the current time step
+    \item When reading position $p$, we retrieve the entry with maximum $t_p \leq t$
+\end{itemize}
+This ensures we always see the most recent write to each position, exactly matching $M$'s tape contents.
 \end{proof}
 
+\vspace{0.5em}
+\noindent\textbf{Step 3: Complexity Analysis}
+
 Finally, we establish the complexity bounds. The simulation incurs logarithmic overhead:
-Space: $O(\log t)$ bits for step counter and $O(\log n)$ bits for position encoding
-Time: $O(\log t)$ for history access operations
+
+\vspace{0.3em}
+\noindent\textit{Space complexity:}
+\begin{itemize}
+    \item $O(\log t)$ bits for step counter
+    \item $O(\log n)$ bits for position encoding
+\end{itemize}
+
+\noindent\textit{Time complexity:}
+\begin{itemize}
+    \item $O(\log t)$ for history access operations
+\end{itemize}
 
 These bounds are tight \cite{parzych2024memory,hhan2024new,boyle2024memory}, as demonstrated through recent impossibility results. Therefore, $S$ simulates $M$ with logarithmic overhead in both space and time \cite{savage1994space,vonkorff2019molecular,bennett1989time}.
 \end{proof}
