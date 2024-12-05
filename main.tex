@@ -240,11 +240,13 @@ Instead, we're engaging with a computational process that must build up complex 
 This leads to testable hypotheses about when recursive reasoning will help or hinder performance: (1) tasks requiring true sequential dependence will benefit from chain-of-thought reasoning, while (2) tasks dominated by parallel pattern recognition may actually suffer from forced sequential processing \cite{liu2024mind}.
 
 This explains why certain interaction patterns prove particularly effective.
-Chain-of-thought prompting works not because it teaches the model to reason, but because it provides a framework for recursive state maintenance \cite{wei2022chain}.
-The model isn't learning new capabilities during the interaction---it's being given a structure for maintaining computational state across multiple steps \cite{ahn2024recursive}.
+Chain-of-thought prompting makes language models universal computers, even though they're limited to threshold computations (TC0) in each forward pass \cite{wei2022chain}.
+This isn't theoretical---we can prove it.
+Each prompt step provides the state maintenance needed for universal computation, while the model's learned patterns provide the transition functions.
+The model doesn't learn new capabilities during prompting---it's using its pre-trained knowledge within a computational framework that enables universal computation through state maintenance \cite{ahn2024recursive}.
 
-The effectiveness of these approaches can be understood through the lens of computational history access \cite{fu2024memory}.
-Chain-of-thought prompting works not by changing the underlying computation, but by providing clear temporal structure for maintaining and accessing computational state \cite{wei2022chain}.
+The power of this approach comes from computational history access \cite{fu2024memory}.
+Each step in the chain builds on previous results while maintaining clear temporal structure \cite{wei2022chain}.
 Similarly, successful memory architectures in AI systems can be viewed as different strategies for implementing reliable history access with clear temporal boundaries \cite{yang2013survey}.
 
 The remarkable leap in language model capabilities emerged from massive overtraining on an unprecedented coverage of human knowledge \cite{schuurmans2024autoregressive}.
