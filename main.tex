@@ -34,12 +34,12 @@
 \maketitle
 
 \begin{abstract}
-Adding memory to constant-depth parallel computation makes it universal.
-Parallel systems, from neural networks to biological cells, transcend their limitations by memorizing intermediate computational results.
-These systems are restricted to constant-depth parallel computations within each episode, yet achieve universal computation by recursively updating and remembering state across episodes.
-These principles explain diverse phenomena, from chain-of-thought reasoning in language models to information processing in organisms.
-Large language models demonstrate this principle by learning to replicate human computational processes through exposure to vast amounts of text data, traces of human computation, while achieving complex reasoning through recursive state maintenance.
-Computational expressiveness emerges not from complex processing units, but from mechanisms for maintaining and accessing recursive state updates across temporal boundaries.
+We prove that any parallel computational system can achieve Turing-completeness through two minimal requirements: recursive state maintenance and reliable history access.
+This theoretical result explains how seemingly limited systems---from cellular networks to neural architectures---achieve complex sequential computation despite being restricted to constant-depth parallel operations.
+We demonstrate this principle in biological systems, where cells use molecular memory and developmental patterns to transcend the limitations of parallel chemical reactions, and in artificial intelligence, where language models leverage chain-of-thought reasoning to perform complex sequential computations through state maintenance.
+Our framework unifies diverse phenomena across domains, from cellular information processing to recursive reasoning in AI, while providing concrete design principles for memory architectures in computational systems.
+Through mathematical analysis and empirical evidence, we show that computational expressiveness emerges not from sophisticated processing units, but from simple mechanisms that maintain and access computational state across temporal boundaries.
+These findings have immediate implications for AI system design, suggesting that advances in complex reasoning may depend more on improved state maintenance mechanisms than on larger or more sophisticated parallel processing units.
 \end{abstract}
 
 \section{Introduction}
