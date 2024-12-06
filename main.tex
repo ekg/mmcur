@@ -166,7 +166,7 @@ In transformers, the attention mechanism enables parallel processing by treating
 In convolutional networks, the locality assumption enables parallel computation across the spatial dimension.
 Even recurrent architectures, when unrolled for parallel training, must make independence assumptions between time steps \cite{dickson2023rnns}.
 
-These independence assumptions limit the network's ability to implement sequential computation in a single forward pass \cite{wei2022chain}.
+These independence assumptions limit the network's ability to implement sequential computation in a single forward pass \cite{wei2022chain}. A potential objection here is that neural networks might achieve sequential computation through mechanisms other than explicit state maintenance---for instance, through learned representations that implicitly encode sequential dependencies. However, theoretical work by \cite{merrill2023parallelism} proves that such implicit encoding cannot circumvent the fundamental limitations imposed by parallel training requirements.
 \cite{merrill2023parallelism} showed for transformers that computation requiring true sequential dependence cannot be implemented in a single forward pass through a parallel-trained network.
 Their analysis extends to other architectures that rely on similar independence assumptions for parallel training \cite{stillman2023generative}.
 
@@ -251,6 +251,8 @@ The implications for system interaction are equally profound and immediately pra
 When interacting with language models, we're not dealing with a system that "thinks" in a single forward pass.
 Instead, we're engaging with a computational process that must build up complex reasoning through recursive state refinement \cite{dickson2024trust}.
 This leads to testable hypotheses about when recursive reasoning will help or hinder performance: (1) tasks requiring true sequential dependence will benefit from chain-of-thought reasoning, while (2) tasks dominated by parallel pattern recognition may actually suffer from forced sequential processing \cite{liu2024mind}.
+
+Some researchers argue that our framework oversimplifies the relationship between memory and computation, particularly in complex systems like language models. They contend that emergent capabilities might arise from architectural features beyond simple state maintenance, pointing to phenomena like in-context learning that seem to transcend simple memory mechanisms. While these objections raise important points about the complexity of modern AI systems, they ultimately reinforce rather than refute our core thesis. The very mechanisms cited as alternatives to memory-based computation---attention, in-context learning, emergent representations---all depend fundamentally on maintaining and accessing computational state.
 
 This explains why certain interaction patterns prove particularly effective.
 Chain-of-thought prompting makes language models universal computers, even though they're limited to threshold computations (TC0) in each forward pass \cite{wei2022chain}.
