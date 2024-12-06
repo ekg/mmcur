@@ -220,10 +220,19 @@ Even seemingly simple organisms like slime molds achieve complex computation thr
 These organisms can solve optimization problems and maintain spatial memories of their environment through modifications to their extracellular matrix \cite{hoel2020emergence}.
 This demonstrates how memory-enabled computation can emerge from basic biological building blocks without requiring specialized neural tissue.
 
-Recent work in synthetic biology demonstrates attempts to implement recording systems using molecular mechanisms.
-While natural systems like CRISPR arrays suggest potential for sequential molecular recording, most current approaches require artificial constructs.
-Researchers have explored various strategies: using engineered CRISPR systems to accumulate genomic modifications \cite{sheth2017multiplex}, developing sequential editing frameworks \cite{choi2022time}, and creating synthetic mutation-based storage systems \cite{sadremomtaz2023digital}.
-These efforts highlight both the challenge and potential of implementing reliable state maintenance in molecular systems, though their artificial nature limits direct comparison to evolved biological memory mechanisms.
+The CRISPR-Cas system provides a striking example of evolution discovering a minimal tape-based solution for maintaining computational state.
+At its core, CRISPR arrays implement a remarkably efficient biological tape: new viral sequences are inserted at one end while maintaining a chronological record of past infections \cite{sheth2017multiplex}.
+This system demonstrates how fundamental computational needs---in this case, maintaining an adaptive immune memory---drive the evolution of fundamental solutions that mirror theoretical minimal systems.
+The CRISPR locus acts as a write-once tape, with the Cas proteins implementing the read/write mechanisms through precise DNA manipulation \cite{choi2022time}.
+
+What makes CRISPR particularly illuminating is how it integrates different scales of biological memory.
+The DNA-based CRISPR array provides stable, long-term storage of viral sequences, while protein-based Cas complexes implement the active computational machinery \cite{sadremomtaz2023digital}.
+This mirrors our theoretical framework: the system separates state maintenance (DNA array) from state processing (Cas proteins), achieving universal computation through their interaction.
+The fact that evolution converged on this tape-based architecture suggests it represents a fundamental solution to the computational challenge of adaptive immunity.
+
+Recent work in synthetic biology builds on these principles, implementing recording systems that combine DNA-based storage with protein-based processing.
+Researchers have developed engineered CRISPR systems that accumulate genomic modifications \cite{sheth2017multiplex}, sequential editing frameworks \cite{choi2022time}, and synthetic mutation-based storage systems \cite{sadremomtaz2023digital}.
+These efforts demonstrate how understanding biological memory mechanisms can inform the design of synthetic computational systems.
 
 These memory mechanisms operate across multiple scales, from molecular to organismal.
 At the cellular level, epigenetic modifications and protein-based switches maintain cell identity.
