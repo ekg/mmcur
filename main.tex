@@ -268,7 +268,7 @@ The transformer architecture exemplifies our theoretical framework by combining 
 Its attention mechanism enables efficient parallel feature detection across inputs, while its layer-wise processing provides natural boundaries for maintaining computational state.
 This architecture respects the parallel constraints we identified while implementing reliable history access through its attention patterns.
 The result is a system that excels at parallel pattern matching but requires explicit state maintenance through techniques like chain-of-thought prompting to achieve sequential reasoning - exactly as our framework predicts.
-This explains the empirically observed pattern where transformers excel at immediate pattern recognition but require guided state maintenance for complex logical reasoning \cite{wei2022chain,liu2024mind}.
+This explains the empirically observed pattern where transformers excel at immediate pattern recognition but require guided state maintenance for complex logical reasoning \cite{wei2022chain,liu2024mind}. Recent work by Liu et al. demonstrates that forcing chain-of-thought reasoning can actually degrade performance on tasks better suited to implicit pattern recognition, such as artificial grammar learning and face matching tasks \cite{liu2024mind}. This mirrors human cognition, where explicit verbal reasoning can interfere with tasks that rely on implicit pattern recognition abilities.
 
 The relationship between compression and state maintenance provides another key insight.
 Language models achieve remarkable compression of human knowledge through their training process, essentially learning a distributed representation of common patterns in text.
