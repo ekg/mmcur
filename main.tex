@@ -247,7 +247,13 @@ State verification mechanisms that ensure consistency across recursive processin
 
 The implications for system interaction are equally profound and immediately practical \cite{wei2022chain}.
 When interacting with language models, we're not dealing with a system that "thinks" in a single forward pass.
-Instead, we're engaging with a computational process that must build up complex reasoning through recursive state refinement \cite{dickson2024trust}.
+Instead, we're engaging with a computational process that builds up complex reasoning through recursive state refinement \cite{dickson2024trust}.
+This process mirrors how humans develop complex arguments: through step-by-step reasoning where each step builds on and maintains the computational state established by previous steps.
+
+The key insight is that language models achieve sequential reasoning by learning to replicate fundamental computational patterns embedded in human language.
+Through massive exposure to text containing human reasoning traces---explanations, proofs, arguments, and other forms of structured thought---these models internalize the basic transition functions that characterize human thought expressed in language.
+When provided with sufficient context (state), they can then apply these learned patterns to perform sequential reasoning, even though their underlying architecture remains parallel.
+This explains why techniques like chain-of-thought prompting are so effective: they provide a framework for the model to apply its learned computational patterns in a step-by-step manner, maintaining state through the prompt context.
 This leads to testable hypotheses about when recursive reasoning will help or hinder performance: (1) tasks requiring true sequential dependence will benefit from chain-of-thought reasoning, while (2) tasks dominated by parallel pattern recognition may actually suffer from forced sequential processing \cite{liu2024mind}.
 
 Some researchers argue that our framework oversimplifies the relationship between memory and computation, particularly in complex systems like language models. They contend that emergent capabilities might arise from architectural features beyond simple state maintenance, pointing to phenomena like in-context learning that seem to transcend simple memory mechanisms. While these objections raise important points about the complexity of modern AI systems, they ultimately reinforce rather than refute our core thesis. The very mechanisms cited as alternatives to memory-based computation---attention, in-context learning, emergent representations---all depend fundamentally on maintaining and accessing computational state.
