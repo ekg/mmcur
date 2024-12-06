@@ -261,9 +261,9 @@ State verification mechanisms that ensure consistency across recursive processin
 
 The history of the ARC Prize reveals both the limitations of traditional neural approaches and the power of memory-based computation. In the first Kaggle competition in 2020, no deep learning-based approach scored above 1\%, and the original GPT-3 model scored 0\% on the public evaluation via direct prompting. Even modern LLMs with sophisticated attention mechanisms perform poorly when used in a static way - GPT-4o achieves only 5\%, Gemini 1.5 reaches 4.5\%, and Claude 3.5 Sonnet manages 14\% on pass@1 evaluation \cite{chollet2024arc}. However, the introduction of test-time training dramatically improved performance, with top approaches in the 2024 competition achieving 55.5\% accuracy through state maintenance mechanisms \cite{chollet2024arc}.
 
-The implications for system interaction reveal fundamental distinctions between pattern matching and sequential reasoning \cite{wei2022chain}.
-Pattern matching operates through parallel processing of input features, enabling rapid recognition but limited to threshold computations---short sequences can be compressed into direct pattern matches.
-Sequential reasoning, in contrast, requires maintaining and updating state across multiple steps for longer sequences, allowing complex logical deductions that build on previous conclusions \cite{dickson2024trust}.
+The implications for system interaction reveal how pattern matching and sequential reasoning complement each other \cite{wei2022chain}.
+Pattern matching operates through parallel processing of input features, enabling rapid recognition within the constraints of threshold computations---this allows efficient processing of short sequences through direct feature detection.
+Sequential reasoning extends these capabilities by maintaining and updating state across multiple steps, enabling complex logical deductions through recursive composition of simpler pattern-matching operations \cite{dickson2024trust}.
 The transformer architecture's success stems from fundamentally respecting the parallel nature of cognition, using attention to make long-range state maintenance patterns more tractable than sequential architectures like RNNs.
 This distinction explains why language models can simultaneously excel at pattern-based tasks while struggling with multi-step logical reasoning unless explicitly guided through state maintenance techniques like chain-of-thought prompting.
 
