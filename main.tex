@@ -151,9 +151,13 @@ Any system with recursive state maintenance and reliable history access is Turin
 
 \section{Fundamental constraints of parallel training}
 
-The restriction of neural architectures to $\text{TC}_0$ complexity isn't merely an implementation artifact.
-It emerges necessarily from the requirements of parallel training at scale \cite{merrill2023parallelism,peng2024limitations}.
+The restriction of neural architectures to $\text{TC}_0$ complexity isn't merely an implementation artifact---it represents a fundamental computational barrier proven by recent theoretical work \cite{merrill2023parallelism,peng2024limitations}.
+This limitation emerges necessarily from the requirements of parallel training at scale, with quantitative bounds now established on both the computational power and limitations of these architectures.
 To understand why, we must examine the fundamental independence assumptions required for parallel optimization \cite{shallue2019measuring}.
+
+Recent work by Merrill \& Sabharwal (2024) proves that transformer architectures gain computational power in precise, quantifiable steps through state maintenance mechanisms.
+Their analysis shows that each additional processing step increases computational capability in a measurable way, but only when proper state maintenance is preserved across steps.
+These results directly support our framework by demonstrating how memory mechanisms, not architectural complexity, determine computational power.
 
 Consider a neural network trained on multiple devices \cite{zhao2024epha}.
 For training to proceed efficiently in parallel, the computation graph must permit independent parameter updates across different portions of the network \cite{barrett2019analyzing}.
