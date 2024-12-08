@@ -4392,3 +4392,130 @@ Key points:
 - Extensive collaboration with security and safety experts
 
 The document represents a comprehensive assessment of the o1 model series, focusing on both capabilities and safety considerations, while maintaining transparency about potential risks and implemented safeguards.
+
+==> litreview.6.md/1.md <==
+litreview.6/science.aao0958.pdf
+Title: Multiplex recording of cellular events over time on CRISPR biological tape
+Authors: Ravi U. Sheth, Sung Sun Yim, Felix L. Wu, Harris H. Wang
+Publication Date: December 15, 2017
+DOI: 10.1126/science.aao0958
+
+Summary:
+This paper describes the development of a "biological tape recorder" called TRACE (Temporal Recording in Arrays by CRISPR Expansion) that can record temporal biological signals directly into bacterial genomes using CRISPR systems.
+
+Key aspects:
+
+1. System Design:
+- The system converts biological signals into changes in intracellular DNA abundance using an inducible trigger plasmid (pTrig)
+- These DNA changes are then recorded as spacers in CRISPR arrays using Cas1/Cas2 proteins
+- The recording is unidirectional, with new spacers added at the 5' end of arrays
+
+2. Key Components:
+- A copy number-inducible trigger plasmid (pTrig) that increases in abundance upon signal detection
+- A recording plasmid (pRec) expressing Cas1/Cas2 for spacer acquisition
+- The bacterial CRISPR array that stores the recorded information
+
+3. Capabilities:
+- Can record presence/absence of signals over multiple days
+- Achieves multiplexed recording of 3 different signals (copper, trehalose, and fucose) simultaneously
+- Maintains stable recordings over 8 days/~50 generations
+- Allows reconstruction of both temporal profiles and population lineages from sequence data
+
+4. Technical Achievements:
+- Demonstrated recording of 16 different 4-day temporal profiles
+- Developed analytical models to accurately classify recorded signals
+- Created a multiplexing strategy using barcoded CRISPR arrays
+- Achieved ~6 hour temporal resolution
+
+The system represents a significant advance in biological recording technology, enabling the chronicling of dynamic cellular states and environmental changes over time. This has potential applications in studying complex biological processes in difficult-to-access environments like the gut microbiome or soil communities.
+
+The work provides a foundation for future development of higher-resolution, multi-channel biological recording systems that could advance our understanding of complex cellular processes across time.
+
+==> litreview.6.md/2.md <==
+litreview.6/s41467-023-42223-4-1.pdf
+Title: Digital data storage on DNA tape using CRISPR base editors
+
+Authors: Afsaneh Sadremomtaz, Robert F. Glass, Jorge Eduardo Guerrero, Dennis R. LaJeunesse, Eric A. Josephs, Reza Zadegan
+
+Publication Date: 2023
+
+DOI: 10.1038/s41467-023-42223-4
+
+Summary:
+This paper presents a novel DNA-based data storage system called "DNA Mutational Overwriting Storage" (DMOS) that uses CRISPR base editing to write digital data onto pre-existing DNA molecules. Key points:
+
+1. Problem Addressed:
+- Current DNA data storage methods rely heavily on chemical DNA synthesis
+- These methods produce toxic waste and have scalability issues
+- Storing 5 minutes of 1080p video would cost $7M and produce 15L of toxic waste
+
+2. DMOS System:
+- Uses CRISPR base editors to write data by making targeted mutations in DNA
+- DNA "tape" consists of multiple registers, each with 16 domains/bits
+- Uses dead Cas9 (dCas9) and APOBEC3A enzyme to convert C to T at specific locations
+- Data is written by mutating sequences from unmutated (0) to mutated (1) state
+
+3. Key Features:
+- DNA can be mass-produced through bacterial replication rather than chemical synthesis
+- Uses nanopore sequencing for reading the stored data
+- Includes error correction and coding schemes
+- Demonstrated writing/reading of:
+  - A bitmap logo (512 pixels)
+  - The paper's title (768 bits)
+  - Achieved 100% accuracy in data recovery
+
+4. Advantages:
+- More environmentally friendly than chemical synthesis methods
+- Potentially more scalable through bacterial DNA replication
+- Allows rewriting of data
+- Uses cheaper long-read sequencing technology
+
+5. Future Potential:
+- Could be expanded using different base editors
+- Possibility for multiple states per domain
+- Potential for erasing and rewriting data
+- More sustainable than current DNA data storage approaches
+
+The paper demonstrates a proof-of-concept for a more sustainable and potentially scalable approach to DNA data storage, though with lower information density than synthesis-based methods.
+
+==> litreview.7.md/1.md <==
+litreview.7/s41586-022-04922-8.pdf
+Title: A time-resolved, multi-symbol molecular recorder via sequential genome editing
+
+Authors: Junhong Choi, Wei Chen, Anna Minkina, Florence M. Chardon, Chase C. Suiter, Samuel G. Regalado, Silvia Domcke, Nobuhiko Hamazaki, Choli Lee, Beth Martin, Riza M. Daza & Jay Shendure
+
+Publication Date: 6 July 2022
+
+DOI: https://doi.org/10.1038/s41586-022-04922-8
+
+Summary:
+This paper introduces DNA Typewriter, a novel system for recording molecular events in living cells using sequential genome editing. The key features and findings include:
+
+1. System Design:
+- Uses a tandem array of partial CRISPR-Cas9 target sites called "DNA Tape"
+- Only the first site is initially active; others are truncated at 5' ends
+- Uses prime editing to make short insertional edits that serve as "symbols"
+- Each edit records the identity of the prime editing guide RNA while activating the next target site
+
+2. Key Capabilities:
+- Can record thousands of distinct symbols concurrently
+- Maintains explicit order of recorded events through sequential editing
+- Works in mammalian cells
+- Achieves higher efficiency through enhanced prime editing techniques
+
+3. Proof-of-Concept Demonstrations:
+- Recorded and decoded complex event histories and short text messages
+- Evaluated performance of dozens of orthogonal tape designs
+- Constructed "long tape" capable of recording up to 20 serial events
+- Used for lineage tracing in combination with single-cell RNA sequencing
+- Maintained Poisson-like accumulation of edits across 20+ generations and 25 days
+
+4. Applications:
+- Demonstrated recording of cell lineage information during clonal expansion
+- Successfully reconstructed a monophyletic lineage of 3,257 cells
+- Showed potential for recording biological signals and developmental histories
+- Offers advantages over existing DNA memory devices in terms of multiplexing, sequential recording, and stability
+
+This system represents a significant advance in molecular recording technology, offering improved capacity, temporal resolution, and reliability compared to previous approaches. It has potential applications in developmental biology, signal recording, and cellular lineage tracing.
+
+The paper provides extensive experimental validation and characterization of the system's performance, including detailed analysis of editing efficiency, accuracy, and scalability.
