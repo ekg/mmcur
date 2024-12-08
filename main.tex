@@ -80,9 +80,10 @@ Without memory, this unit can only output yes/no signals---a trivial, static ope
 However, with memory to store previous results, this same unit becomes capable of counting: starting from zero, it can repeatedly increment its input and maintain the running total, transforming a simple parallel threshold operation into a sequential counter.
 This counter then serves as a fundamental building block for more complex operations, enabling program sequencing and even Turing machine simulation.
 
-This requirement for reliable history access naturally creates temporal structure in computation.
-Different systems implement this in various ways---neural networks through attention windows and forward passes \cite{martini2015information,quentin2019differential}, cells through cell cycle phases and epigenetic mechanisms \cite{bruno2022epigenetic}, and organisms through developmental stages.
-In each case, the system must maintain clear temporal boundaries to ensure reliable access to its computational history.
+Reliable history access requires systems to maintain clear boundaries between computational states---a requirement that manifests as temporal structure in physical implementations.
+In neural networks, this structure emerges through attention windows that establish sequence order and layered processing that maintains state boundaries \cite{martini2015information,quentin2019differential}.
+Biological systems show similar patterns: cells partition computation through cell cycle phases and stable epigenetic states \cite{bruno2022epigenetic}, while developing organisms maintain state through precisely timed developmental stages.
+Despite their diverse implementations, all these systems share a common need to establish unambiguous boundaries between computational states, enabling reliable access to their processing history.
 
 These capabilities enable universal computation through a straightforward construction \cite{deutsch1995universality,bennett1989time}.
 Given a Universal Turing Machine $U$, we implement it as follows: The state $s = (q, p, a)$ encodes the current machine state $q$, the position $p$ of the tape head, and the symbol $a$ under the head.
