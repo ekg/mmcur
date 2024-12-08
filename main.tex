@@ -275,9 +275,12 @@ Despite massive investment in model development throughout 2023-2024, improvemen
 The LMSYS Chatbot Arena, which has evaluated over 90 models through more than 800,000 human comparisons, shows only minimal differentiation between top models \cite{lmsys2024arena}.
 Performance improvements on standard benchmarks have slowed dramatically compared to previous generational leaps \cite{marcus2024evidence}.
 This plateau is further evidenced by major tech companies struggling to achieve meaningful improvements despite unprecedented resource allocation \cite{zuo2024plateau}.
-These empirical observations align precisely with our framework's prediction that parallel processing capabilities alone cannot overcome fundamental sequential reasoning limitations.
 
-Recent work with the OpenAI o1 system further illuminates these limitations, demonstrating that chain-of-thought reasoning provides new opportunities for safety monitoring and validation of our theoretical framework \cite{openai2024o1}.
+The history of the ARC Prize particularly illuminates these limitations.
+In the first Kaggle competition in 2020, no deep learning-based approach scored above 1\%, and the original GPT-3 model scored 0\% on the public evaluation via direct prompting.
+Even modern LLMs with sophisticated attention mechanisms perform poorly when used in a static way - GPT-4o achieves only 5\%, Gemini 1.5 reaches 4.5\%, and Claude 3.5 Sonnet manages 14\% on pass@1 evaluation \cite{chollet2024arc}.
+However, the introduction of test-time training dramatically improved performance, with top approaches in the 2024 competition achieving 55.5\% accuracy through state maintenance mechanisms \cite{chollet2024arc}.
+These empirical observations align precisely with our framework's prediction that parallel processing capabilities alone cannot overcome fundamental sequential reasoning limitations without proper state maintenance.
 However, just as biological systems don't solve sequential computation by making cells more complex \cite{wang2023parallel}, we won't solve it by making transformer layers more sophisticated \cite{zhao2024epha}.
 
 Instead, architectural innovation should focus on robust mechanisms for state maintenance and recursive processing \cite{jung2020new}.
