@@ -68,7 +68,7 @@ We then examine how parallel processing limitations manifest in both artificial 
 Finally, we explore the practical implications for artificial intelligence development, particularly in the context of large language models and recursive reasoning.
 This analysis provides a unified perspective on computation across domains while suggesting new directions for AI architecture development focused on robust state maintenance mechanisms.
 
-\section{Basic requirements and construction}
+\section{A constructive proof of computational universality}
 
 A system has recursive state processing if it can read its current state $s$, generate an update function $f(s)$ that produces the next state, and maintain the new state $f(s)$ for subsequent processing.
 This state maintenance must be robust against errors and degradation.
@@ -82,7 +82,7 @@ It uses history access to reconstruct tape contents as needed and maintains the 
 
 \section{Completeness of the construction}
 
-We show how these two requirements enable universal computation through a constructive proof.
+We show how these two requirements enable universal computation through a constructive proof that proceeds in three steps: encoding the machine state, simulating tape operations, and proving correctness with complexity bounds.
 
 \vspace{1em}
 
@@ -140,7 +140,7 @@ This ensures we always see the most recent write to each position, exactly match
 Any system with recursive state maintenance and reliable history access is Turing-complete.
 \end{corollary}
 
-\section{What does universality give us?}
+\vspace{1em}
 
 Consider a basic threshold unit that checks if a number is greater than zero.
 Without memory, this unit can only output yes/no signals---a trivial, static operation.
