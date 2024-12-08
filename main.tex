@@ -186,7 +186,8 @@ Ion channels open and close in parallel across membranes based on voltage gradie
 Even direct protein-protein interactions and mechanical signal transduction operate through networks of molecules simultaneously changing conformational states \cite{alberts2022molecular,berridge2014cell}.
 
 This parallel processing isn't an implementation choice---it's fundamental to cellular metabolism \cite{cai2024efficient,hoel2020emergence}.
-A cell cannot afford to serialize its basic information processing, whether through fast ion channels or slower biochemical cascades.
+A cell cannot afford to serialize its basic information processing---a typical eukaryotic cell contains gigabasepairs of DNA sequence, similar amounts of RNA, and billions of proteins \cite{milo2013protein} which are tumbling under Brownian motion in the gigahertz scale, vibrating in the megahertz to terahertz range, and diffusing across the cell in seconds.
+This is a space in which everything is literally interacting with everything else all the time, where structures appear ordered and planned only because their components have found each other through the rapid and continuous interaction of the entire cellular contents.
 The need for metabolic efficiency forces parallel computation just as training efficiency forces parallelism in artificial neural networks \cite{barrett2019analyzing}.
 This parallel architecture restricts cellular computation to $\text{TC}_0$ complexity: threshold functions operating on many inputs simultaneously, but no true sequential logic \cite{wang2023parallel}.
 
