@@ -158,7 +158,7 @@ The restriction of neural architectures to $\text{TC}_0$ complexity isn't merely
 This limitation emerges necessarily from the requirements of parallel training at scale, with quantitative bounds now established on both the computational power and limitations of these architectures.
 To understand why, we must examine the fundamental independence assumptions required for parallel optimization~\cite{shallue2019measuring}.
 
-Recent work by Merrill \& Sabharwal (2024) proves that transformer architectures gain computational power in precise, quantifiable steps through state maintenance mechanisms.
+Recent work \cite{merrill2024} shows how transformer architectures gain computational power through state maintenance mechanisms.
 Their analysis shows that each additional processing step increases computational capability in a measurable way, but only when proper state maintenance is preserved across steps.
 These results directly support our framework by demonstrating how memory mechanisms, not architectural complexity, determine computational power.
 
