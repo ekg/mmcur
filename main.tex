@@ -144,7 +144,7 @@ Any system with recursive state maintenance and reliable history access is Turin
 
 \section{What does universality give us?}
 
-To illustrate how the proof shows memory transforming simple operations into universal computation, consider a basic threshold unit that checks if a number is greater than zero.
+Consider how memory transforms even the simplest computational operations into building blocks for universal computation, starting with a basic threshold unit that checks if a number is greater than zero.
 Without memory, this unit can only output yes/no signals---a trivial, static operation.
 However, with memory to store previous results, this same unit becomes capable of counting: starting from zero, it can repeatedly increment its input and maintain the running total, transforming a simple parallel threshold operation into a sequential counter.
 This counter then serves as a fundamental building block for more complex operations, enabling program sequencing and even Turing machine simulation.
