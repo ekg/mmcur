@@ -80,8 +80,6 @@ Given a Universal Turing Machine $U$, we implement it as follows: The state $s =
 At each step, the system processes current state $s$ to determine $(q', a', d) = \delta(q, a)$, where $q'$ is the next machine state, $a'$ is the symbol to write, and $d$ is the head movement.
 It uses history access to reconstruct tape contents as needed and maintains the new state for the next step.
 
-\section{Completeness of the construction}
-
 We show how these two requirements enable universal computation through a constructive proof that proceeds in three steps: encoding the machine state, simulating tape operations, and proving correctness with complexity bounds.
 
 \vspace{1em}
