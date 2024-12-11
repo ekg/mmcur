@@ -148,43 +148,37 @@ In neural networks, this structure emerges through attention windows that establ
 Biological systems show similar patterns: cells partition computation through cell cycle phases and stable epigenetic states \cite{bruno2022epigenetic}, while developing organisms maintain state through precisely timed developmental stages and morphology \cite{turing1952chemical}.
 Despite their diverse implementations, all these systems share a common need to establish unambiguous boundaries between computational states, enabling reliable access to their processing history.
 
-\section{Fundamental constraints of parallel computation}
+\section{Memory constraints in parallel systems}
+
+Both artificial and biological systems face fundamental constraints in parallel computation that shape their architecture and capabilities.
+These constraints emerge from different sources but lead to remarkably similar solutions through memory and state maintenance.
+
+\subsection{Parallel processing limitations}
 
 Neural architectures face a fundamental computational barrier: they are restricted to $\text{TC}_0$ complexity, as proven by recent theoretical work \cite{merrill2023parallelism,peng2024limitations}.
 This limitation stems directly from the requirements of parallel training at scale.
 To train efficiently across multiple devices, neural networks must permit independent parameter updates across different portions of the network \cite{barrett2019analyzing}.
 This independence requirement manifests in different ways: transformers treat each position independently modulo attention weights, convolutional networks rely on spatial locality, and even recurrent networks must make independence assumptions between time steps when unrolled for parallel training \cite{dickson2023rnns}.
 
-These parallel processing constraints fundamentally limit the network's sequential computation abilities \cite{wei2022chain}.
-While neural networks might seem to achieve sequential computation through learned representations, theoretical work proves that such implicit encoding cannot circumvent the parallel training limitations \cite{merrill2023parallelism}.
-The $\text{TC}_0$ bound emerges specifically from examining the backwards pass during training \cite{jung2020new}.
-Any architecture implementing arbitrary sequential computation in a single forward pass would require propagating gradients through this sequential computation.
-This would create an inherently serial process that conflicts with parallel training requirements \cite{zhu2024overcoming}.
-
-Recent work shows how neural architectures overcome these limitations through state maintenance mechanisms \cite{merrill2024}.
-Each additional processing step increases computational capability in a measurable way, but only when proper state maintenance is preserved across steps.
-This directly supports our framework by demonstrating how memory mechanisms, not architectural complexity, determine computational power.
-The key insight is that neural networks achieve complex computation not by circumventing their parallel nature, but by maintaining state across multiple processing steps.
-
-\section{Computation in biological systems}
-
+Similarly, biological systems face parallel processing constraints due to their physical nature.
 The central dogma of molecular biology reveals how cells solve computation through inherently parallel mechanisms \cite{wang2023parallel,cai2024efficient,fu2023scgrn}.
 Unable to engineer precise electromagnetic flows like silicon systems, cells must process information through vast networks of simultaneous molecular interactions.
 Every aspect of cellular computation occurs through parallel reactions governed by concentration thresholds and binding affinities \cite{alberts2022molecular}.
-Ion channels open and close in parallel across membranes based on voltage gradients, while G-protein coupled receptors simultaneously trigger cascades of second messengers \cite{alberts2022molecular}.
-Even direct protein-protein interactions and mechanical signal transduction operate through networks of molecules simultaneously changing conformational states \cite{alberts2022molecular}.
-
-Cells are fundamentally superparallel processors \cite{cai2024efficient,hoel2020emergence}.
 A typical eukaryotic cell contains gigabase-pairs of DNA, comparable RNA, and billions of proteins \cite{milo2013protein} tumbling at gigahertz frequencies \cite{zhang2023molecular}, vibrating in the megahertz to terahertz range, and diffusing across the cell in seconds.
-In this environment, all components interact continuously and simultaneously, while structures emerge through rapid parallel interactions across the entire cellular contents.
-The physical impossibility of imposing sequential order on billions of molecules in constant motion forces parallel computation, just as training efficiency forces parallelism in artificial neural networks \cite{barrett2019analyzing}.
-This parallel architecture restricts cellular computation to $\text{TC}_0$ complexity: threshold functions operating on many inputs simultaneously, but no true sequential logic \cite{wang2023parallel}.
+The physical impossibility of imposing sequential order on billions of molecules in constant motion forces parallel computation, just as training efficiency forces parallelism in artificial neural networks.
 
-The brain transcends these parallel constraints through precise architectural design.
+\subsection{Overcoming limitations through state maintenance}
+
+Both artificial and biological systems overcome these parallel constraints through sophisticated state maintenance mechanisms.
+In neural networks, each additional processing step increases computational capability in a measurable way, but only when proper state maintenance is preserved across steps.
+Recent work shows this directly supports our framework by demonstrating how memory mechanisms, not architectural complexity, determine computational power \cite{merrill2024}.
+
+The brain demonstrates similar principles through precise architectural design.
 In the hippocampal-entorhinal system, dedicated ``time cells'' fire in precise sequences while ramping cells modulate their activity to provide temporal context \cite{quentin2019differential}.
 The prefrontal cortex coordinates with the hippocampus to organize memories, while the parahippocampal region processes spatial and event details \cite{martini2015information}.
 This system achieves ordered episodic memories not by making individual neurons sequential processors, but by maintaining state through multiple parallel components orchestrated in time.
-Even here, the fundamental operations remain parallel---it is the sophisticated maintenance of state across specialized structures that enables sequential processing \cite{bruno2022epigenetic}.
+
+\subsection{Evolutionary solutions for state maintenance}
 
 Biological systems have evolved three primary strategies for maintaining computational state, each demonstrating the fundamental role of memory in enabling complex computation.
 
