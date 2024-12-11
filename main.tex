@@ -34,7 +34,7 @@
 \maketitle
 
 \begin{abstract}
-Memory makes universal computation possible through two fundamental capabilities: recursive state maintenance and reliable history access.
+Memory makes universal computation possible through two fundamental capabilities: recursive state maintenance and reliable history access \cite{sipser1996introduction}.
 This minimality becomes especially clear when examining parallel systems.
 Neural networks achieve universal computation through state maintenance across iterations, despite limitations in their basic computational units.
 We demonstrate how memory mechanisms enable complex computation and how this manifests in biological systems through specialized cellular structures and in artificial neural networks through techniques like chain-of-thought reasoning.
@@ -74,7 +74,7 @@ This state maintenance must be robust against errors and degradation.
 
 A system has reliable history access if it can: (1) reference any previous state $s_i$ from its computation history without error, (2) distinguish between different states in its history unambiguously, (3) maintain and determine the correct temporal order of states, establishing clear boundaries between computational periods, and (4) guarantee the integrity of stored states.
 
-These capabilities enable universal computation through a straightforward construction \cite{deutsch1995universality,bennett1989time}.
+These capabilities enable universal computation through a straightforward construction \cite{sipser1996introduction,deutsch1995universality,bennett1989time}.
 Given a Universal Turing Machine $U$, we implement it as follows: The state $s = (q, p, a)$ encodes the current machine state $q$, the position $p$ of the tape head, and the symbol $a$ under the head.
 At each step, the system processes current state $s$ to determine $(q', a', d) = \delta(q, a)$, where $q'$ is the next machine state, $a'$ is the symbol to write, and $d$ is the head movement.
 It uses history access to reconstruct tape contents as needed and maintains the new state for the next step.
