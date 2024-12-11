@@ -21,7 +21,6 @@ this shows proper em dashes---they connect phrases like this---while avoiding si
 
 ## Todo List
 
-- Consolidate the core thesis statement about memory and reliable history access enabling universal computation.
 - Combine discussions of parallel computation and \(\text{TC}_0\) constraints into a cohesive explanation, reducing repetition.
 - Integrate discussions of Large Language Models and chain-of-thought reasoning into a single, well-integrated section.
 - Mention performance plateaus and overtraining once, summarizing rather than reintroducing at length.
