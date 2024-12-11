@@ -21,6 +21,5 @@ this shows proper em dashes---they connect phrases like this---while avoiding si
 
 ## Todo List
 
-- State the analogy between human cultural evolution and the development of memory for computation once in the introduction and revisit it succinctly in the conclusion.
 - Keep the proof rigorous and self-contained but avoid multiple redundant references and restatements.
 - Integrate discussions about memory constraints in biological and AI systems into a single comparative section to avoid reiteration.
