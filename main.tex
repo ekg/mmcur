@@ -213,25 +213,11 @@ Developing organisms also record state through their morphology and self-enhanci
 Through the interaction of fast-diffusing inhibitors with self-enhancing activators, organisms create stable spatial patterns that maintain developmental state information across time.
 This mechanism enables complex pattern formation from initially uniform conditions, demonstrating how simple molecular interactions can implement sophisticated state maintenance through physical structure.
 
-Even seemingly simple organisms like slime molds achieve complex computation through physical memory structures in their multicellular aggregates.
-These organisms can solve optimization problems and maintain spatial memories of their environment through modifications to their extracellular matrix \cite{hoel2020emergence}.
-This demonstrates how memory-enabled computation can emerge from basic biological building blocks without requiring specialized neural tissue.
-
-The CRISPR-Cas system provides a striking example of evolution discovering the simplest possible tape-based solution for maintaining computational state.
-When life needed temporal logging, it created perhaps the most minimal possible sequential memory structure: CRISPR arrays implement a remarkably efficient biological tape where new viral sequences are inserted at one end while maintaining a chronological record of past infections \cite{sheth2017multiplex}.
-This system demonstrates how fundamental computational needs---in this case, maintaining an adaptive immune memory---drive the evolution of fundamental solutions that mirror theoretical minimal systems.
-The CRISPR locus acts as a write-once tape, with the Cas proteins implementing the read/write mechanisms through precise DNA manipulation \cite{choi2022time}.
-
-The elegance of this solution is further demonstrated by the molecular details of CRISPR spacer integration.
-The system implements a precise two-step write operation using just two proteins (Cas1 and Cas2) that maintain exact repeat lengths through a molecular ruler mechanism \cite{kim2019crispr}.
-This ensures both precise state boundaries and temporal ordering.
-Critically, the physical arrangement of the array, with the promoter at the leader sequence, results in higher expression of leader-proximal (more recent) spacers, creating an inherent prioritization of recent memories.
-This demonstrates how evolution discovered not just any tape-based memory system, but precisely the kind of tape structure needed for the specific computational problem at hand - remembering and prioritizing response to recent infections while maintaining a reliable historical record across generations.
-
-What makes CRISPR particularly illuminating is how it integrates different scales of biological memory.
-The DNA-based CRISPR array provides stable, long-term storage of viral sequences, while protein-based Cas complexes implement the active computational machinery \cite{sadremomtaz2023digital}.
-This mirrors our theoretical framework: the system separates state maintenance (DNA array) from state processing (Cas proteins), achieving universal computation through their interaction.
-The fact that evolution converged on this tape-based architecture suggests it represents a fundamental solution to the computational challenge of adaptive immunity.
+The CRISPR-Cas system exemplifies evolution's discovery of minimal yet effective memory architectures.
+This remarkably efficient biological tape maintains a chronological record of viral infections, with new sequences inserted at one end \cite{sheth2017multiplex}.
+The system achieves precise state maintenance through a two-protein mechanism that ensures exact repeat lengths and temporal ordering \cite{kim2019crispr}.
+By separating stable DNA-based storage from active protein-based processing \cite{sadremomtaz2023digital}, CRISPR demonstrates how evolution converged on fundamental solutions for maintaining computational state.
+Even seemingly simple organisms like slime molds demonstrate sophisticated computation through physical memory structures in their extracellular matrix \cite{hoel2020emergence}, showing how memory-enabled computation can emerge from basic biological building blocks.
 
 Recent work in synthetic biology builds on these principles, implementing recording systems that combine DNA-based storage with protein-based processing.
 Researchers have developed engineered CRISPR systems that accumulate genomic modifications \cite{sheth2017multiplex}, sequential editing frameworks \cite{choi2022time}, and synthetic mutation-based storage systems \cite{sadremomtaz2023digital}.
@@ -266,18 +252,10 @@ Through exposure to text containing human reasoning traces, these models interna
 When provided with sufficient context as state, they can apply these learned patterns to perform step-by-step reasoning.
 This explains why chain-of-thought prompting proves effective: it provides a framework for maintaining computational state across multiple steps.
 
-Recent empirical evidence strongly supports these theoretical limitations of pure scaling approaches.
-Despite massive investment in model development throughout 2023-2024, improvements in LLM performance have nearly plateaued.
-The LMSYS Chatbot Arena, which has evaluated over 90 models through more than 800,000 human comparisons, shows only minimal differentiation between top models \cite{lmsys2024arena}.
-Performance improvements on standard benchmarks have slowed dramatically compared to previous generational leaps \cite{marcus2024evidence}.
-This plateau is further evidenced by major tech companies struggling to achieve meaningful improvements despite unprecedented resource allocation \cite{zuo2024plateau}.
-
-The history of the ARC Prize particularly illuminates these limitations.
-In the first Kaggle competition in 2020, no deep learning-based approach scored above 1\%, and the original GPT-3 model scored 0\% on the public evaluation via direct prompting.
-Even modern LLMs with sophisticated attention mechanisms perform poorly when used in a static way - GPT-4o achieves only 5\%, Gemini 1.5 reaches 4.5\%, and Claude 3.5 Sonnet manages 14\% on pass@1 evaluation \cite{chollet2024arc}.
-However, the introduction of test-time training dramatically improved performance, with top approaches in the 2024 competition achieving 55.5\% accuracy through state maintenance mechanisms \cite{chollet2024arc}.
-These empirical observations align precisely with our framework's prediction that parallel processing capabilities alone cannot overcome fundamental sequential reasoning limitations without proper state maintenance.
-However, just as biological systems don't solve sequential computation by making cells more complex \cite{wang2023parallel}, we won't solve it by making transformer layers more sophisticated \cite{zhao2024epha}.
+Recent empirical evidence from the ARC Prize competition demonstrates the limitations of pure scaling approaches.
+While modern LLMs with sophisticated architectures achieve only 5-14\% accuracy through direct prompting, the introduction of state maintenance mechanisms through test-time training improved performance to 55.5\% \cite{chollet2024arc}.
+This dramatic improvement aligns with our framework's prediction: parallel processing capabilities alone cannot overcome sequential reasoning limitations without proper state maintenance.
+Just as biological systems don't solve sequential computation by making cells more complex \cite{wang2023parallel}, we won't solve it by making transformer layers more sophisticated \cite{zhao2024epha}.
 
 Instead, architectural innovation should focus on robust mechanisms for state maintenance and recursive processing \cite{jung2020new}.
 This might involve memory systems that maintain coherent state across multiple processing steps \cite{zhu2024overcoming}.
@@ -322,19 +300,10 @@ The success of these methods depends not on teaching models new reasoning capabi
 
 \section{Conclusion}
 
-Our analysis highlights a critical insight about the recent advances in artificial intelligence.
-The breakthrough in language model capabilities came not from architectural innovations, but from massive overtraining on an unprecedented coverage of human knowledge, enabling these systems to learn the human transition function itself.
-When combined with sufficient context windows for state maintenance, this allows them to achieve human-level performance across many tasks.
-
-The principle extends beyond AI.
-From oral traditions to writing systems to modern computing, human civilization has advanced through transformations in its ability to maintain and access computational state.
-Similarly, biological systems evolved increasingly sophisticated memory mechanisms, from molecular switches to neural architectures \cite{burrill2010making}.
-At each level, from individual cells to human culture, the ability to maintain and reliably access state determines computational capability.
-
-This perspective suggests a shift in focus for AI development.
-Rather than solely pursuing more powerful pattern matching through larger models, progress may require equal attention to the memory and state maintenance mechanisms that enable recursive computation.
-Evolution's elegant solution---maintaining computational correctness through definition rather than enforcement---hints at the potential for fundamentally new approaches to reliable computation.
-By returning to these fundamental requirements, we can better understand computation across minds, machines, and living systems.
+Our analysis reveals a fundamental pattern across scales: from molecular mechanisms to neural systems to artificial intelligence, advances in computational capability emerge from enhanced abilities to maintain and access state.
+The recent breakthroughs in language models demonstrate this principle---their power comes not from architectural complexity but from learning human computational patterns while maintaining sufficient context for recursive processing.
+This suggests a shift in focus for AI development: rather than pursuing larger models, progress requires attention to the memory mechanisms that enable recursive computation.
+Evolution's elegant solutions, from molecular switches to neural architectures \cite{burrill2010making}, point toward fundamentally new approaches to reliable computation based on robust state maintenance rather than complex processing units.
 
 \begingroup
 \footnotesize
