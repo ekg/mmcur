@@ -21,7 +21,6 @@ this shows proper em dashes---they connect phrases like this---while avoiding si
 
 ## Todo List
 
-- Integrate discussions of Large Language Models and chain-of-thought reasoning into a single, well-integrated section.
 - Mention performance plateaus and overtraining once, summarizing rather than reintroducing at length.
 - Select a few representative biological examples (e.g., CRISPR, neural memory, developmental patterns) and provide a unified conclusion, avoiding repetitive framing.
 - State the analogy between human cultural evolution and the development of memory for computation once in the introduction and revisit it succinctly in the conclusion.
