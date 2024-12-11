@@ -21,5 +21,4 @@ this shows proper em dashes---they connect phrases like this---while avoiding si
 
 ## Todo List
 
-- Keep the proof rigorous and self-contained but avoid multiple redundant references and restatements.
 - Integrate discussions about memory constraints in biological and AI systems into a single comparative section to avoid reiteration.
