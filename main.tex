@@ -153,6 +153,10 @@ Despite their diverse implementations, all these systems share a common need to 
 Both artificial and biological systems face fundamental constraints in parallel computation that shape their architecture and capabilities.
 These constraints emerge from different sources but lead to remarkably similar solutions through memory and state maintenance.
 
+Recent empirical work provides striking validation of this principle.
+Feng et al. \cite{feng2024rnns} demonstrated that RNNs stripped to their minimal state maintenance operations, but reorganized for parallel processing, match the performance of recent sequence models.
+This shows how basic state maintenance enables complex computation.
+
 \subsection{Parallel processing limitations}
 
 Neural architectures face a fundamental computational barrier: they are restricted to $\text{TC}_0$ complexity, as proven by recent theoretical work \cite{merrill2023parallelism,peng2024limitations}.
