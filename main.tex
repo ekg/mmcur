@@ -163,6 +163,7 @@ Neural architectures face a fundamental computational barrier: they are restrict
 This limitation stems directly from the requirements of parallel training at scale.
 To train efficiently across multiple devices, neural networks must permit independent parameter updates across different portions of the network \cite{barrett2019analyzing}.
 This independence requirement manifests in different ways: transformers treat each position independently modulo attention weights, convolutional networks rely on spatial locality, and even recurrent networks must make independence assumptions between time steps when unrolled for parallel training \cite{dickson2023rnns}.
+Even recent architectural innovations like structured state spaces and their variants reformulate sequential computation for parallel training while retaining the core limitations of recurrent processing \cite{gu2021efficiently,gu2023mamba,dao2024transformers,nguyen2024hyenadna}.
 
 Similarly, biological systems face parallel processing constraints due to their physical nature.
 The central dogma of molecular biology reveals how cells solve computation through inherently parallel mechanisms \cite{wang2023parallel,cai2024efficient,fu2023scgrn}.
