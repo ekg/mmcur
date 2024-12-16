@@ -4,7 +4,7 @@
 TARGET = main
 
 # LaTeX compiler and options
-LATEX = xelatex
+LATEX = pdflatex
 LATEX_OPTS = -interaction=nonstopmode -halt-on-error
 
 # Default target
