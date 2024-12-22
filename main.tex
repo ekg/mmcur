@@ -232,6 +232,9 @@ Since a system without reliable state maintenance cannot consistently execute an
 In other words, reliable policy following and reliable computation are fundamentally inseparable: a system capable of one must be capable of the other.
 The substantial computational costs---\$17-20 per task in high-efficiency mode---likely reflect both the quadratic overhead of transformer attention and the need to evaluate multiple possible computational traces.
 This suggests o3 represents something qualitatively different from traditional LLMs \cite{willison2024o3}---by achieving reliable state maintenance through parallel search and selection, albeit at significant cost, it appears to meet the requirements for universal computation outlined in our framework.
+While o3 invests heavily in chain-of-thought (``state-keeping'') and robust policy referencing, it still does not unify memory in a single, universal mechanism.
+In practice, it combines multiple partial strategies---chunked or rolling contexts, local chain-of-thought, and, at times, external retrieval systems---to maintain its internal state.
+Hence, o3 should be seen as an early illustration of how emphasizing memory-like processes can push models beyond purely pattern-based reasoning, rather than a complete or general-purpose memory system.
 The system's impressive performance may emerge not from sophisticated ethical reasoning, but from its ability to maintain consistent computational state while searching for valid solutions that follow learned patterns.
 
 Instead, architectural innovation should focus on robust mechanisms for state maintenance and recursive processing \cite{jung2020new}.
