@@ -225,7 +225,7 @@ This dramatic improvement aligns with our framework's prediction: parallel proce
 Just as biological systems don't solve sequential computation by making cells more complex \cite{wang2023parallel}, we won't solve it by making transformer layers more sophisticated \cite{zhao2024epha}.
 
 Recent results from OpenAI's o3 model provide further evidence for this view.
-The system achieves 82.8\% accuracy on 400 public tasks in high-efficiency mode (\$6,677, using 33M tokens) and 91.5\% in low-efficiency mode (using 9.5B tokens) \cite{chollet2024o3}.
+The system achieves 82.8\% accuracy on 400 public tasks in high-efficiency mode (\$6,677, using approximately 33M tokens) and 91.5\% in low-efficiency mode (using approximately 9.5B tokens, at an estimated cost of \$1.15M) \cite{chollet2024o3}.
 Our framework suggests that what's being framed as 'deliberative alignment' \cite{guan2024deliberative,openai2024deliberative} may be better understood as an emergent property of achieving reliable computation through memory and state maintenance, building on earlier work with the o1 model \cite{openai2024learning}.
 Unable to maintain reliable computational state in a single chain of thought, the system compensates by searching over potential computational paths, using policy adherence to detect which paths maintain coherence \cite{chollet2024o3, openai2024learning}.
 The substantial computational costs---$17-20 per task in high-efficiency mode---likely reflect both the quadratic overhead of transformer attention and the need to evaluate multiple possible computational traces.
