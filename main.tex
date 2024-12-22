@@ -162,9 +162,7 @@ Recent empirical work provides striking validation of this principle.
 Feng et al. \cite{feng2024rnns} demonstrated that RNNs stripped to their minimal state maintenance operations, but reorganized for parallel processing, match the performance of recent sequence models.
 This shows how basic state maintenance enables complex computation.
 
-Neural architectures are fundamentally parallel, imposing hard limits on sequential computation.
-
-Neural architectures face a fundamental computational barrier: they are restricted to $\text{TC}_0$ complexity, as proven by recent theoretical work \cite{merrill2023parallelism,peng2024limitations}.
+Neural architectures are fundamentally parallel, imposing hard limits on sequential computation. Neural architectures face a fundamental computational barrier: they are restricted to $\text{TC}_0$ complexity, as proven by recent theoretical work \cite{merrill2023parallelism,peng2024limitations}.
 This limitation stems directly from the requirements of parallel training at scale.
 To train efficiently across multiple devices, neural networks must permit independent parameter updates across different portions of the network \cite{barrett2019analyzing}.
 This independence requirement manifests in different ways: transformers treat each position independently modulo attention weights, convolutional networks rely on spatial locality, and even recurrent networks must make independence assumptions between time steps when unrolled for parallel training \cite{dickson2023rnns}.
@@ -181,9 +179,7 @@ Additional memory mechanisms---like recurrent connections and attention---enable
 Recent work shows this directly supports our framework by demonstrating how memory mechanisms, not architectural complexity, determine computational power (for details of positional embeddings and attention-based ordering, see \cite{merrill2023parallelism,merrill2024}).
 These mechanisms inject sequential capability into parallel architectures not through more complex units, but by maintaining and accessing state across processing steps.
 
-Cells face parallel constraints due to molecular diffusion and simultaneous biochemical reactions.
-
-Like neural networks, biological processes cannot easily run "step-by-step" in a physical sense.
+Cells face parallel constraints due to molecular diffusion and simultaneous biochemical reactions. Like neural networks, biological processes cannot easily run "step-by-step" in a physical sense.
 A typical eukaryotic cell contains gigabase-pairs of DNA, comparable RNA, and billions of proteins \cite{milo2013protein} tumbling at gigahertz frequencies \cite{zhang2023molecular}.
 The physical impossibility of imposing sequential order on billions of molecules in constant motion forces parallel computation, just as training efficiency forces parallelism in artificial neural networks.
 
