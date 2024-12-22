@@ -237,7 +237,7 @@ In other words, reliable policy following and reliable computation are fundament
 The substantial computational costs---\$17--20 per task in high-efficiency mode---likely reflect both the quadratic overhead of transformer attention and the need to evaluate multiple possible computational traces.
 This suggests o3 represents something qualitatively different from traditional LLMs \cite{willison2024o3}---by achieving reliable state maintenance through parallel search and selection, albeit at significant cost, it appears to meet the requirements for universal computation outlined in our framework.
 
-O3's chain-of-thought fulfills both ``recursive state maintenance'' and ``reliable history access,'' storing partial results (including policy references) and retrieving them at each step.
+o3's chain-of-thought fulfills both ``recursive state maintenance'' and ``reliable history access,'' storing partial results (including policy references) and retrieving them at each step.
 The same memory mechanism that preserves logical continuity across iterations also ensures continuous policy adherence, preventing the system from losing alignment constraints in the midst of multi-step reasoning.
 By unifying these capacities, o3 illustrates how reliable computation and faithful policy following naturally converge when robust memory mechanisms are in place.
 While o3 invests heavily in chain-of-thought (``state-keeping'') and robust policy referencing, it still does not unify memory in a single, universal mechanism.
