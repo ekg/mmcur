@@ -154,41 +154,40 @@ Despite their diverse implementations, all these systems share a common need to 
 
 \section{Memory constraints in parallel systems}
 
-Parallel constraints arise in real-world systems, forcing reliance on memory for complex computation. Both artificial and biological systems face fundamental constraints in parallel computation that shape their architecture and capabilities.
+Parallel constraints arise in real-world systems, forcing reliance on memory for complex computation.
+Both artificial and biological systems face fundamental constraints in parallel computation that shape their architecture and capabilities.
 These constraints emerge from different sources but lead to remarkably similar solutions through memory and state maintenance.
-We examine how parallel processing constraints appear in neural networks, then illustrate parallel solutions in biology, emphasizing that memory is the key to bridging both domains.
 
-Recent empirical work provides striking validation of this principle.
-Feng et al. \cite{feng2024rnns} demonstrated that RNNs stripped to their minimal state maintenance operations, but reorganized for parallel processing, match the performance of recent sequence models.
-This shows how basic state maintenance enables complex computation.
-
-Neural architectures are fundamentally parallel, imposing hard limits on sequential computation. Neural architectures face a fundamental computational barrier: they are restricted to $\text{TC}_0$ complexity, as proven by recent theoretical work \cite{merrill2023parallelism,peng2024limitations}.
+Neural architectures face a fundamental computational barrier: they are restricted to $\text{TC}_0$ complexity, as proven by recent theoretical work \cite{merrill2023parallelism,peng2024limitations}.
 This limitation stems directly from the requirements of parallel training at scale.
 To train efficiently across multiple devices, neural networks must permit independent parameter updates across different portions of the network \cite{barrett2019analyzing}.
 This independence requirement manifests in different ways: transformers treat each position independently modulo attention weights, convolutional networks rely on spatial locality, and even recurrent networks must make independence assumptions between time steps when unrolled for parallel training \cite{dickson2023rnns}.
 Even recent architectural innovations like structured state spaces and their variants reformulate sequential computation for parallel training while retaining the core limitations of recurrent processing \cite{gu2021efficiently,gu2023mamba,dao2024transformers,nguyen2024hyenadna}.
 
+Recent empirical work provides striking validation of this principle.
+Feng et al. \cite{feng2024rnns} demonstrated that RNNs stripped to their minimal state maintenance operations, but reorganized for parallel processing, match the performance of recent sequence models.
+This shows how basic state maintenance enables complex computation.
+
 Similarly, biological systems face parallel processing constraints due to their physical nature.
 The central dogma of molecular biology reveals how cells solve computation through inherently parallel mechanisms \cite{wang2023parallel,cai2024efficient,fu2023scgrn}.
 Unable to engineer precise electromagnetic flows like silicon systems, cells must process information through vast networks of simultaneous molecular interactions.
 Every aspect of cellular computation occurs through parallel reactions governed by concentration thresholds and binding affinities \cite{alberts2022molecular}.
-A typical eukaryotic cell contains gigabase-pairs of DNA, comparable RNA, and billions of proteins \cite{milo2013protein} tumbling at gigahertz frequencies \cite{zhang2023molecular}, vibrating in the megahertz to terahertz range, and diffusing across the cell in seconds.
-The physical impossibility of imposing sequential order on billions of molecules in constant motion forces parallel computation, just as training efficiency forces parallelism in artificial neural networks.
+A typical eukaryotic cell contains gigabase-pairs of DNA, comparable quantities of RNA, and billions of proteins \cite{milo2013protein}.
+These molecules are in constant motion, with proteins tumbling at gigahertz frequencies \cite{zhang2023molecular}, vibrating in the megahertz to terahertz range, and diffusing across the entire cell within seconds.
+In this dense molecular soup, every component is practically interacting with every other component all the time, making true sequential processing physically impossible.
+The sheer scale of these simultaneous interactions—billions of molecules moving at gigahertz frequencies within the confined space of a cell—forces computation to be inherently parallel.
 
-Additional memory mechanisms---like recurrent connections and attention---enable sequential logic in parallel networks. Each additional processing step increases computational capability in a measurable way, but only when proper state maintenance is preserved across steps.
+Additional memory mechanisms—like recurrent connections and attention—enable sequential logic in parallel networks.
+Each additional processing step increases computational capability in a measurable way, but only when proper state maintenance is preserved across steps.
 Recent work shows this directly supports our framework by demonstrating how memory mechanisms, not architectural complexity, determine computational power (for details of positional embeddings and attention-based ordering, see \cite{merrill2023parallelism,merrill2024}).
 These mechanisms inject sequential capability into parallel architectures not through more complex units, but by maintaining and accessing state across processing steps.
-
-Cells face parallel constraints due to molecular diffusion and simultaneous biochemical reactions. Like neural networks, biological processes cannot easily run "step-by-step" in a physical sense.
-A typical eukaryotic cell contains gigabase-pairs of DNA, comparable RNA, and billions of proteins \cite{milo2013protein} tumbling at gigahertz frequencies \cite{zhang2023molecular}.
-The physical impossibility of imposing sequential order on billions of molecules in constant motion forces parallel computation, just as training efficiency forces parallelism in artificial neural networks.
 
 DNA-based record-keeping, epigenetics, and neural time cells exemplify how evolution converged on memory to enable sequential processing.
 The CRISPR-Cas system represents perhaps the most elegant implementation, maintaining a chronological record of viral infections \cite{kim2019crispr} through stable DNA-based storage combined with active protein-based processing \cite{sadremomtaz2023digital}.
 In neural circuits, specialized "time cells" fire in precise sequences while ramping cells modulate their activity to provide temporal context \cite{quentin2019differential}, with the prefrontal cortex and parahippocampal regions integrating contextual details \cite{martini2015information}.
 These mechanisms achieve ordered processing not through sequential computation, but by maintaining state through multiple parallel components orchestrated in time.
 
-Ultimately, enhanced memory---across domains---provides the cornerstone for circumventing parallel limitations.
+Ultimately, enhanced memory—across domains—provides the cornerstone for circumventing parallel limitations.
 The anterior-posterior axis and segmentation patterns in animal embryos emerge through maintained morphogen gradients and sequential state updates \cite{pastor2020computation}.
 These patterns demonstrate remarkable robustness, with the ability to regenerate proper proportions even after significant tissue removal or reorganization \cite{lobo2012towards}.
 This principle was first formalized by Turing's reaction-diffusion theory \cite{turing1952chemical}, showing how simple molecular interactions can implement sophisticated state maintenance through physical structure.
