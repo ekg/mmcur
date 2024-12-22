@@ -207,26 +207,7 @@ These patterns demonstrate remarkable robustness, with the ability to regenerate
 This principle was first formalized by Turing's reaction-diffusion theory \cite{turing1952chemical}, showing how simple molecular interactions can implement sophisticated state maintenance through physical structure.
 Through the interaction of fast-diffusing inhibitors with self-enhancing activators, organisms create stable spatial patterns that maintain developmental state information across time.
 
-These systems share a common principle of memory-enabled computation (see Table~\ref{tab:MemoryComparison}).
-
-\begin{table}[ht]
-\scriptsize
-\centering
-\begin{tabular}{lcc}
-\toprule
-\textbf{System} & \textbf{Recursive State Maintenance} & \textbf{Reliable History Access} \\
-\midrule
-Cells (genetics, epigenetics) & Yes (DNA replication, gene regulation) & Not fully (indefinite addressability lacking) \\
-Neural Networks (RNNs) & Yes, if hidden states persist & Partially (depends on stable recurrence) \\
-Transformers (context) & Yes, via context re-injection & Yes, up to window size \\
-\bottomrule
-\end{tabular}
-\caption{\small Comparison of selected systems against the memory criteria defined in Section~2. 
-Cells exhibit partially reliable memory but lack unlimited addressable history. 
-RNNs can maintain recursive states if properly designed, but are limited by capacity. 
-Transformers simulate recursion by reintroducing previous tokens in context.}
-\label{tab:MemoryComparison}
-\end{table}
+These systems share a common principle of memory-enabled computation.
 Recent work in synthetic biology validates this framework, successfully implementing recording systems that combine DNA-based storage with protein-based processing \cite{sheth2017multiplex}.
 At the cellular level, even apparently sequential processes like the cell cycle are implemented through parallel molecular networks with threshold-based transitions rather than true sequential computation \cite{alberts2022molecular}.
 This mirrors how artificial systems overcome parallel processing limitations through recursive state maintenance rather than more complex basic units.
