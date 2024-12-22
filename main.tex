@@ -73,7 +73,7 @@ This analysis provides a unified perspective on computation across domains while
 A system has recursive state processing if it can read its current state $s$, generate an update function $f(s)$ that produces the next state, and maintain the new state $f(s)$ for subsequent processing.
 This state maintenance must be robust against errors and degradation.
 
-A system has reliable history access if it can: (1) reference any previous state $s_i$ from its computation history without error, (2) distinguish between different states in its history unambiguously, (3) maintain and determine the correct temporal order of states, establishing clear boundaries between computational periods, and (4) guarantee the integrity of stored states.
+A system has reliable history access if it can: (1) reference any previous state $s_i$ from its computation history without error, (2) distinguish between different states in its history unambiguously, (3) maintain and determine the correct temporal order of states, establishing clear boundaries between computational periods, and (4) guarantee the integrity of stored states. Note that standard RNNs are capacity-limited and may require external memory modules or augmented architectures to meet these requirements fully.
 
 These capabilities enable universal computation through a straightforward construction \cite{sipser1996introduction,deutsch1995universality,bennett1989time}.
 Given a Universal Turing Machine $U$, we implement it as follows: The state $s = (q, p, a)$ encodes the current machine state $q$, the position $p$ of the tape head, and the symbol $a$ under the head.
@@ -207,7 +207,25 @@ These patterns demonstrate remarkable robustness, with the ability to regenerate
 This principle was first formalized by Turing's reaction-diffusion theory \cite{turing1952chemical}, showing how simple molecular interactions can implement sophisticated state maintenance through physical structure.
 Through the interaction of fast-diffusing inhibitors with self-enhancing activators, organisms create stable spatial patterns that maintain developmental state information across time.
 
-These three systems share a common principle: they achieve complex computation not through sophisticated processing units, but through reliable state maintenance mechanisms.
+These systems share a common principle of memory-enabled computation (see Table~\ref{tab:MemoryComparison}).
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{lcc}
+\toprule
+\textbf{System} & \textbf{Recursive State Maintenance} & \textbf{Reliable History Access} \\
+\midrule
+Cells (epigenetics, etc.) & Partially (threshold-based) & Not fully (indefinite addressability lacking) \\
+Neural Networks (RNNs) & Yes, if hidden states persist & Partially (depends on stable recurrence) \\
+Transformers (context) & Yes, via context re-injection & Yes, up to window size \\
+\bottomrule
+\end{tabular}
+\caption{Comparison of selected systems against the memory criteria defined in Section~2. 
+Cells exhibit partially reliable memory but lack unlimited addressable history. 
+RNNs can maintain recursive states if properly designed, but are limited by capacity. 
+Transformers simulate recursion by reintroducing previous tokens in context.}
+\label{tab:MemoryComparison}
+\end{table}
 Recent work in synthetic biology validates this framework, successfully implementing recording systems that combine DNA-based storage with protein-based processing \cite{sheth2017multiplex}.
 At the cellular level, even apparently sequential processes like the cell cycle are implemented through parallel molecular networks with threshold-based transitions rather than true sequential computation \cite{alberts2022molecular}.
 This mirrors how artificial systems overcome parallel processing limitations through recursive state maintenance rather than more complex basic units.
