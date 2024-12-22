@@ -178,18 +178,12 @@ Every aspect of cellular computation occurs through parallel reactions governed 
 A typical eukaryotic cell contains gigabase-pairs of DNA, comparable RNA, and billions of proteins \cite{milo2013protein} tumbling at gigahertz frequencies \cite{zhang2023molecular}, vibrating in the megahertz to terahertz range, and diffusing across the cell in seconds.
 The physical impossibility of imposing sequential order on billions of molecules in constant motion forces parallel computation, just as training efficiency forces parallelism in artificial neural networks.
 
-\subsection{Overcoming limitations through state maintenance}
-
-Both artificial and biological systems overcome these parallel constraints through sophisticated state maintenance mechanisms.
-In neural networks, each additional processing step increases computational capability in a measurable way, but only when proper state maintenance is preserved across steps.
+\textbf{Additional memory mechanisms---like recurrent connections and attention---enable sequential logic in parallel networks.}
+Each additional processing step increases computational capability in a measurable way, but only when proper state maintenance is preserved across steps.
 Recent work shows this directly supports our framework by demonstrating how memory mechanisms, not architectural complexity, determine computational power (for details of positional embeddings and attention-based ordering, see \cite{merrill2023parallelism,merrill2024}).
+These mechanisms inject sequential capability into parallel architectures not through more complex units, but by maintaining and accessing state across processing steps.
 
-The brain demonstrates similar principles through precise architectural design.
-In the hippocampal-entorhinal system, dedicated ``time cells'' fire in precise sequences while ramping cells modulate their activity to provide temporal context \cite{quentin2019differential}.
-The prefrontal cortex coordinates with the hippocampus to organize memories, while the parahippocampal region processes spatial and event details \cite{martini2015information}.
-This system achieves ordered episodic memories not by making individual neurons sequential processors, but by maintaining state through multiple parallel components orchestrated in time.
-
-\subsection{Evolutionary solutions for state maintenance}
+\textbf{Cells face parallel constraints due to molecular diffusion and simultaneous biochemical reactions.}
 
 Like neural networks, biological processes cannot easily run "step-by-step" in a physical sense.
 A typical eukaryotic cell contains gigabase-pairs of DNA, comparable RNA, and billions of proteins \cite{milo2013protein} tumbling at gigahertz frequencies \cite{zhang2023molecular}.
