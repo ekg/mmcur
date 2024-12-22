@@ -210,12 +210,13 @@ Through the interaction of fast-diffusing inhibitors with self-enhancing activat
 These systems share a common principle of memory-enabled computation (see Table~\ref{tab:MemoryComparison}).
 
 \begin{table}[ht]
+\small
 \centering
 \begin{tabular}{lcc}
 \toprule
 \textbf{System} & \textbf{Recursive State Maintenance} & \textbf{Reliable History Access} \\
 \midrule
-Cells (epigenetics, etc.) & Partially (threshold-based) & Not fully (indefinite addressability lacking) \\
+Cells (genetics, epigenetics) & Yes (DNA replication, gene regulation) & Not fully (indefinite addressability lacking) \\
 Neural Networks (RNNs) & Yes, if hidden states persist & Partially (depends on stable recurrence) \\
 Transformers (context) & Yes, via context re-injection & Yes, up to window size \\
 \bottomrule
