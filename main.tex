@@ -224,6 +224,14 @@ While modern LLMs with sophisticated architectures achieve only 5-14\% accuracy 
 This dramatic improvement aligns with our framework's prediction: parallel processing capabilities alone cannot overcome sequential reasoning limitations without proper state maintenance.
 Just as biological systems don't solve sequential computation by making cells more complex \cite{wang2023parallel}, we won't solve it by making transformer layers more sophisticated \cite{zhao2024epha}.
 
+Recent results from OpenAI's o3 model provide further evidence for this view.
+The system achieves 82.8\% accuracy on 400 public tasks in high-efficiency mode ($6,677, using 33M tokens) and 91.5\% in low-efficiency mode (using 9.5B tokens) \cite{chollet2024o3}.
+Our framework suggests that what's being framed as 'deliberative alignment' \cite{guan2024deliberative} may be better understood as an emergent property of achieving reliable computation through memory and state maintenance.
+Unable to maintain reliable computational state in a single chain of thought, the system compensates by searching over potential computational paths, using policy adherence to detect which paths maintain coherence \cite{chollet2024o3, openai2024learning}.
+The substantial computational costs---$17-20 per task in high-efficiency mode---likely reflect both the quadratic overhead of transformer attention and the need to evaluate multiple possible computational traces.
+This suggests o3 represents something qualitatively different from traditional LLMs \cite{willison2024o3}---by achieving reliable state maintenance through parallel search and selection, albeit at significant cost, it appears to meet the requirements for universal computation outlined in our framework.
+The system's impressive performance may emerge not from sophisticated ethical reasoning, but from its ability to maintain consistent computational state while searching for valid solutions that follow learned patterns.
+
 Instead, architectural innovation should focus on robust mechanisms for state maintenance and recursive processing \cite{jung2020new}.
 This might involve memory systems that maintain coherent state across multiple processing steps \cite{zhu2024overcoming}.
 Recent research has identified specific conditions where chain-of-thought reasoning can actually reduce performance, particularly in tasks where the underlying computation requires implicit pattern recognition rather than explicit reasoning \cite{liu2024mind}.
