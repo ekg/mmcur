@@ -154,14 +154,16 @@ Despite their diverse implementations, all these systems share a common need to 
 
 \section{Memory constraints in parallel systems}
 
+\textbf{Parallel constraints arise in real-world systems, forcing reliance on memory for complex computation.}
 Both artificial and biological systems face fundamental constraints in parallel computation that shape their architecture and capabilities.
 These constraints emerge from different sources but lead to remarkably similar solutions through memory and state maintenance.
+We examine how parallel processing constraints appear in neural networks, then illustrate parallel solutions in biology, emphasizing that memory is the key to bridging both domains.
 
 Recent empirical work provides striking validation of this principle.
 Feng et al. \cite{feng2024rnns} demonstrated that RNNs stripped to their minimal state maintenance operations, but reorganized for parallel processing, match the performance of recent sequence models.
 This shows how basic state maintenance enables complex computation.
 
-\subsection{Parallel processing limitations}
+\textbf{Neural architectures are fundamentally parallel, imposing hard limits on sequential computation.}
 
 Neural architectures face a fundamental computational barrier: they are restricted to $\text{TC}_0$ complexity, as proven by recent theoretical work \cite{merrill2023parallelism,peng2024limitations}.
 This limitation stems directly from the requirements of parallel training at scale.
@@ -189,18 +191,16 @@ This system achieves ordered episodic memories not by making individual neurons 
 
 \subsection{Evolutionary solutions for state maintenance}
 
-Biological systems have evolved three primary strategies for maintaining computational state, each demonstrating the fundamental role of memory in enabling complex computation.
+Like neural networks, biological processes cannot easily run "step-by-step" in a physical sense.
+A typical eukaryotic cell contains gigabase-pairs of DNA, comparable RNA, and billions of proteins \cite{milo2013protein} tumbling at gigahertz frequencies \cite{zhang2023molecular}.
+The physical impossibility of imposing sequential order on billions of molecules in constant motion forces parallel computation, just as training efficiency forces parallelism in artificial neural networks.
 
-The CRISPR-Cas system represents perhaps the most elegant implementation of biological memory.
-This remarkably efficient system maintains a chronological record of viral infections \cite{kim2019crispr}.
-By separating stable DNA-based storage from active protein-based processing \cite{sadremomtaz2023digital}, CRISPR demonstrates how evolution converged on fundamental solutions for maintaining computational state.
-The system achieves this through a minimal yet effective architecture that combines reliable state storage with precise processing mechanisms.
+\textbf{DNA-based record-keeping, epigenetics, and neural time cells exemplify how evolution converged on memory to enable sequential processing.}
+The CRISPR-Cas system represents perhaps the most elegant implementation, maintaining a chronological record of viral infections \cite{kim2019crispr} through stable DNA-based storage combined with active protein-based processing \cite{sadremomtaz2023digital}.
+In neural circuits, specialized "time cells" fire in precise sequences while ramping cells modulate their activity to provide temporal context \cite{quentin2019differential}, with the prefrontal cortex and parahippocampal regions integrating contextual details \cite{martini2015information}.
+These mechanisms achieve ordered processing not through sequential computation, but by maintaining state through multiple parallel components orchestrated in time.
 
-Neural systems implement a second key strategy through sophisticated memory structures that preserve both state and temporal relationships.
-In the hippocampal-entorhinal circuit, ``time cells'' fire sequentially to encode distinct moments in time, while ramping cells bridge these moments by changing their firing patterns as the interval progresses \cite{quentin2019differential}.
-Simultaneously, the prefrontal cortex and parahippocampal regions integrate contextual details \cite{martini2015information}, ensuring ordered, coherent episodic memories without requiring each neuron to act as a purely sequential processor.
-
-Developmental biology provides the third major paradigm through pattern formation and morphogenesis.
+\textbf{Ultimately, enhanced memory---across domains---provides the cornerstone for circumventing parallel limitations.}
 The anterior-posterior axis and segmentation patterns in animal embryos emerge through maintained morphogen gradients and sequential state updates \cite{pastor2020computation}.
 These patterns demonstrate remarkable robustness, with the ability to regenerate proper proportions even after significant tissue removal or reorganization \cite{lobo2012towards}.
 This principle was first formalized by Turing's reaction-diffusion theory \cite{turing1952chemical}, showing how simple molecular interactions can implement sophisticated state maintenance through physical structure.
