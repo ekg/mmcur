@@ -251,6 +251,10 @@ State verification mechanisms that ensure consistency across recursive processin
 This framework reveals distinct modes of computation in language models \cite{wei2022chain}.
 Pattern matching operates through parallel processing, enabling rapid recognition through direct feature detection.
 Sequential reasoning builds on this by maintaining state across steps, enabling complex deductions through recursive composition \cite{dickson2024trust}.
+In language models, as in many neural-based systems, there is a fundamental tension between pattern matching---where the model recognizes or replicates textual patterns in a single pass---and multi-step reasoning, which hinges on robust state maintenance across multiple inference steps.
+This tension directly reflects our principle that memory is indispensable for universal computation.
+When a model can only match patterns, it remains limited to parallel inference without harnessing the power of sequential logic.
+In contrast, chain-of-thought or memory-based approaches allow the system to accumulate partial results, retrieve them as needed, and thereby execute more advanced computations.
 This distinction explains why chain-of-thought reasoning can sometimes reduce performance, particularly for tasks better suited to implicit pattern recognition \cite{liu2024mind}.
 The effect mirrors human cognition, where explicit verbal reasoning can interfere with intuitive pattern matching.
 
