@@ -226,8 +226,7 @@ This explains why chain-of-thought prompting proves effective: it provides a fra
 
 Recent empirical evidence from the ARC Prize competition demonstrates the limitations of pure scaling approaches.
 While modern LLMs with sophisticated architectures achieve only 5-14\% accuracy through direct prompting, the introduction of state maintenance mechanisms through test-time training improved performance to 55.5\% \cite{chollet2024arc}.
-This dramatic improvement aligns with our framework's prediction: parallel processing capabilities alone cannot overcome sequential reasoning limitations without proper state maintenance.
-We won't solve it by making transformer layers more sophisticated \cite{zhao2024epha}.
+This dramatic improvement aligns with our framework's prediction: parallel processing capabilities alone cannot overcome sequential reasoning limitations without proper state maintenance, just as biological systems don't solve sequential computation by making cells more complex \cite{wang2023parallel}.
 
 Recent results from OpenAI's o3 model provide further evidence for this view.
 The system achieves 82.8\% accuracy on 400 public tasks in high-efficiency mode (requiring \$6{,}677, using approximately 33M tokens) and 91.5\% in low-efficiency mode (using approximately 9.5B tokens, at an estimated cost of \$1.15M) \cite{chollet2024o3}.
@@ -274,8 +273,6 @@ The remarkable leap in language model capabilities emerged from massive overtrai
 This represents a form of transfer learning where human computational patterns are distilled into the model's parameters.
 This extensive exposure enabled these systems to learn and internalize the fundamental transition functions that humans use with language.
 When provided with sufficient context (state), these models can achieve human-level performance precisely because they have learned to replicate human computational patterns through exposure to vast collections of text---our recorded explanations, arguments, derivations, and other traces of human thought \cite{brown2020language,wei2022chain}.
-
-When presented with prompts containing examples, LLMs can effectively apply learned patterns to break down complex problems into steps, implementing a form of recursive reasoning \cite{wei2022chain}.
 This reasoning occurs without weight updates, suggesting the models have internalized generalizable computational patterns from their training data.
 The success of techniques like chain-of-thought prompting demonstrates that these models can effectively replicate human-like problem-solving approaches when given appropriate frameworks for maintaining computational state \cite{wei2022emergent}.
 
