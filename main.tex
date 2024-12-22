@@ -227,7 +227,7 @@ This explains why chain-of-thought prompting proves effective: it provides a fra
 Recent empirical evidence from the ARC Prize competition demonstrates the limitations of pure scaling approaches.
 While modern LLMs with sophisticated architectures achieve only 5-14\% accuracy through direct prompting, the introduction of state maintenance mechanisms through test-time training improved performance to 55.5\% \cite{chollet2024arc}.
 This dramatic improvement aligns with our framework's prediction: parallel processing capabilities alone cannot overcome sequential reasoning limitations without proper state maintenance.
-Just as biological systems don't solve sequential computation by making cells more complex \cite{wang2023parallel}, we won't solve it by making transformer layers more sophisticated \cite{zhao2024epha}.
+We won't solve it by making transformer layers more sophisticated \cite{zhao2024epha}.
 
 Recent results from OpenAI's o3 model provide further evidence for this view.
 The system achieves 82.8\% accuracy on 400 public tasks in high-efficiency mode (requiring \$6{,}677, using approximately 33M tokens) and 91.5\% in low-efficiency mode (using approximately 9.5B tokens, at an estimated cost of \$1.15M) \cite{chollet2024o3}.
@@ -254,9 +254,7 @@ State verification mechanisms that ensure consistency across recursive processin
 
 This framework reveals distinct modes of computation in language models \cite{wei2022chain}.
 Pattern matching operates through parallel processing, enabling rapid recognition through direct feature detection.
-Sequential reasoning builds on this by maintaining state across steps, enabling complex deductions through recursive composition \cite{dickson2024trust}.
 In language models, as in many neural-based systems, there is a fundamental tension between pattern matching---where the model recognizes or replicates textual patterns in a single pass---and multi-step reasoning, which hinges on robust state maintenance across multiple inference steps.
-This tension directly reflects our principle that memory is indispensable for universal computation.
 When a model can only match patterns, it remains limited to parallel inference without harnessing the power of sequential logic.
 In contrast, chain-of-thought or memory-based approaches allow the system to accumulate partial results, retrieve them as needed, and thereby execute more advanced computations.
 This distinction explains why chain-of-thought reasoning can sometimes reduce performance, particularly for tasks better suited to implicit pattern recognition \cite{liu2024mind}.
@@ -268,10 +266,6 @@ This compression differs fundamentally from state maintenance \cite{dickson2024t
 Compression captures static patterns, while state maintenance enables dynamic computation through recursive updates.
 This explains why models can recognize patterns instantly but need explicit prompting for step-by-step reasoning.
 
-Sequence length reveals another key principle.
-Short sequences often resolve through pure pattern matching in a single forward pass.
-Longer sequences requiring true sequential reasoning demand explicit state maintenance across multiple steps \cite{wei2022chain}.
-This creates testable predictions about when recursive reasoning helps or hinders: sequential tasks benefit from chain-of-thought approaches, while pattern-matching tasks may suffer from forced sequential processing \cite{liu2024mind}.
 
 The power of this approach comes from computational history access \cite{fu2024memory}.
 Each step in the chain builds on previous results while maintaining clear temporal structure \cite{wei2022chain}.
@@ -285,7 +279,6 @@ When presented with prompts containing examples, LLMs can effectively apply lear
 This reasoning occurs without weight updates, suggesting the models have internalized generalizable computational patterns from their training data.
 The success of techniques like chain-of-thought prompting demonstrates that these models can effectively replicate human-like problem-solving approaches when given appropriate frameworks for maintaining computational state \cite{wei2022emergent}.
 
-This perspective illuminates why techniques like chain-of-thought prompting prove effective: they provide a framework for applying learned human computational patterns recursively while maintaining state across steps \cite{wei2022chain}.
 The success of these methods depends not on teaching models new reasoning capabilities, but on structuring computation to leverage already-learned transition functions in a way that enables reliable state maintenance and access.
 
 
