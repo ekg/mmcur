@@ -251,23 +251,15 @@ This aligns with our framework's prediction that memory-based recursive computat
 State verification mechanisms that ensure consistency across recursive processing steps, similar to how biological systems maintain state coherence through specialized cellular structures \cite{espinosa2024molecular}, become crucial for maintaining reliable computation.
 
 
-This framework reveals distinct modes of computation in language models \cite{wei2022chain}.
-Pattern matching operates through parallel processing, enabling rapid recognition through direct feature detection.
-In language models, as in many neural-based systems, there is a fundamental tension between pattern matching---where the model recognizes or replicates textual patterns in a single pass---and multi-step reasoning, which hinges on robust state maintenance across multiple inference steps.
-When a model can only match patterns, it remains limited to parallel inference without harnessing the power of sequential logic.
-In contrast, chain-of-thought or memory-based approaches allow the system to accumulate partial results, retrieve them as needed, and thereby execute more advanced computations.
-This distinction explains why chain-of-thought reasoning can sometimes reduce performance, particularly for tasks better suited to implicit pattern recognition \cite{liu2024mind}.
-The effect mirrors human cognition, where explicit verbal reasoning can interfere with intuitive pattern matching.
+This framework highlights two complementary modes of computation in language models \cite{wei2022chain}.
+Pattern matching relies on parallel processing to recognize textual features in a single pass, while multi-step reasoning depends on robust state maintenance.
+Without memory, a model is confined to parallel inference and cannot harness sequential logic.
+In contrast, chain-of-thought or memory-based methods accumulate partial results step by step, enabling more complex computations.
+However, explicitly spelling out each inference can sometimes degrade performance on tasks better suited to implicit pattern recognition \cite{liu2024mind}, mirroring how conscious reasoning can undermine human intuition.
 
-The relationship between compression and computation provides further insight.
-Language models compress human knowledge into distributed representations of text patterns.
-This compression differs fundamentally from state maintenance \cite{dickson2024trust}.
-Compression captures static patterns, while state maintenance enables dynamic computation through recursive updates.
-This explains why models can recognize patterns instantly but need explicit prompting for step-by-step reasoning.
-
-
-The power of this approach comes from computational history access \cite{fu2024memory}.
-Each step in the chain builds on previous results while maintaining clear temporal structure \cite{wei2022chain}.
+Further insight comes from the relationship between compression and computation \cite{dickson2024trust}.
+Language models compress static patterns into distributed representations, yet require explicit prompting for sequential tasks because compression alone does not support dynamic state updates.
+Herein lies the power of computational history access \cite{fu2024memory}: each reasoning step builds on previous results while maintaining temporal structure \cite{wei2022chain}, providing the essential scaffolding for advanced, memory-driven computations.
 
 The remarkable leap in language model capabilities emerged from massive overtraining on an unprecedented coverage of human knowledge \cite{schuurmans2024autoregressive}.
 This represents a form of transfer learning where human computational patterns are distilled into the model's parameters.
