@@ -148,9 +148,9 @@ However, with memory to store previous results, this same unit becomes capable o
 This counter then serves as a fundamental building block for more complex operations, enabling program sequencing and even Turing machine simulation.
 
 Reliable history access requires systems to maintain clear boundaries between computational states---a requirement that manifests as temporal structure in physical implementations.
-In neural networks, this structure emerges through attention windows that establish sequence order and layered processing that maintains state boundaries \cite{martini2015information,quentin2019differential}.
+In biological systems, though epigenetics and threshold signals provide a partial form of memory, they do not fulfill the indefinite, unambiguous addressability required by Definition~1. In neural networks, this structure emerges through attention windows that establish sequence order and layered processing that maintains state boundaries \cite{martini2015information,quentin2019differential}.
 Biological systems show similar patterns: cells partition computation through cell cycle phases and stable epigenetic states \cite{bruno2022epigenetic}, while developing organisms maintain state through precisely timed developmental stages and morphology \cite{turing1952chemical}.
-Despite their diverse implementations, all these systems share a common need to establish unambiguous boundaries between computational states, enabling reliable access to their processing history.
+Despite their diverse implementations, all these systems share a common need to establish unambiguous boundaries between computational states, enabling reliable access to their processing history. Each of these domains confirms the same fundamental principle: partial or ephemeral memory alone cannot sustain universal computation; systems must meet both conditions from Definition~1 to achieve full Turing-completeness.
 
 \section{Memory constraints in parallel systems}
 
@@ -180,7 +180,7 @@ The physical impossibility of imposing sequential order on billions of molecules
 
 Both artificial and biological systems overcome these parallel constraints through sophisticated state maintenance mechanisms.
 In neural networks, each additional processing step increases computational capability in a measurable way, but only when proper state maintenance is preserved across steps.
-Recent work shows this directly supports our framework by demonstrating how memory mechanisms, not architectural complexity, determine computational power \cite{merrill2024}.
+Recent work shows this directly supports our framework by demonstrating how memory mechanisms, not architectural complexity, determine computational power (for details of positional embeddings and attention-based ordering, see \cite{merrill2023parallelism,merrill2024}).
 
 The brain demonstrates similar principles through precise architectural design.
 In the hippocampal-entorhinal system, dedicated ``time cells'' fire in precise sequences while ramping cells modulate their activity to provide temporal context \cite{quentin2019differential}.
