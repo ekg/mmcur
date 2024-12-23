@@ -212,9 +212,9 @@ Through exposure to text containing human reasoning traces, these models interna
 When provided with sufficient context as state, they can apply these learned patterns to perform step-by-step reasoning.
 This explains why chain-of-thought prompting proves effective: it provides a framework for maintaining computational state across multiple steps.
 
-Recent empirical evidence from the ARC Prize competition demonstrates the limitations of pure scaling approaches.
-While modern LLMs with sophisticated architectures achieve only 5-14\% accuracy through direct prompting, the introduction of state maintenance mechanisms through test-time training improved performance to 55.5\% \cite{chollet2024arc}.
-This dramatic improvement aligns with our framework's prediction: parallel processing capabilities alone cannot overcome sequential reasoning limitations without proper state maintenance, just as biological systems don't solve sequential computation by making cells more complex \cite{wang2023parallel}.
+The ARC Prize competition provides compelling evidence of the limitations inherent in scaling models alone.
+While advanced LLMs with sophisticated architectures reach only 5-14\% accuracy through direct prompting, introducing state maintenance through test-time training boosts performance to 55.5\% \cite{chollet2024arc}.
+This dramatic improvement aligns with our framework's prediction: parallel processing alone cannot overcome sequential reasoning constraints without reliable state maintenance, just as biological systems do not solve sequential tasks by making cells more complex \cite{wang2023parallel}.
 
 Recent results from OpenAI's o3 model provide further evidence for this view.
 The system achieves 82.8\% accuracy on 400 public tasks in high-efficiency mode (requiring \$6{,}677, using approximately 33M tokens) and 91.5\% in low-efficiency mode (using approximately 9.5B tokens, at an estimated cost of \$1.15M) \cite{chollet2024o3}.
