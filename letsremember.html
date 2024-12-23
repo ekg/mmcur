@@ -163,6 +163,7 @@ function setup() {
         state:      isAlive,
         mem:        0,
         aliveCount: 0,
+        everAlive:  isAlive, // true if starting alive
         colorVal:   { r: colorStart.r, g: colorStart.g, b: colorStart.b }
       };
     }
@@ -195,9 +196,8 @@ function draw() {
       fill(cell.colorVal.r, cell.colorVal.g, cell.colorVal.b);
       rect(c * cellSize, r * cellSize, cellSize, cellSize);
 
-      // If aliveCount > 0, show the number in a darker version of the cell's color
-      // So the very first time aliveCount=0 => no digit is drawn
-      if (cell.aliveCount > 0) {
+      // Show digit if aliveCount > 0 or if it's wrapped back to 0 (not first time)
+      if (cell.aliveCount > 0 || (cell.aliveCount === 0 && cell.everAlive)) {
         fill(cell.colorVal.r * 0.7, cell.colorVal.g * 0.7, cell.colorVal.b * 0.7);
         text(
           cell.aliveCount,
@@ -258,6 +258,7 @@ function updateCell(r, c) {
   let newCount = cell.aliveCount;
   if (outcome === 1) {
     newCount = (newCount + 1) % 10;
+    cell.everAlive = true; // Mark as having been alive
   }
 
   cell.state      = outcome;
@@ -283,6 +284,7 @@ function windowResized() {
           state:      old.state,
           mem:        old.mem,
           aliveCount: old.aliveCount,
+          everAlive:  old.everAlive,
           // copy over colorVal
           colorVal:   { 
             r: old.colorVal.r, 
@@ -298,6 +300,7 @@ function windowResized() {
           state:      isAlive,
           mem:        0,
           aliveCount: 0,
+          everAlive:  isAlive,
           colorVal:   { r: colorStart.r, g: colorStart.g, b: colorStart.b }
         };
       }
