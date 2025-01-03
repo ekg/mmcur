@@ -1,31 +1,31 @@
 TL;DR:
-General intelligence ≈ universal computation.
+[General intelligence ≈ universal computation.](#generality)
 Universality requires: reliable (1) thinking, (2) and memory of what you thought.
-Your average human with a pen and paper can compute anything computable, powered only by sandwiches.
-Current AI achieves this through transformer attention—at a quadratic cost thats on pace to eat the worlds venture capital and boil our oceans.
+[Your average human with a pen and paper can compute anything computable, powered only by sandwiches.](#bronzeage)
+[Current AI achieves this through transformer attention—at a quadratic cost thats on pace to eat the worlds venture capital and boil our oceans.](#attention)
 We can do better.
-CRISPR shows us that, when efficient universality is needed, state appears.
-The recurrent nature of natural intelligence suggests a way forward.
+[CRISPR shows us that, when efficient universality is needed, state appears.](#crispr)
+[The recurrent nature of natural intelligence suggests a way forward.](#recurrence)
 Be true to yourself, and remember what you've done.
 
 ----
 
 On a morning in early December I was running by the Mississippi when I saw a large industrial plume on the horizon.
 
-[image of plume]
+![xAI's cooling plume as seen from Memphis](xai-plume-memphis.jpg)
 
-The plume is water vapor and nitrous oxides from xAI's "Colossus" supercomputer.
-100k H100s are boiling 5 million liters of water a day from the Memphis sands aquifer, powered by dozens of portable methane generators pumping out 100 MW—enough for 50,000 homes.
-They couldn't wait for the Tennessee Valley Authority to build new capacity; that delay might mean losing the race for a quantum leap in human capability.
-Soon, the plant will begin cooling with graywater from the city, but for now it boils some of the cleanest municipal water on the planet.
+The plume is water vapor and nitrous oxides from what is believed to be the largest supercomputer in the world, xAI's "Colossus".
+100k H100s are vaporizing 5 million liters of water a day from the Memphis sands aquifer.
+Dozens of portable methane generators feed the system with at least 100 MW—enough for 50,000 homes.
+xAI couldn't wait for the Tennessee Valley Authority to build new capacity; that delay might mean losing the race for a quantum leap in human capability.
 
 This plume, now dominating Memphis's skyline, is compute's heat waste made visible in our rush to train an artificial general intelligence (AGI).
-xAI's stated goal is a "1% shot at a Kardashev type 1 civilization"—a society capable of harnessing all its planet's energy, presumably enabled by the AGI they aim to bring into the world.
-And they're just getting started, planning a tenfold expansion of Colossus to 1M GPUs.
+[xAI's stated goal is a "1% shot at a Kardashev type 1 civilization"](https://www.capacitymedia.com/article/musks-xais-colossus-cluster-set-for-one-million-gpu-supercomputer-expansion)—a [society capable of harnessing all its planet's energy](https://en.wikipedia.org/wiki/Planetary_civilization), presumably enabled by the AGI they aim to bring into the world.
+And they're just getting started, with a tenfold [expansion of Colossus to 1M GPUs](https://www.ft.com/content/9c0516cf-dd12-4665-aa22-712de854fe2f) already planned.
 
 You may have noticed that, although ravenous and hyperactive, a learning human child doesn't generate a thousand meter plume of water vapor and reactive particulates to develop their intelligence.
 Yet your average human, fueled by sandwiches, can implement any algorithm with just pen and paper.
-So augmented with bronze age technology, we become "universal" computers in Turing's language—the quintessential "general" intelligence capable of solving any problem given enough time and snacks.
+<a name="bronzeage">So augmented with bronze age technology, we become "universal" computers in Turing's language—the quintessential "general" intelligence capable of solving any problem given enough time and snacks.</a>
  For the sake of argument, let’s agree: general intelligence ≈ universal computer.
 
 That link has been on my mind for two years, ever since I first read the magic words "Let’s think step by step" in a groundbreaking machine learning paper.
@@ -41,7 +41,7 @@ The model’s expressivity, harnessed across multiple steps, blossoms into gener
 
 Out of deep love for this line of research, I spent much of December in a meditation on the link between memory and computation.
 This post is a human introduction to that paper, where I provide the simplest and most intuitive explanation of universality (a.k.a. general intelligence) that I could synthesize.
-Universality requires only (1) stable evolution of thought (no hallucinations), and (2) reliable access to the history of thought.
+<a name="generality">Universality requires only (1) stable evolution of thought (no hallucinations), and (2) reliable access to the history of thought.</a>
 This synthesis rightly seems banal, dull, too simple to be useful, too theory of computation 101 to be interesting.
 And OK, if you studied the theory of computation, yes, it is, but why did y'all forget the textbook and start imaging that threshold circuits and feedforward networks could achieve general intelligence?
 If you can remember, this perspective quickly takes us to some amazing places.
@@ -54,13 +54,14 @@ They’re not just modeling words but the programs behind those words (which mig
 Looking through the lens of Turing machines, we've transferred our state transition functions to them, which they are now they are able to generalize to new input contexts (drawing tikz unicorns and such).
 
 Part of the magic is that LLMs, must of which are Transformers, are forging a shared computational interface with us, letting us push each other around in a collaborative workspace space that can solve new tasks.
-However, they have a costly flaw that makes them otherworldly in their resource demands: attention.
+However, they have a costly flaw that makes them otherworldly in their resource demands: <a name="attention">attention</a>.
 In effect, attention is a learned function for memory and association across the input.
 But with n tokens, each must attend to every other token—an n × n explosion in both compute and memory.
 Double your context length, quadruple the cost.
 Want to "think" four times longer?
-That’s sixteen times more overhead.
+That's sixteen times more overhead.
 And because memory is the key to intelligence, model context length must be increased, leading to quadratic increases in costs which I saw made visible in Memphis last month.
+Attention demonstrates the bitter lesson: end-to-end learning beats architecture, but at a painful cost that we can't scale forever.
 
 But the truth is, generality doesn’t require a quadratic cost.
 Look at a single cell.
@@ -68,7 +69,8 @@ It has gigabases of DNA and a swarm of biomolecules, operating in a parallel sou
 By some definitions, each cell’s molecular interactions also fall in that threshold-circuit-like class: essentially parallel transformations, no large sequential pipeline.
 But cells offset this limitation with state—encoded in their components and their DNA, which holds a record of life’s entire lineage.
 When cells need to store or recall specific bits of information, they literally write it into the genome.
-CRISPR, for example, is a chronological log of viral infections, allowing bacteria to remember which infections are recent and worth the most defensive energy.
+<a name="crispr">The canonical example is CRISPR, which can be understood most fundamentally as a chronological log of fragments of viruses, addresses in the space of DNA, that represent viral infections that this particular cell has survived, and its lineage has survived.</a>
+The chronology is not just an artifact of the system, but is essential because by remembering which viruses are more recent, the cell can invest more energy in making guided nucleases that target them than ones which occurred long ago.
 
 The ARC AGI Prize nicely illustrates where today’s models stand.
 A single forward-pass language model—like GPT-4—gets about 0–5% accuracy on ARC tasks.
@@ -86,7 +88,7 @@ In effect, by brute-forcing memory into reliability, they show how easily you ca
 Soon after, OpenAI's Board said that to achieve AGI, we'll just need "unimaginable sums of money", proposing to restructure as a public benefit corporation to attract fresh capital.
 They plan to scale up, spin more GPUs, and chase universal intelligence through raw power.
 
-As a sandwich-eating universal intelligence, I'm not convinced.
+<a name="recurrence">As a sandwich-eating universal intelligence, I'm not convinced.</a>
 Humans got smarter not by growing our brains, but by distributing memory across society—spoken word, libraries, the internet—finding ways to preserve and share knowledge without a ruinous overhead.
 I'll bet on a resurgence of recurrent approaches that drastically reduce inference costs by maintaining a rolling hidden state, incrementally processing new information (an exciting hybrid direction is "Chain of Continuous Thought").
 Yes, we might need specialized modules for robust memory access—but if biology, evolution, and a good pen-and-paper can do it, so can we.
