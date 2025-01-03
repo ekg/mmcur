@@ -22,7 +22,6 @@ Soon, the plant will begin cooling with graywater from the city, but for now it 
 This plume, now dominating Memphis's skyline, is compute's heat waste made visible in our rush to train an artificial general intelligence (AGI).
 xAI's stated goal is a "1% shot at a Kardashev type 1 civilization"—a society capable of harnessing all its planet's energy, presumably enabled by the AGI they aim to bring into the world.
 And they're just getting started, planning a tenfold expansion of Colossus to 1M GPUs.
-Something about the scaling patterns 
 
 You may have noticed that, although ravenous and hyperactive, a learning human child doesn't generate a thousand meter plume of water vapor and reactive particulates to develop their intelligence.
 Yet your average human, fueled by sandwiches, can implement any algorithm with just pen and paper.
@@ -35,8 +34,9 @@ It was as if some psychological "effect" flipped them into a more rigorous and s
 
 But theoretical analyses of transformers revealed something deeper than just a neat psychology trick.
 Transformers, in a single forward pass, are restricted to a class called TC0, basically a family of threshold circuits that can be computed in parallel with aggregation.
-That’s roughly the complexity of first-order logic.
-However, if you use "chain-of-thought" or a series of recursive prompts—feeding each of the model’s outputs back into its input—the combined system becomes capable of simulating a universal Turing machine.
+TC0 systems are often called "bounded parallel".
+They can quickly match patterns, but can't count, do math, or follow a recipe unless the process can be encoded in a fixed set of circuits.
+_However_, if you use "chain-of-thought" or a series of recursive prompts—feeding each of the model's outputs back into its input—the combined system becomes capable of simulating a universal Turing machine.
 The model’s expressivity, harnessed across multiple steps, blossoms into general computation.
 
 Out of deep love for this line of research, I spent much of December in a meditation on the link between memory and computation.
