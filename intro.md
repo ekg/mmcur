@@ -6,7 +6,7 @@ Universality requires: reliable (1) thinking, (2) and memory of what you thought
 We can do better.
 [CRISPR shows us that, when efficient universality is needed, state appears.](#crispr)
 [The recurrent nature of natural intelligence suggests a way forward.](#recurrence)
-Be true to yourself, and remember what you've done.
+[Be true to yourself, and remember what you've done.](https://arxiv.org/abs/2412.17794)
 
 ----
 
