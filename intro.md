@@ -97,3 +97,5 @@ Generality doesn't require industrial-scale power plants.
 It just needs a reliable way to remember and recall what you've thought.
 
 Let's remember.
+
+[^1]: See discussions between O(1) Labs authors ([video](https://www.youtube.com/watch?v=jPluSXJpdrA)) and Noam Brown ([video](https://www.youtube.com/watch?v=eaAonE58sLU)) on the relationship between compute, memory, and reasoning in large language models.
