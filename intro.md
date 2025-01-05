@@ -1,18 +1,19 @@
 TL;DR:
-[General intelligence ≈ universal computation.](#generality)
-Universality = reliable thinking and memory of your thoughts.
-[Your average human with a pen and paper can compute anything computable, powered only by sandwiches.](#bronzeage)
-[Current AI achieves this through transformer attention—at a quadratic cost thats on pace to eat the worlds venture capital and boil our oceans.](#attention)
-We can do better.
-[CRISPR shows us that, when efficient universality is needed, state appears.](#crispr)
-[The recurrent nature of natural intelligence suggests a way forward.](#recurrence)
-[Be true to yourself, and remember what you've done.](https://arxiv.org/abs/2412.17794)
+
+- [General intelligence ≈ universal computation.](#generality)
+- [Universality only requires reliable thinking and memory of your thoughts.](https://arxiv.org/abs/2412.17794)
+- [Your average human with a pen and paper can compute anything computable, powered only by sandwiches.](#bronzeage)
+- [Current AI achieves this through transformer attention—at a quadratic cost thats on pace to eat the worlds venture capital and boil our oceans.](#attention)
+- [We can do better](https://arxiv.org/abs/2410.01201)
+- [CRISPR shows us that, when efficient universality is needed, state appears.](#crispr)
+- [The recurrent nature of natural intelligence suggests a way forward.](#recurrence)
+- [Be true to yourself, and remember what you've done.](https://arxiv.org/abs/2412.17794)
 
 ----
 
 On a morning in early December I was running by the Mississippi when I saw a large industrial plume on the horizon.
 
-![xAI's cooling plume as seen from Memphis](xai-plume-memphis.jpg)
+![xAI's cooling plume as seen from Mud Island in Memphis](xai-plume-memphis.jpg)
 
 The plume is water vapor and nitrous oxides from what is believed to be the largest supercomputer in the world, xAI's "Colossus".
 100k H100s are vaporizing 5 million liters of water a day from the Memphis sands aquifer.
@@ -23,7 +24,7 @@ This plume, now dominating Memphis's skyline, is compute's heat waste made visib
 [xAI's stated goal is a "1% shot at a Kardashev type 1 civilization"](https://www.capacitymedia.com/article/musks-xais-colossus-cluster-set-for-one-million-gpu-supercomputer-expansion)—a [society capable of harnessing all its planet's energy](https://en.wikipedia.org/wiki/Planetary_civilization), presumably enabled by the AGI they aim to bring into the world.
 And they're just getting started, with a tenfold [expansion of Colossus to 1M GPUs](https://www.ft.com/content/9c0516cf-dd12-4665-aa22-712de854fe2f) already planned.
 
-You may have noticed that, although ravenous and hyperactive, a learning human child doesn't generate a thousand meter plume of water vapor and reactive particulates to develop their intelligence.
+You may have noticed that, although ravenous and hyperactive, a human child doesn't generate a thousand meter plume of water vapor and reactive particulates to develop their intelligence.
 Yet your average human, fueled by sandwiches, can implement any algorithm with just pen and paper.
 <a name="bronzeage">So augmented with bronze age technology, we become "universal" computers in Turing's language—the quintessential "general" intelligence capable of solving any problem given enough time and snacks.</a>
  For the sake of argument, let’s agree: general intelligence ≈ universal computer.
@@ -61,7 +62,7 @@ Double your context length, quadruple the cost.
 Want to "think" four times longer?
 That's sixteen times more overhead.
 And because memory is the key to intelligence, model context length must be increased, leading to quadratic increases in costs which I saw made visible in Memphis last month.
-Attention demonstrates the bitter lesson: end-to-end learning beats architecture, but at a painful cost that we can't scale forever.
+Attention demonstrates the bitter lesson: end-to-end learning beats architecture, but it also forces us to eat a bitter pill: a quadratic cost that we can't scale forever.
 
 But the truth is, generality doesn’t require a quadratic cost.
 Look at a single cell.
