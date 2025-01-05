@@ -1,6 +1,6 @@
 TL;DR:
 [General intelligence ≈ universal computation.](#generality)
-Universality requires: reliable (1) thinking, (2) and memory of what you thought.
+Universality = reliable thinking and memory of your thoughts.
 [Your average human with a pen and paper can compute anything computable, powered only by sandwiches.](#bronzeage)
 [Current AI achieves this through transformer attention—at a quadratic cost thats on pace to eat the worlds venture capital and boil our oceans.](#attention)
 We can do better.
