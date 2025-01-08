@@ -1,24 +1,25 @@
 TL;DR:
 
 - [General intelligence ≈ universal computation.](#generality)
-- [Universality only requires reliable thinking and memory of your thoughts.](https://arxiv.org/abs/2412.17794)
+- [Universality only requires reliable thinking and memory of your thoughts. (arXiv:2412.17794)](https://arxiv.org/abs/2412.17794)
 - [Your average human with a pen and paper can compute anything computable, powered only by sandwiches.](#bronzeage)
 - [Current AI achieves this through transformer attention—at a quadratic cost thats on pace to eat the worlds venture capital and boil our oceans.](#attention)
 - [We can do better](https://arxiv.org/abs/2410.01201)
-- [CRISPR shows us that, when efficient universality is needed, state appears.](#crispr)
+- [CRISPR shows us that, when biology needs reliable memory, state appears.](#crispr)
 - [The recurrent nature of natural intelligence suggests a way forward.](#recurrence)
 - [Be true to yourself, and remember what you've done.](https://arxiv.org/abs/2412.17794)
 
 ----
 
+# What CRISPR, o3, and the Memphis plume tell us about intelligence
+
 On a morning in early December I was running by the Mississippi when I saw a large industrial plume on the horizon.
-
-![xAI's cooling plume as seen from Mud Island in Memphis](xai-plume-memphis.jpg)
-
 The plume is water vapor and nitrous oxides from what is believed to be the largest supercomputer in the world, xAI's "Colossus".
 100k H100s are vaporizing 5 million liters of water a day from the Memphis sands aquifer.
 Dozens of portable methane generators feed the system with at least 100 MW—enough for 50,000 homes.
 xAI couldn't wait for the Tennessee Valley Authority to build new capacity; that delay might mean losing the race for a quantum leap in human capability.
+
+![xAI's cooling plume as seen from Mud Island in Memphis](xai-plume-memphis.jpg)
 
 This plume, now dominating Memphis's skyline, is compute's heat waste made visible in our rush to train an artificial general intelligence (AGI).
 [xAI's stated goal is a "1% shot at a Kardashev type 1 civilization"](https://www.capacitymedia.com/article/musks-xais-colossus-cluster-set-for-one-million-gpu-supercomputer-expansion)—a [society capable of harnessing all its planet's energy](https://en.wikipedia.org/wiki/Planetary_civilization), presumably enabled by the AGI they aim to bring into the world.
