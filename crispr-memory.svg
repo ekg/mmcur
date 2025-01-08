@@ -1,77 +1,114 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="90 120 800 380">
   <!-- Circular Bacterial Genome -->
   <circle cx="200" cy="350" r="100" fill="none" stroke="#666" stroke-width="2"/>
   
   <!-- CRISPR Region Indicator -->
-  <path d="M270,280 A100,100 0 0,1 270,420" stroke="#ff9999" stroke-width="8"/>
+  <path d="M270,280 A100,100 0 0,1 270,420" stroke="#ff9999" stroke-width="8" fill="none"/>
   
   <!-- Zoom Lines -->
-  <path d="M280,350 L350,350" stroke="#666" stroke-width="1" stroke-dasharray="5,5"/>
+  <path d="M305,350 L450,350" stroke="#666" stroke-width="1" stroke-dasharray="5,5"/>
   
-  <!-- Timeline with arrow above viruses -->
-  <line x1="350" y1="50" x2="750" y2="50" stroke="#666" stroke-width="2"/>
-  <path d="M340,50 L360,40 L360,60 Z" fill="#666"/>
-  <text x="325" y="45" text-anchor="end" fill="#666">Now</text>
-  <text x="760" y="45" text-anchor="start" fill="#666">Past</text>
+  <!-- Timeline with arrow pointing left -->
+  <!-- Title text -->
+  <text x="100" y="170" text-anchor="start" fill="black" font-size="42">CRISPR is a</text>
+  <text x="100" y="208" text-anchor="start" fill="black" font-size="36">temporal memory</text>
+  
+  <line x1="450" y1="150" x2="850" y2="150" stroke="#666" stroke-width="2"/>
+  <path d="M860,150 L840,140 L840,160 Z" fill="#666"/>
+  <text x="425" y="145" text-anchor="end" fill="#666">New</text>
+  <text x="860" y="145" text-anchor="start" fill="#666">Old</text>
 
   <!-- CRISPR Array (Zoomed) -->
-  <g transform="translate(350,320)">
+  <g transform="translate(450,320)">
     <!-- Zoomed Background -->
     <rect x="0" y="0" width="400" height="60" fill="#f8f8f8" stroke="#666"/>
     
+    <!-- Leader Sequence -->
+    <rect x="-80" y="0" width="80" height="60" fill="#ffeb99" stroke="#666"/>
+    <text x="-40" y="35" text-anchor="middle" fill="#666" font-size="16">Leader</text>
+    
+    <!-- New spacer insertion arrow -->
+    <path d="M0 -30 L0 -5" stroke="#666" stroke-width="1" marker-end="url(#arrowhead)"/>
+    <text x="0" y="-50" text-anchor="middle" fill="#666" font-size="10">New spacers</text>
+    <text x="0" y="-38" text-anchor="middle" fill="#666" font-size="10">inserted here</text>
+    
     <!-- Repeats and Spacers -->
     <rect x="0" y="0" width="30" height="60" fill="#ddd" stroke="#666"/>
-    <rect x="30" y="0" width="80" height="60" fill="#ff7f7f" stroke="#666"/>
+    <rect x="30" y="0" width="80" height="60" fill="#7f7fff" stroke="#666"/>
     <rect x="110" y="0" width="30" height="60" fill="#ddd" stroke="#666"/>
     <rect x="140" y="0" width="80" height="60" fill="#7fbf7f" stroke="#666"/>
     <rect x="220" y="0" width="30" height="60" fill="#ddd" stroke="#666"/>
-    <rect x="250" y="0" width="80" height="60" fill="#7f7fff" stroke="#666"/>
+    <rect x="250" y="0" width="80" height="60" fill="#ff7f7f" stroke="#666"/>
     <rect x="330" y="0" width="30" height="60" fill="#ddd" stroke="#666"/>
     
     <!-- Labels -->
-    <text x="15" y="35" text-anchor="middle" fill="#666" font-size="10">DR</text>
-    <text x="70" y="35" text-anchor="middle" fill="white" font-size="12">C</text>
-    <text x="125" y="35" text-anchor="middle" fill="#666" font-size="10">DR</text>
-    <text x="180" y="35" text-anchor="middle" fill="white" font-size="12">B</text>
-    <text x="235" y="35" text-anchor="middle" fill="#666" font-size="10">DR</text>
-    <text x="290" y="35" text-anchor="middle" fill="white" font-size="12">A</text>
-    <text x="345" y="35" text-anchor="middle" fill="#666" font-size="10">DR</text>
+    <text x="15" y="35" text-anchor="middle" fill="#666" font-size="13">DR</text>
+    <text x="70" y="35" text-anchor="middle" fill="white" font-size="16">C</text>
+    <text x="125" y="35" text-anchor="middle" fill="#666" font-size="13">DR</text>
+    <text x="180" y="35" text-anchor="middle" fill="white" font-size="16">B</text>
+    <text x="235" y="35" text-anchor="middle" fill="#666" font-size="13">DR</text>
+    <text x="290" y="35" text-anchor="middle" fill="white" font-size="16">A</text>
+    <text x="345" y="35" text-anchor="middle" fill="#666" font-size="13">DR</text>
+
+    <!-- Spacer explanation -->
+    <text x="180" y="110" text-anchor="middle" fill="#666" font-size="14">CRISPR spacers match phage DNA sequences</text>
+    <text x="180" y="125" text-anchor="middle" fill="#666" font-size="14">and guide Cas proteins to destroy invading phages</text>
   </g>
 
-  <!-- Viruses aligned with their spacers -->
-  <!-- Virus C (newest) -->
-  <circle cx="420" cy="120" r="25" fill="#ff7f7f" opacity="0.8"/>
-  <circle cx="420" cy="120" r="20" fill="none" stroke="#ff0000" stroke-width="1" stroke-dasharray="2,2"/>
-  <text x="420" y="160" text-anchor="middle" font-size="12" fill="#666">Bacteriophage C</text>
-  <text x="420" y="95" text-anchor="middle" font-size="12" fill="#666">Recent infection</text>
+  <!-- Virus A (newest) -->
+  <g transform="translate(500,182) scale(0.20)">
+    <path fill="#7f7fff" stroke="#0000ff" stroke-linejoin="round" stroke-width="15.02" d="m100.18 112.58-45.5-26.27V33.77l45.5-26.27 45.5 26.27v52.54z"/>
+    <path fill="none" stroke="#0000ff" stroke-linejoin="round" stroke-width="30" d="M100.18 104.08v99.9"/>
+    <path fill="none" stroke="#0000ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="15" d="m7.5 274.8 22.1-86.33 70.13 13.3-34.68-32.56L45.98 274.4m146.88.4-22.1-86.33-70.13 13.3 34.69-32.56 19.06 105.19"/>
+  </g>
+  <text x="520" y="256" text-anchor="middle" font-size="12" fill="#666">Bacteriophage C</text>
+  <text x="520" y="174" text-anchor="middle" font-size="12" fill="#666">Recent infection</text>
   
   <!-- Virus B -->
-  <circle cx="530" cy="120" r="25" fill="#7fbf7f" opacity="0.8"/>
-  <circle cx="530" cy="120" r="20" fill="none" stroke="#00ff00" stroke-width="1" stroke-dasharray="2,2"/>
-  <text x="530" y="160" text-anchor="middle" font-size="12" fill="#666">Bacteriophage B</text>
-  <text x="530" y="95" text-anchor="middle" font-size="12" fill="#666">Prior infection</text>
+  <g transform="translate(610,182) scale(0.20)">
+    <path fill="#7fbf7f" stroke="#00ff00" stroke-linejoin="round" stroke-width="15.02" d="m100.18 112.58-45.5-26.27V33.77l45.5-26.27 45.5 26.27v52.54z"/>
+    <path fill="none" stroke="#00ff00" stroke-linejoin="round" stroke-width="30" d="M100.18 104.08v99.9"/>
+    <path fill="none" stroke="#00ff00" stroke-linecap="round" stroke-linejoin="round" stroke-width="15" d="m7.5 274.8 22.1-86.33 70.13 13.3-34.68-32.56L45.98 274.4m146.88.4-22.1-86.33-70.13 13.3 34.69-32.56 19.06 105.19"/>
+  </g>
+  <text x="630" y="256" text-anchor="middle" font-size="12" fill="#666">Bacteriophage B</text>
+  <text x="630" y="174" text-anchor="middle" font-size="12" fill="#666">Prior infection</text>
   
-  <!-- Virus A (oldest) -->
-  <circle cx="640" cy="120" r="25" fill="#7f7fff" opacity="0.8"/>
-  <circle cx="640" cy="120" r="20" fill="none" stroke="#0000ff" stroke-width="1" stroke-dasharray="2,2"/>
-  <text x="640" y="160" text-anchor="middle" font-size="12" fill="#666">Bacteriophage A</text>
-  <text x="640" y="95" text-anchor="middle" font-size="12" fill="#666">Ancient infection</text>
+  <!-- Virus C (oldest) -->
+  <g transform="translate(720,182) scale(0.20)">
+    <path fill="#ff7f7f" stroke="#ff0000" stroke-linejoin="round" stroke-width="15.02" d="m100.18 112.58-45.5-26.27V33.77l45.5-26.27 45.5 26.27v52.54z"/>
+    <path fill="none" stroke="#ff0000" stroke-linejoin="round" stroke-width="30" d="M100.18 104.08v99.9"/>
+    <path fill="none" stroke="#ff0000" stroke-linecap="round" stroke-linejoin="round" stroke-width="15" d="m7.5 274.8 22.1-86.33 70.13 13.3-34.68-32.56L45.98 274.4m146.88.4-22.1-86.33-70.13 13.3 34.69-32.56 19.06 105.19"/>
+  </g>
+  <text x="740" y="256" text-anchor="middle" font-size="12" fill="#666">Bacteriophage A</text>
+  <text x="740" y="174" text-anchor="middle" font-size="12" fill="#666">Ancient infection</text>
 
-  <!-- Direct vertical arrows -->
-  <line x1="420" y1="145" x2="420" y2="320" stroke="#ff7f7f" stroke-width="2" marker-end="url(#arrowhead)"/>
-  <line x1="530" y1="145" x2="530" y2="320" stroke="#7fbf7f" stroke-width="2" marker-end="url(#arrowhead)"/>
-  <line x1="640" y1="145" x2="640" y2="320" stroke="#7f7fff" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <!-- Direct vertical arrows with colored arrowheads -->
+  <line x1="520" y1="262" x2="520" y2="317" stroke="#7f7fff" stroke-width="2" marker-end="url(#blueArrowhead)"/>
+  <line x1="630" y1="262" x2="630" y2="317" stroke="#7fbf7f" stroke-width="2" marker-end="url(#greenArrowhead)"/>
+  <line x1="740" y1="262" x2="740" y2="317" stroke="#ff7f7f" stroke-width="2" marker-end="url(#redArrowhead)"/>
 
   <!-- Labels -->
-  <text x="200" y="450" text-anchor="middle" fill="#666" font-size="14">Bacterial Genome</text>
-  <text x="270" y="330" text-anchor="end" fill="#666" font-size="12">CRISPR Array</text>
-  <text x="350" y="300" text-anchor="middle" fill="#666" font-size="10">DR = Direct Repeat</text>
+  <text x="200" y="480" text-anchor="middle" fill="#666" font-size="14">Bacterial Genome</text>
+  <text x="370" y="290" text-anchor="end" fill="#666" font-size="12">CRISPR Array</text>
+  <text x="450" y="400" text-anchor="middle" fill="#666" font-size="10">DR = Direct Repeat</text>
 
   <!-- Arrow definitions -->
   <defs>
     <marker id="arrowhead" markerWidth="10" markerHeight="7" 
             refX="9" refY="3.5" orient="auto">
       <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+    <marker id="redArrowhead" markerWidth="10" markerHeight="7" 
+            refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ff7f7f"/>
+    </marker>
+    <marker id="greenArrowhead" markerWidth="10" markerHeight="7" 
+            refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#7fbf7f"/>
+    </marker>
+    <marker id="blueArrowhead" markerWidth="10" markerHeight="7" 
+            refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#7f7fff"/>
     </marker>
   </defs>
 </svg>
