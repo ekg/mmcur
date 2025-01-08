@@ -17,7 +17,8 @@ TL;DR:
 
 ----
 
-# What CRISPR, o3, and the Memphis plume tell us about intelligence
+<a name="race-for-agi"></a>
+# The Race for AGI
 
 On a morning in early December I was running by the Mississippi when I saw a large industrial plume on the horizon.
 The plume is water vapor and nitrous oxides from what is believed to be the largest supercomputer in the world, xAI's "Colossus".
@@ -30,6 +31,9 @@ xAI couldn't wait for the Tennessee Valley Authority to build new capacity; that
 This plume, now dominating Memphis's skyline, is compute's heat waste made visible in our rush to train an artificial general intelligence (AGI).
 [xAI's stated goal is a "1% shot at a Kardashev type 1 civilization"](https://www.capacitymedia.com/article/musks-xais-colossus-cluster-set-for-one-million-gpu-supercomputer-expansion)—a [society capable of harnessing all its planet's energy](https://en.wikipedia.org/wiki/Planetary_civilization), presumably enabled by the AGI they aim to bring into the world.
 And they're just getting started, with a tenfold [expansion of Colossus to 1M GPUs](https://www.ft.com/content/9c0516cf-dd12-4665-aa22-712de854fe2f) already planned.
+
+<a name="universal-computation"></a>
+# Universal Computation
 
 You may have noticed that, although ravenous and hyperactive, a human child doesn't generate a thousand meter plume of water vapor and reactive particulates to develop their intelligence.
 Yet your average human, fueled by sandwiches, can implement any algorithm with just pen and paper.
@@ -93,6 +97,9 @@ The ARC AGI Prize nicely illustrates where today’s models stand.
 A single forward-pass language model—like GPT-4—gets about 0–5% accuracy on ARC tasks.
 Cheaper chain-of-thought–based systems that do a bit of [test-time training](https://arxiv.org/abs/2411.07279) [get close to 50%](https://arxiv.org/abs/2412.04604).
 Meanwhile, a careful human solver will approach 100% if you just give them enough time to think.
+
+<a name="beyond-brute-force"></a>
+# Beyond Brute Force
 
 Then, in late December 2024, along comes [OpenAI's o3](https://openai.com/index/deliberative-alignment/), which [nearly solved the entire benchmark](https://arcprize.org/blog/oai-o3-pub-breakthrough).
 If you let the model "think less"—what they call high-efficiency mode—it answers 400 tasks at 82.8% accuracy for around $6,600.
