@@ -1,21 +1,15 @@
+# What CRISPR, o3 and the Memphis Plume Show Us About Intelligence
+
 TL;DR:
+- [The Memphis plume](#race-for-agi) - The race for AGI made visible
+- [Universal computation](#universal-computation) - Human + pen + paper + sandwiches = universal computer  
+- [Memory makes computation universal](#memory-requirement) - Two rules for general intelligence
+- [The attention tax](#attention-tax) - Why current AI costs scale quadratically
+- [Nature's solution](#natures-solution) - Learning from biological memory
+- [Beyond brute force](#beyond-brute-force) - What o3 reveals
+- [A path forward](#path-forward) - Remembering efficiently
 
-- [General intelligence ≈ universal computation](#universal-computation)
-- [Universality only requires reliable thinking and memory of your thoughts](#memory-requirement)
-- [Current AI achieves this through transformer attention—at a quadratic cost](#attention-tax)
-- [CRISPR shows us that, when efficient universality is needed, state appears](#natures-solution)
-- [We can do better by learning from biological systems](#path-forward)
-
-## In this post:
-- The Race for AGI: Memphis's new skyline
-- Universal Computation: What makes intelligence general
-- The Memory Requirement: Two simple rules for universality
-- The Attention Tax: Why current AI scales quadratically
-- Nature's Solution: How CRISPR remembers
-- Beyond Brute Force: What o3 reveals about memory
-- A Path Forward: Learning from biology and history
-
-----
+---
 
 <a name="race-for-agi"></a>
 # The Race for AGI
@@ -37,7 +31,7 @@ And they're just getting started, with a tenfold [expansion of Colossus to 1M GP
 
 You may have noticed that, although ravenous and hyperactive, a human child doesn't generate a thousand meter plume of water vapor and reactive particulates to develop their intelligence.
 Yet your average human, fueled by sandwiches, can implement any algorithm with just pen and paper.
-<a name="bronzeage">So augmented with bronze age technology, we become "universal" computers in Turing's language—the quintessential "general" intelligence capable of solving any problem given enough time and snacks.</a>
+So augmented with bronze age technology, we become "universal" computers in Turing's language—the quintessential "general" intelligence capable of solving any problem given enough time and snacks.
  For the sake of argument, let’s agree: general intelligence ≈ universal computer.
 
 That link has been on my mind for two years, ever since I first read the magic words "Let’s think step by step" in a groundbreaking machine learning paper.
@@ -56,7 +50,7 @@ The model’s expressivity, harnessed across multiple steps, blossoms into gener
 
 Out of deep love for this line of research, I spent much of December in a meditation on the link between memory and computation.
 This post is a human introduction to that paper, where I provide the simplest and most intuitive explanation of universality (a.k.a. general intelligence) that I could synthesize.
-<a name="generality">Universality requires only (1) stable evolution of thought (no hallucinations), and (2) reliable access to the history of thought.</a>
+Universality requires only (1) stable evolution of thought (no hallucinations), and (2) reliable access to the history of thought.
 This synthesis rightly seems banal, dull, too simple to be useful, too theory of computation 101 to be interesting.
 And OK, if you studied the theory of computation, yes, it is, but why did y'all forget the textbook and start imaging that threshold circuits and feedforward networks could achieve general intelligence?
 If you can remember, this perspective quickly takes us to some amazing places.
@@ -91,7 +85,7 @@ It has gigabases of DNA and a swarm of biomolecules, operating in a parallel sou
 By some definitions, each cell’s molecular interactions also fall in that threshold-circuit-like class: essentially parallel transformations, no large sequential pipeline.
 But cells offset this limitation with state—encoded in their components and their DNA, which holds a record of life’s entire lineage.
 When cells need to store or recall specific bits of information, they literally write it into the genome.
-<a name="crispr">The canonical example is CRISPR, which can be understood most fundamentally as a chronological log of fragments of viruses, addresses in the space of DNA, that represent viral infections that this particular cell has survived, and its lineage has survived.</a>
+The canonical example is CRISPR, which can be understood most fundamentally as a chronological log of fragments of viruses, addresses in the space of DNA, that represent viral infections that this particular cell has survived, and its lineage has survived.
 The chronology is not just an artifact of the system, but is essential because by remembering which viruses are more recent, the cell can invest more energy in making guided nucleases that target them than ones which occurred long ago.
 
 ![CRISPR, better known for its use as a genome editing tool, is actually a temporal memory system.](crispr-memory.png)
