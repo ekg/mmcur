@@ -113,14 +113,14 @@ At quadratic cost, that's not just unsustainable it's impossible.
 Meanwhile, human civilization achieves this kind of extended cognition through more elegant means.
 Ideas evolve across conversations, papers, and experiments, maintaining state through distributed networks of sandwich-powered minds working in shared contexts.
 
-![Written memory persists: A papyrus from Herculaneum, 2000 years old, decoded by [a space-time transformer model](https://arxiv.org/abs/2102.05095). This work is close to my heart: I'm originally from Kentucky, where the [Vesivius Challenge](https://scrollprize.org/grandprize) that led to this breakthrough is organized. I also spent nearly a decade living in Napoli, and have visited Ercolano scavi (Herculaneum) many times. Copyright Vesuvius Challenge.](youssef_text_wbb.small.jpg)
-
 Current AI research has thus discovered that "thinking longer" helps, but in their excitement over this empirical finding, many miss that reliable memory is the fundamental capability that makes computation universal.
 The field has [embraced psychological concepts like Daniel Kahneman "System 1" (fast, intuitive) versus "System 2" (slow, deliberate) thinking to explain these improvements](https://www.youtube.com/watch?v=jPluSXJpdrA).
 o1/o3's developers advocate [dramatically scaling test-time compute](https://www.youtube.com/watch?v=eaAonE58sLU) to "hours, days, even weeks", but I truly wonder how quadratic-memory transformer-based architectures will allow this to happen.
 
 Soon after [o3's release](https://openai.com/index/deliberative-alignment/), OpenAI's Board said that to achieve AGI, we'll just need ([as paraphrased](https://daringfireball.net/2024/12/openai_unimaginable)) "unimaginable sums of money", [proposing to restructure as a public benefit corporation to attract fresh capital](https://openai.com/index/why-our-structure-must-evolve-to-advance-our-mission/).
 They plan to scale up, spin more GPUs, and chase universal intelligence through raw power.
+
+![Written memory persists: A papyrus from Herculaneum, 2000 years old, decoded by [a space-time transformer model](https://arxiv.org/abs/2102.05095). This work is close to my heart: I'm originally from Kentucky, where the [Vesivius Challenge](https://scrollprize.org/grandprize) that led to this breakthrough is organized. I also spent nearly a decade living in Napoli, and have visited Ercolano scavi (Herculaneum) many times. Copyright Vesuvius Challenge.](youssef_text_wbb.small.jpg)
 
 ## <a name="path-forward" href="#path-forward">a path forward</a>
 
