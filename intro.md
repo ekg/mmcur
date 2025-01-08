@@ -1,6 +1,6 @@
 # What CRISPR, o3, and the Memphis Plume Show Us About Intelligence
 
-TL;DR: universal intelligence—the ability to solve any problem—depends on the ability to be true to yourself and remember what you've thought, and nothing else.
+TL;DR: universal intelligence—the ability to solve any problem—depends on the ability to be true to yourself while remembering what you've thought, and nothing else.
 
 - [The Memphis Plume](#the-memphis-plume) - the race for artificial general intelligence made visible
 - [Universal Computation](#universal-computation) - human + pen + paper + sandwiches = universal computer
