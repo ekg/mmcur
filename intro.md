@@ -1,18 +1,18 @@
-# What CRISPR, o3 and the Memphis Plume Show Us About Intelligence
+# What CRISPR, O3 and the Memphis Plume Show Us About Intelligence
 
 TL;DR:
 
-- [the memphis plume](#the-memphis-plume) - The race for AGI made visible
-- [universal computation](#universal-computation) - Human + pen + paper + sandwiches = universal computer
-- [memory makes computation universal](#memory-requirement) - Two rules for general intelligence
-- [the attention tax](#attention-tax) - Why thinking longer will hit a wall
-- [nature's solution](#natures-solution) - Learning from biological memory
-- [beyond brute force](#beyond-brute-force) - What o3 reveals
-- [a path forward](#path-forward) - Remembering efficiently
+- [The Memphis Plume](#the-memphis-plume) - The Race for AGI Made Visible
+- [Universal Computation](#universal-computation) - Human + Pen + Paper + Sandwiches = Universal Computer
+- [Memory Makes Computation Universal](#memory-requirement) - Two Rules for General Intelligence
+- [The Attention Tax](#attention-tax) - Why Thinking Longer Will Hit a Wall
+- [Nature's Solution](#natures-solution) - Learning from Biological Memory
+- [Beyond Brute Force](#beyond-brute-force) - What O3 Reveals
+- [A Path Forward](#path-forward) - Remembering Efficiently
 
 ---
 
-## <a name="the-memphis-plume" href="#the-memphis-plume">the memphis plume</a>
+## <a name="the-memphis-plume" href="#the-memphis-plume">The Memphis Plume</a>
 
 On a morning in early December I was running by the Mississippi when I saw a large industrial plume on the horizon.
 The plume is water vapor and nitrous oxides from what is believed to be the largest supercomputer in the world, xAI's "Colossus".
@@ -26,7 +26,7 @@ This plume, now dominating Memphis's skyline, is compute's heat waste made visib
 [xAI's stated goal is a "1% shot at a Kardashev type 1 civilization"](https://www.capacitymedia.com/article/musks-xais-colossus-cluster-set-for-one-million-gpu-supercomputer-expansion)—a [society capable of harnessing all its planet's energy](https://en.wikipedia.org/wiki/Planetary_civilization), presumably enabled by the AGI they aim to bring into the world.
 And they're just getting started, with a tenfold [expansion of Colossus to 1M GPUs](https://www.ft.com/content/9c0516cf-dd12-4665-aa22-712de854fe2f) already planned.
 
-## <a name="universal-computation" href="#universal-computation">universal computation</a>
+## <a name="universal-computation" href="#universal-computation">Universal Computation</a>
 
 You may have noticed that, although ravenous and hyperactive, a human child doesn't generate a thousand meter plume of water vapor and reactive particulates to develop their intelligence.
 Yet your average human, fueled by sandwiches, can implement any algorithm with just pen and paper.
@@ -44,7 +44,7 @@ They can quickly match patterns, but can't count, do math, or follow a recipe un
 _However_, if you use "chain-of-thought" or a series of recursive prompts—feeding each of the model's outputs back into its input—the combined system becomes capable of simulating a universal Turing machine.
 The model’s expressivity, harnessed across multiple steps, blossoms into general computation.
 
-## <a name="memory-requirement" href="#memory-requirement">memory makes computation universal</a>
+## <a name="memory-requirement" href="#memory-requirement">Memory Makes Computation Universal</a>
 
 Out of deep love for this line of research, I spent much of December in a meditation on the link between memory and computation.
 This post is a human introduction to that paper, where I provide the simplest and most intuitive explanation of universality (a.k.a. general intelligence) that I could synthesize.
@@ -63,7 +63,7 @@ This deeper transfer of computational thinking [explains why models continue imp
 
 Part of the magic is that LLMs, must of which are Transformers, are forging a shared computational interface with us, letting us push each other around in a collaborative workspace space that can solve new tasks.
 
-## <a name="attention-tax" href="#attention-tax">the attention tax</a>
+## <a name="attention-tax" href="#attention-tax">The Attention Tax</a>
 
 However, they have a costly flaw that makes them otherworldly in their resource demands: attention.
 In effect, attention is a learned function for memory and association across the input.
@@ -77,7 +77,7 @@ A transformer's quadratic scaling hits a wall at 1M tokens:
 
 ![Comparing linear, log-linear, and quadratic scaling vs. input.](quadratic-wall.png)
 
-## <a name="natures-solution" href="#natures-solution">nature's solution</a>
+## <a name="natures-solution" href="#natures-solution">Nature's Solution</a>
 
 But the truth is, generality doesn’t require a quadratic cost.
 Look at a single cell.
@@ -95,7 +95,7 @@ A single forward-pass language model—like GPT-4—gets about 0–5% accuracy o
 Cheaper chain-of-thought–based systems that do a bit of [test-time training](https://arxiv.org/abs/2411.07279) [get close to 50%](https://arxiv.org/abs/2412.04604).
 Meanwhile, a careful human solver will approach 100% if you just give them enough time to think.
 
-## <a name="beyond-brute-force" href="#beyond-brute-force">beyond brute force</a>
+## <a name="beyond-brute-force" href="#beyond-brute-force">Beyond Brute Force</a>
 
 Then, in late December 2024, along comes [OpenAI's o3](https://openai.com/index/deliberative-alignment/), which [nearly solved the entire benchmark](https://arcprize.org/blog/oai-o3-pub-breakthrough).
 If you let the model "think less"—what they call high-efficiency mode—it answers 400 tasks at 82.8% accuracy for around $6,600.
@@ -122,7 +122,7 @@ They plan to scale up, spin more GPUs, and chase universal intelligence through 
 
 ![Written memory persists: A papyrus from Herculaneum, 2000 years old, decoded by [a space-time transformer model](https://arxiv.org/abs/2102.05095). This work is close to my heart: I'm originally from Kentucky, where the [Vesivius Challenge](https://scrollprize.org/grandprize) that led to this breakthrough is organized. I also spent nearly a decade living in Napoli, and have visited Ercolano scavi (Herculaneum) many times. Copyright Vesuvius Challenge.](youssef_text_wbb.small.jpg)
 
-## <a name="path-forward" href="#path-forward">a path forward</a>
+## <a name="path-forward" href="#path-forward">A Path Forward</a>
 
 As a sandwich-eating universal intelligence, I'm not convinced.
 Humans got smarter not by growing our brains, but by distributing memory across society—spoken word, libraries, the internet—finding ways to preserve and share knowledge without a ruinous overhead.
