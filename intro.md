@@ -12,7 +12,7 @@ TL;DR:
 ---
 
 <a name="race-for-agi"></a>
-# The Race for AGI
+## The Race for AGI
 
 On a morning in early December I was running by the Mississippi when I saw a large industrial plume on the horizon.
 The plume is water vapor and nitrous oxides from what is believed to be the largest supercomputer in the world, xAI's "Colossus".
@@ -27,7 +27,7 @@ This plume, now dominating Memphis's skyline, is compute's heat waste made visib
 And they're just getting started, with a tenfold [expansion of Colossus to 1M GPUs](https://www.ft.com/content/9c0516cf-dd12-4665-aa22-712de854fe2f) already planned.
 
 <a name="universal-computation"></a>
-# Universal Computation
+## Universal Computation
 
 You may have noticed that, although ravenous and hyperactive, a human child doesn't generate a thousand meter plume of water vapor and reactive particulates to develop their intelligence.
 Yet your average human, fueled by sandwiches, can implement any algorithm with just pen and paper.
@@ -46,7 +46,7 @@ _However_, if you use "chain-of-thought" or a series of recursive prompts—feed
 The model’s expressivity, harnessed across multiple steps, blossoms into general computation.
 
 <a name="memory-requirement"></a>
-# The Memory Requirement
+## The Memory Requirement
 
 Out of deep love for this line of research, I spent much of December in a meditation on the link between memory and computation.
 This post is a human introduction to that paper, where I provide the simplest and most intuitive explanation of universality (a.k.a. general intelligence) that I could synthesize.
@@ -65,7 +65,7 @@ This deeper transfer of computational thinking [explains why models continue imp
 
 Part of the magic is that LLMs, must of which are Transformers, are forging a shared computational interface with us, letting us push each other around in a collaborative workspace space that can solve new tasks.
 <a name="attention-tax"></a>
-# The Attention Tax
+## The Attention Tax
 
 However, they have a costly flaw that makes them otherworldly in their resource demands: attention.
 In effect, attention is a learned function for memory and association across the input.
@@ -96,7 +96,7 @@ Cheaper chain-of-thought–based systems that do a bit of [test-time training](h
 Meanwhile, a careful human solver will approach 100% if you just give them enough time to think.
 
 <a name="beyond-brute-force"></a>
-# Beyond Brute Force
+## Beyond Brute Force
 
 Then, in late December 2024, along comes [OpenAI's o3](https://openai.com/index/deliberative-alignment/), which [nearly solved the entire benchmark](https://arcprize.org/blog/oai-o3-pub-breakthrough).
 If you let the model "think less"—what they call high-efficiency mode—it answers 400 tasks at 82.8% accuracy for around $6,600.
@@ -124,7 +124,7 @@ Soon after [o3's release](https://openai.com/index/deliberative-alignment/), Ope
 They plan to scale up, spin more GPUs, and chase universal intelligence through raw power.
 
 <a name="path-forward"></a>
-# A Path Forward
+## A Path Forward
 
 As a sandwich-eating universal intelligence, I'm not convinced.
 Humans got smarter not by growing our brains, but by distributing memory across society—spoken word, libraries, the internet—finding ways to preserve and share knowledge without a ruinous overhead.
