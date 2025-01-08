@@ -1,13 +1,19 @@
 TL;DR:
 
-- [General intelligence ≈ universal computation.](#generality)
-- [Universality only requires reliable thinking and memory of your thoughts. (arXiv:2412.17794)](https://arxiv.org/abs/2412.17794)
-- [Your average human with a pen and paper can compute anything computable, powered only by sandwiches.](#bronzeage)
-- [Current AI achieves this through transformer attention—at a quadratic cost thats on pace to eat the worlds venture capital and boil our oceans.](#attention)
-- [We can do better](https://arxiv.org/abs/2410.01201)
-- [CRISPR shows us that, when biology needs reliable memory, state appears.](#crispr)
-- [The recurrent nature of natural intelligence suggests a way forward.](#recurrence)
-- [Be true to yourself, and remember what you've done.](https://arxiv.org/abs/2412.17794)
+- [General intelligence ≈ universal computation](#universal-computation)
+- [Universality only requires reliable thinking and memory of your thoughts](#memory-requirement)
+- [Current AI achieves this through transformer attention—at a quadratic cost](#attention-tax)
+- [CRISPR shows us that, when efficient universality is needed, state appears](#natures-solution)
+- [We can do better by learning from biological systems](#path-forward)
+
+## In this post:
+- The Race for AGI: Memphis's new skyline
+- Universal Computation: What makes intelligence general
+- The Memory Requirement: Two simple rules for universality
+- The Attention Tax: Why current AI scales quadratically
+- Nature's Solution: How CRISPR remembers
+- Beyond Brute Force: What o3 reveals about memory
+- A Path Forward: Learning from biology and history
 
 ----
 
@@ -57,7 +63,10 @@ Looking through the lens of Turing machines, we've transferred our state transit
 This deeper transfer of computational thinking [explains why models continue improving far beyond naive pattern-matching saturation points](https://ai.meta.com/blog/meta-llama-3/)—they're gradually refining their models of human cognitive processes themselves.
 
 Part of the magic is that LLMs, must of which are Transformers, are forging a shared computational interface with us, letting us push each other around in a collaborative workspace space that can solve new tasks.
-However, they have a costly flaw that makes them otherworldly in their resource demands: <a name="attention">attention</a>.
+<a name="attention-tax"></a>
+# The Attention Tax
+
+However, they have a costly flaw that makes them otherworldly in their resource demands: attention.
 In effect, attention is a learned function for memory and association across the input.
 But with n tokens, each must attend to every other token—an n × n explosion in both compute and memory.
 Double your context length, quadruple the cost.
@@ -110,7 +119,10 @@ o1/o3's developers advocate [dramatically scaling test-time compute](https://www
 Soon after [o3's release](https://openai.com/index/deliberative-alignment/), OpenAI's Board said that to achieve AGI, we'll just need ([as paraphrased](https://daringfireball.net/2024/12/openai_unimaginable)) "unimaginable sums of money", [proposing to restructure as a public benefit corporation to attract fresh capital](https://openai.com/index/why-our-structure-must-evolve-to-advance-our-mission/).
 They plan to scale up, spin more GPUs, and chase universal intelligence through raw power.
 
-<a name="recurrence">As a sandwich-eating universal intelligence, I'm not convinced.</a>
+<a name="path-forward"></a>
+# A Path Forward
+
+As a sandwich-eating universal intelligence, I'm not convinced.
 Humans got smarter not by growing our brains, but by distributing memory across society—spoken word, libraries, the internet—finding ways to preserve and share knowledge without a ruinous overhead.
 I'll bet on a resurgence of [recurrent approaches](https://arxiv.org/html/2410.01201v2) that drastically reduce inference costs by maintaining a [rolling hidden state, incrementally processing new information, thinking slowly and deeply when we need them to](https://arxiv.org/abs/2412.06769)).
 Yes, we might need specialized modules for robust memory access—but if biology, evolution, and a good pen-and-paper can do it, so can we.
