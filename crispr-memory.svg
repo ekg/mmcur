@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Circular Bacterial Genome -->
+  <circle cx="200" cy="350" r="100" fill="none" stroke="#666" stroke-width="2"/>
+  
+  <!-- CRISPR Region Indicator -->
+  <path d="M270,280 A100,100 0 0,1 270,420" stroke="#ff9999" stroke-width="8"/>
+  
+  <!-- Zoom Lines -->
+  <path d="M280,350 L350,350" stroke="#666" stroke-width="1" stroke-dasharray="5,5"/>
+  
+  <!-- Timeline with arrow above viruses -->
+  <line x1="350" y1="50" x2="750" y2="50" stroke="#666" stroke-width="2"/>
+  <path d="M340,50 L360,40 L360,60 Z" fill="#666"/>
+  <text x="325" y="45" text-anchor="end" fill="#666">Now</text>
+  <text x="760" y="45" text-anchor="start" fill="#666">Past</text>
+
+  <!-- CRISPR Array (Zoomed) -->
+  <g transform="translate(350,320)">
+    <!-- Zoomed Background -->
+    <rect x="0" y="0" width="400" height="60" fill="#f8f8f8" stroke="#666"/>
+    
+    <!-- Repeats and Spacers -->
+    <rect x="0" y="0" width="30" height="60" fill="#ddd" stroke="#666"/>
+    <rect x="30" y="0" width="80" height="60" fill="#ff7f7f" stroke="#666"/>
+    <rect x="110" y="0" width="30" height="60" fill="#ddd" stroke="#666"/>
+    <rect x="140" y="0" width="80" height="60" fill="#7fbf7f" stroke="#666"/>
+    <rect x="220" y="0" width="30" height="60" fill="#ddd" stroke="#666"/>
+    <rect x="250" y="0" width="80" height="60" fill="#7f7fff" stroke="#666"/>
+    <rect x="330" y="0" width="30" height="60" fill="#ddd" stroke="#666"/>
+    
+    <!-- Labels -->
+    <text x="15" y="35" text-anchor="middle" fill="#666" font-size="10">DR</text>
+    <text x="70" y="35" text-anchor="middle" fill="white" font-size="12">C</text>
+    <text x="125" y="35" text-anchor="middle" fill="#666" font-size="10">DR</text>
+    <text x="180" y="35" text-anchor="middle" fill="white" font-size="12">B</text>
+    <text x="235" y="35" text-anchor="middle" fill="#666" font-size="10">DR</text>
+    <text x="290" y="35" text-anchor="middle" fill="white" font-size="12">A</text>
+    <text x="345" y="35" text-anchor="middle" fill="#666" font-size="10">DR</text>
+  </g>
+
+  <!-- Viruses aligned with their spacers -->
+  <!-- Virus C (newest) -->
+  <circle cx="420" cy="120" r="25" fill="#ff7f7f" opacity="0.8"/>
+  <circle cx="420" cy="120" r="20" fill="none" stroke="#ff0000" stroke-width="1" stroke-dasharray="2,2"/>
+  <text x="420" y="160" text-anchor="middle" font-size="12" fill="#666">Bacteriophage C</text>
+  <text x="420" y="95" text-anchor="middle" font-size="12" fill="#666">Recent infection</text>
+  
+  <!-- Virus B -->
+  <circle cx="530" cy="120" r="25" fill="#7fbf7f" opacity="0.8"/>
+  <circle cx="530" cy="120" r="20" fill="none" stroke="#00ff00" stroke-width="1" stroke-dasharray="2,2"/>
+  <text x="530" y="160" text-anchor="middle" font-size="12" fill="#666">Bacteriophage B</text>
+  <text x="530" y="95" text-anchor="middle" font-size="12" fill="#666">Prior infection</text>
+  
+  <!-- Virus A (oldest) -->
+  <circle cx="640" cy="120" r="25" fill="#7f7fff" opacity="0.8"/>
+  <circle cx="640" cy="120" r="20" fill="none" stroke="#0000ff" stroke-width="1" stroke-dasharray="2,2"/>
+  <text x="640" y="160" text-anchor="middle" font-size="12" fill="#666">Bacteriophage A</text>
+  <text x="640" y="95" text-anchor="middle" font-size="12" fill="#666">Ancient infection</text>
+
+  <!-- Direct vertical arrows -->
+  <line x1="420" y1="145" x2="420" y2="320" stroke="#ff7f7f" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="530" y1="145" x2="530" y2="320" stroke="#7fbf7f" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="640" y1="145" x2="640" y2="320" stroke="#7f7fff" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Labels -->
+  <text x="200" y="450" text-anchor="middle" fill="#666" font-size="14">Bacterial Genome</text>
+  <text x="270" y="330" text-anchor="end" fill="#666" font-size="12">CRISPR Array</text>
+  <text x="350" y="300" text-anchor="middle" fill="#666" font-size="10">DR = Direct Repeat</text>
+
+  <!-- Arrow definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+            refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+</svg>

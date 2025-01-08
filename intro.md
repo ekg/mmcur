@@ -75,25 +75,36 @@ The chronology is not just an artifact of the system, but is essential because b
 
 The ARC AGI Prize nicely illustrates where today’s models stand.
 A single forward-pass language model—like GPT-4—gets about 0–5% accuracy on ARC tasks.
-Cheaper chain-of-thought–based systems that do a bit of test-time training get close to 50%.
-Meanwhile, a careful human solver can reach 100% if you just give them enough time to think.
+Cheaper chain-of-thought–based systems that do a bit of [test-time training](https://arxiv.org/abs/2411.07279) [get close to 50%](https://arxiv.org/abs/2412.04604).
+Meanwhile, a careful human solver will approach 100% if you just give them enough time to think.
 
-Then along comes OpenAI's O3, which nearly solved the entire benchmark in late December.
+Then along comes OpenAI's o3, which nearly solved the entire benchmark in late December.
 If you let the model "think less"—what they call high-efficiency mode—it answers 400 tasks at 82.8% accuracy for about $6,600.
 But if you let it think 172 times longer, exploring many more possible solution paths in parallel, it climbs to 91.5%.
-That final push costs $1.15 million in total compute
-O3's authors describe this not primarily as an engineering hack but as an ethical one, "deliberative alignment" wherein an overseer system that prunes and merges an entire forest of thought.
-They apparently pay the monstrous quadratic cost to keep all those partial reasoning traces in memory, to preserve consistency, and let the model think longer in pursuit of another apparent scaling law.
+That final push costs $1.15 million in total compute.
+o3's authors describe this not primarily as an engineering hack but as an ethical one, "deliberative alignment" wherein an overseer system that prunes and merges an kind of "forest of thought".
+They apparently pay a monstrous cost to keep all those partial reasoning traces in memory, to preserve consistency, and let the model think longer in pursuit of another apparent scaling law.
+
+In effect, by brute-forcing memory into reliability, they show how easily you can approach universal computation if you're willing to burn a fortune on tokens.
+And this isn't like previous scaling laws that revealed new capabilities—it's paying an enormous price to achieve something that biological systems do routinely.
+To reach the kind of sustained reliable thinking needed for real breakthroughs—novel cancer treatments, scientific discoveries, fundamental insights—we'd need to maintain computational state not just for a few more steps, but across weeks or months of focused investigation.
+Not just in one mind, but across communities of thinkers building on each other's work.
+At quadratic cost, that's not just unsustainable it's impossible.
+Transformer's quadratic scaling hits a wall at 1M tokens:
+
+![Comparing linear, log-linear, and quadratic scaling vs. input.](quadratic-wall.png)
+
+Meanwhile, human civilization achieves this kind of extended cognition through more elegant means.
+Ideas evolve across conversations, papers, and experiments, maintaining state through distributed networks of sandwich-powered minds working in shared contexts.
+
+Current AI research has thus discovered that "thinking longer" helps, but in their excitement over this empirical finding, many miss that reliable memory is the fundamental capability that makes computation universal.
+The field has [embraced psychological concepts like "System 1" (fast, intuitive) versus "System 2" (slow, deliberate) thinking to explain these improvements](https://www.youtube.com/watch?v=jPluSXJpdrA).
+o1/o3's developers advocate [brute-force scaling of test-time compute]()—even while acknowledging the unsustainability of its quadratic costs—because they've confused a psychological metaphor for a computational principle.
+But the ability to "think longer" with current inefficient memory mechanisms isn't the same as achieving the kind of efficient universal computation we see in biological systems.
 
 In effect, by brute-forcing memory into reliability, they show how easily you can approach universal computation if you’re willing to burn a fortune on tokens.
-Soon after, OpenAI's Board said that to achieve AGI, we'll just need "unimaginable sums of money", proposing to restructure as a public benefit corporation to attract fresh capital.
+Soon after, OpenAI's Board said that to achieve AGI, we'll just need ([as paraphrased](https://daringfireball.net/2024/12/openai_unimaginable)) "unimaginable sums of money", proposing to restructure as a public benefit corporation to attract fresh capital.
 They plan to scale up, spin more GPUs, and chase universal intelligence through raw power.
-
-Current AI research has discovered that "thinking longer" helps, but in their excitement over this empirical finding, many miss that reliable memory is the fundamental capability that makes computation universal. The field has embraced psychological concepts like "System 1" (fast, intuitive) versus "System 2" (slow, deliberate) thinking to explain these improvements, as [O(1) Labs researchers discuss](https://www.youtube.com/watch?v=jPluSXJpdrA). However, this framework is fundamentally flawed.
-
-Rather than recognizing that reliable state maintenance and history access are prerequisites for universal computation, researchers celebrate what [O(1) Labs developers describe](https://www.youtube.com/watch?v=jPluSXJpdrA) as models engaging in "System 2 reasoning" if given enough compute. They're rediscovering the fundamental role of memory in computation. When models say "wait, this is wrong, let me take a step back"—a behavior [examined in the O(1) Labs discussion](https://www.youtube.com/watch?v=jPluSXJpdrA)—it's not sophisticated reasoning—it's the basic state maintenance that enables universal computation.
-
-The field advocates for brute-force scaling of test-time compute—even while acknowledging the unsustainability of its quadratic costs—because it has mistaken what [O(1) Labs developers identify](https://www.youtube.com/watch?v=jPluSXJpdrA) as a psychological metaphor for a computational principle. But the ability to "think longer" with current inefficient memory mechanisms isn't the same as achieving the kind of efficient universal computation we see in biological systems.
 
 <a name="recurrence">As a sandwich-eating universal intelligence, I'm not convinced.</a>
 Humans got smarter not by growing our brains, but by distributing memory across society—spoken word, libraries, the internet—finding ways to preserve and share knowledge without a ruinous overhead.
