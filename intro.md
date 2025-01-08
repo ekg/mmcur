@@ -77,6 +77,8 @@ When cells need to store or recall specific bits of information, they literally 
 <a name="crispr">The canonical example is CRISPR, which can be understood most fundamentally as a chronological log of fragments of viruses, addresses in the space of DNA, that represent viral infections that this particular cell has survived, and its lineage has survived.</a>
 The chronology is not just an artifact of the system, but is essential because by remembering which viruses are more recent, the cell can invest more energy in making guided nucleases that target them than ones which occurred long ago.
 
+![CRISPR, better known for its use as a genome editing tool, is actually a temporal memory system.](crispr-memory.png)
+
 The ARC AGI Prize nicely illustrates where today’s models stand.
 A single forward-pass language model—like GPT-4—gets about 0–5% accuracy on ARC tasks.
 Cheaper chain-of-thought–based systems that do a bit of [test-time training](https://arxiv.org/abs/2411.07279) [get close to 50%](https://arxiv.org/abs/2412.04604).
