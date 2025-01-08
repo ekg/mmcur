@@ -51,6 +51,9 @@ They can quickly match patterns, but can't count, do math, or follow a recipe un
 _However_, if you use "chain-of-thought" or a series of recursive prompts—feeding each of the model's outputs back into its input—the combined system becomes capable of simulating a universal Turing machine.
 The model’s expressivity, harnessed across multiple steps, blossoms into general computation.
 
+<a name="memory-requirement"></a>
+# The Memory Requirement
+
 Out of deep love for this line of research, I spent much of December in a meditation on the link between memory and computation.
 This post is a human introduction to that paper, where I provide the simplest and most intuitive explanation of universality (a.k.a. general intelligence) that I could synthesize.
 <a name="generality">Universality requires only (1) stable evolution of thought (no hallucinations), and (2) reliable access to the history of thought.</a>
