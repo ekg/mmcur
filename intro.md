@@ -52,7 +52,7 @@ Out of deep love for this line of research, I spent much of December in a medita
 In this post, I provide the simplest and most intuitive explanation of universality (a.k.a. general intelligence) that I could synthesize.
 Universality requires only (1) stable evolution of thought (no hallucinations), and (2) reliable access to the history of thought.
 This synthesis rightly seems banal, dull, too simple to be useful, too theory of computation 101 to be interesting.
-And OK, if you studied the theory of computation, yes, it is, but why did y'all forget the textbook and start imaging that threshold circuits and feedforward networks could achieve general intelligence?
+And OK, if you studied the theory of computation, yes, it is, but why did y'all forget the textbook and start imaging that threshold circuits and feedforward networks could achieve general intelligence? [Even chain-of-thought prompting, while often helpful, can actually reduce performance on tasks where explicit reasoning makes humans worse](https://arxiv.org/abs/2410.21333).
 If you can remember, this perspective quickly takes us to some amazing places.
 
 The first place is an intuitive understanding of what LLMs are.

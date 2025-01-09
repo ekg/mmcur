@@ -15,7 +15,7 @@ KEY CITATIONS TO ADD:
 - [x] https://doi.org/10.1112/plms/s2-42.1.230 Turing 1936 for computation foundations
 - [x] https://en.wikipedia.org/wiki/Markov_chain_Monte_Carlo for "MCMC"
 - [x] https://arxiv.org/abs/2203.15556 "Training Compute-Optimal Large Language Models" by Hoffmann et. al for scaling laws ("Chinchilla optimal")
-- [ ] https://arxiv.org/abs/2410.21333 "Mind Your Step (by Step): Chain-of-Thought can Reduce Performance on Tasks where Thinking Makes Humans Worse" Liu et al. for chain-of-thought limitations
+- [x] https://arxiv.org/abs/2410.21333 "Mind Your Step (by Step): Chain-of-Thought can Reduce Performance on Tasks where Thinking Makes Humans Worse" Liu et al. for chain-of-thought limitations ✓
 - [ ] https://arxiv.org/abs/2407.21783 add this Meta Llama 3 technical paper link in addition to the blog post one we have now
 
 FIGURE IMPROVEMENTS:
