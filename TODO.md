@@ -3,6 +3,7 @@ Here's a comprehensive checklist from our entire conversation:
 ESSENTIAL FIXES:
 - [x] Fix typo: "must of which" → "most of which" in LLMs/Transformers section
 - [x] Add "2024" to December morning run
+- [ ] Remove duplicate (last) reference to how this is an introduction to the arxiv preprint
 - [ ] Break up long CRISPR sentence about chronological logs
 - [ ] Change "The Attention Tax" to "The Bitter Pill" (section title + TOC + anchor)
 
