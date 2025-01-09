@@ -1,7 +1,7 @@
 Here's a comprehensive checklist from our entire conversation:
 
 ESSENTIAL FIXES:
-- [ ] Fix typo: "must of which" → "most of which" in LLMs/Transformers section
+- [x] Fix typo: "must of which" → "most of which" in LLMs/Transformers section
 - [ ] Add "2024" to December morning run
 - [ ] Break up long CRISPR sentence about chronological logs
 - [ ] Change "The Attention Tax" to "The Bitter Pill" (section title + TOC + anchor)
