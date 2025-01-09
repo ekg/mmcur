@@ -49,7 +49,7 @@ The model’s expressivity, harnessed across multiple steps, blossoms into gener
 ## <a name="memory-requirement" href="#memory-requirement">Memory Makes Computation Universal</a>
 
 Out of deep love for this line of research, I spent much of December in a meditation on the link between memory and computation.
-This post is a human introduction to that paper, where I provide the simplest and most intuitive explanation of universality (a.k.a. general intelligence) that I could synthesize.
+In this post, I provide the simplest and most intuitive explanation of universality (a.k.a. general intelligence) that I could synthesize.
 Universality requires only (1) stable evolution of thought (no hallucinations), and (2) reliable access to the history of thought.
 This synthesis rightly seems banal, dull, too simple to be useful, too theory of computation 101 to be interesting.
 And OK, if you studied the theory of computation, yes, it is, but why did y'all forget the textbook and start imaging that threshold circuits and feedforward networks could achieve general intelligence?
