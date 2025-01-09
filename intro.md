@@ -61,7 +61,7 @@ Another interpretation is that LLMs are a quintessential example of transfer lea
 By trying to predict what humans might say or do next, the models effectively learned patterns embedded in our writing—including the latent computational rules that shape human reasoning.
 They're not just modeling words but the programs behind those words (which might be human minds, or other models, or entire cryptographic protocols).
 Looking through the lens of Turing machines, we've transferred our state transition functions to them, which they are now they are able to generalize to new input contexts ([drawing tikz unicorns and such](https://arxiv.org/abs/2303.12712)).
-This deeper transfer of computational thinking [explains why models continue improving far beyond naive pattern-matching saturation points](https://ai.meta.com/blog/meta-llama-3/)—they're gradually refining their models of human cognitive processes themselves.
+This deeper transfer of computational thinking [explains why models continue improving far beyond naive pattern-matching saturation points](https://ai.meta.com/blog/meta-llama-3/) ([technical paper](https://arxiv.org/abs/2407.21783))—they're gradually refining their models of human cognitive processes themselves.
 
 Part of the magic is that LLMs, most of which are Transformers, are forging a shared computational interface with us, letting us push each other around in a collaborative workspace space that can solve new tasks.
 
