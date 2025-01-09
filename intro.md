@@ -16,16 +16,13 @@ TL;DR: universal intelligence—the ability to solve any problem—depends on th
 
 ## <a name="the-memphis-plume" href="#the-memphis-plume">The Memphis Plume</a>
 
-On a morning in early December 2024 I was running by the Mississippi when I saw a large industrial plume on the horizon:
+On a crisp morning in early December 2024, I was running by the Mississippi when I caught sight of a colossal plume on the horizon:
 
-![xAI's cooling plume as seen from Mud Island in Memphis](xai-plume-memphis.jpg)
+![The large plume seen here is primarily from the TVA Allen Combined Cycle Plant, which operates at around 1 gigawatt. xAI's "Colossus" facility is located just behind Allen; though currently smaller, xAI intends to scale up to a similar capacity in the near future.](xai-plume-memphis.jpg)
 
-The plume is water vapor and nitrous oxides from what is [believed to be the largest supercomputer in the world, xAI's "Colossus"](https://en.wikipedia.org/wiki/Colossus_(supercomputer)).
-More than 100k H100s are vaporizing 5 million liters of water a day from the Memphis sands aquifer.
-Dozens of portable methane generators feed the system with at least 100 MW—enough for 50,000 homes.
-xAI couldn't wait for the Tennessee Valley Authority to build new capacity; that delay might mean losing the race for a quantum leap in human capability.
+The plume is mostly from the Tennessee Valley Authority's Allen Combined Cycle Plant—a 1-gigawatt behemoth powering Memphis. But xAI's "Colossus" supercomputer sits on the same site, already drawing around 150 MW and substantial cooling water. For now, that's only about 10% of Allen's power footprint, but xAI's plans call for scaling to a gigawatt in the coming year—potentially creating its own towering plume in the race toward artificial general intelligence.
 
-This plume, now dominating Memphis's skyline, is compute's heat waste made visible in our rush to train an artificial general intelligence (AGI).
+This growing industrial footprint, now dominating Memphis's skyline, foreshadows compute's heat waste made visible in our rush to train an artificial general intelligence (AGI).
 [xAI's stated goal is a "1% shot at a Kardashev type 1 civilization"](https://www.capacitymedia.com/article/musks-xais-colossus-cluster-set-for-one-million-gpu-supercomputer-expansion)—a [society capable of harnessing all its planet's energy](https://en.wikipedia.org/wiki/Planetary_civilization), presumably enabled by the AGI they aim to bring into the world.
 And they're just getting started, with a tenfold [expansion of Colossus to 1M GPUs](https://www.ft.com/content/9c0516cf-dd12-4665-aa22-712de854fe2f) already planned.
 
