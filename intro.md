@@ -74,7 +74,7 @@ Double your context length, quadruple the cost.
 Want to "think" four times longer?
 That's sixteen times more overhead.
 And because memory is the key to intelligence, model context length must be increased, leading to quadratic increases in costs which I saw made visible in Memphis last month.
-Attention demonstrates the bitter lesson: end-to-end learning beats architecture, but it also forces us to eat a bitter pill: a quadratic cost that we can't scale forever.
+Attention demonstrates [the bitter lesson](http://www.incompleteideas.net/IncIdeas/BitterLesson.html): end-to-end learning beats architecture, but it also forces us to eat a bitter pill: a quadratic cost that we can't scale forever.
 A transformer's quadratic scaling hits a wall at 1M tokens:
 
 ![Comparing linear, log-linear, and quadratic scaling vs. input.](quadratic-wall.png)
