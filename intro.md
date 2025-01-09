@@ -20,8 +20,8 @@ On a morning in early December 2024 I was running by the Mississippi when I saw 
 
 ![xAI's cooling plume as seen from Mud Island in Memphis](xai-plume-memphis.jpg)
 
-The plume is water vapor and nitrous oxides from what is believed to be the largest supercomputer in the world, xAI's "Colossus".
-100k H100s are vaporizing 5 million liters of water a day from the Memphis sands aquifer.
+The plume is water vapor and nitrous oxides from what is [believed to be the largest supercomputer in the world, xAI's "Colossus"](https://en.wikipedia.org/wiki/Colossus_(supercomputer)).
+More than 100k H100s are vaporizing 5 million liters of water a day from the Memphis sands aquifer.
 Dozens of portable methane generators feed the system with at least 100 MW—enough for 50,000 homes.
 xAI couldn't wait for the Tennessee Valley Authority to build new capacity; that delay might mean losing the race for a quantum leap in human capability.
 
