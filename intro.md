@@ -33,7 +33,7 @@ And they're just getting started, with a tenfold [expansion of Colossus to 1M GP
 You may have noticed that, although ravenous and hyperactive, a human child doesn't generate a thousand meter plume of water vapor and reactive particulates to develop their intelligence.
 Yet your average human, fueled by sandwiches, can implement any algorithm with just pen and paper.
 So augmented with bronze age technology, we become ["universal" computers in Turing's language](https://doi.org/10.1112/plms/s2-42.1.230)—the quintessential "general" intelligence capable of solving any problem given enough time and snacks.
- For the sake of argument, let’s agree: general intelligence ≈ universal computer.
+For the sake of argument, let’s agree: general intelligence ≈ universal computer.
 
 That link has been on my mind for two years, ever since I first read the magic words "Let’s think step by step" in a groundbreaking machine learning paper.
 I was amused by how a simple phrase, [first introduced by Wei et al.](https://arxiv.org/abs/2205.11916), seemed to invoke a more deliberate, thoughtful mode in large language models (LLMs).
