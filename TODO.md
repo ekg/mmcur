@@ -10,7 +10,7 @@ ESSENTIAL FIXES:
 KEY CITATIONS TO ADD:
 - [x] https://arxiv.org/abs/2205.11916 for first "Let's think step by step" mention
 - [x] https://arxiv.org/abs/2310.07923 "The Expressive Power of Transformers with Chain of Thought" Merrill & Sabharwal for TC0 limitations / chain of thought capabilities (also https://openreview.net/forum?id=NjNGlPh8Wh for reviews and discussion... add inline somehow with a light touch)
-- [ ] https://arxiv.org/abs/2410.01201 "Were RNNs All We Needed?" if not already cited in closing
+- [x] https://arxiv.org/abs/2410.01201 "Were RNNs All We Needed?" if not already cited in closing
 - [ ] http://www.incompleteideas.net/IncIdeas/BitterLesson.html Sutton's bitter lesson essay
 - [ ] https://doi.org/10.1112/plms/s2-42.1.230 Turing 1936 for computation foundations
 - [ ] https://en.wikipedia.org/wiki/Markov_chain_Monte_Carlo for "MCMC"
