@@ -7,7 +7,7 @@ TL;DR: universal intelligence—the ability to solve any problem—depends on th
 - [The Memphis Plume](#the-memphis-plume) - the race for artificial general intelligence made visible
 - [Universal Computation](#universal-computation) - human + pen + paper + sandwiches = universal computer
 - [Memory Makes Computation Universal](#memory-requirement) - two rules for general intelligence
-- [The Attention Tax](#attention-tax) - Why Thinking Longer Will Hit a Wall
+- [The Bitter Pill](#bitter-pill) - Why Thinking Longer Will Hit a Wall
 - [Nature's Solution](#natures-solution) - Learning from Biological Memory
 - [Beyond Brute Force](#beyond-brute-force) - What O3 Reveals
 - [A Path Forward](#path-forward) - Remembering Efficiently
@@ -65,7 +65,7 @@ This deeper transfer of computational thinking [explains why models continue imp
 
 Part of the magic is that LLMs, most of which are Transformers, are forging a shared computational interface with us, letting us push each other around in a collaborative workspace space that can solve new tasks.
 
-## <a name="attention-tax" href="#attention-tax">The Attention Tax</a>
+## <a name="bitter-pill" href="#bitter-pill">The Bitter Pill</a>
 
 However, they have a costly flaw that makes them otherworldly in their resource demands: attention.
 In effect, attention is a learned function for memory and association across the input.

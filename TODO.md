@@ -5,7 +5,7 @@ ESSENTIAL FIXES:
 - [x] Add "2024" to December morning run
 - [x] Remove duplicate (last) reference to how this is an introduction to the arxiv preprint
 - [x] Break up long CRISPR sentence about chronological logs
-- [ ] Change "The Attention Tax" to "The Bitter Pill" (section title + TOC + anchor)
+- [x] Change "The Attention Tax" to "The Bitter Pill" (section title + TOC + anchor)
 
 KEY CITATIONS TO ADD:
 - [ ] Wei et al. 2022 for first "Let's think step by step" mention
