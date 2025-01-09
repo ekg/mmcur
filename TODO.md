@@ -4,7 +4,7 @@ ESSENTIAL FIXES:
 - [x] Fix typo: "must of which" → "most of which" in LLMs/Transformers section
 - [x] Add "2024" to December morning run
 - [x] Remove duplicate (last) reference to how this is an introduction to the arxiv preprint
-- [ ] Break up long CRISPR sentence about chronological logs
+- [x] Break up long CRISPR sentence about chronological logs
 - [ ] Change "The Attention Tax" to "The Bitter Pill" (section title + TOC + anchor)
 
 KEY CITATIONS TO ADD:

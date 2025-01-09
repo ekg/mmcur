@@ -87,7 +87,7 @@ It has gigabases of DNA and a swarm of biomolecules, operating in a parallel sou
 By some definitions, each cell’s molecular interactions also fall in that threshold-circuit-like class: essentially parallel transformations, no large sequential pipeline.
 But cells offset this limitation with state—encoded in their components and their DNA, which holds a record of life’s entire lineage.
 When cells need to store or recall specific bits of information, they literally write it into the genome.
-The canonical example is CRISPR, which can be understood most fundamentally as a chronological log of fragments of viruses, addresses in the space of DNA, that represent viral infections that this particular cell has survived, and its lineage has survived.
+The canonical example is CRISPR. At its core, CRISPR functions as a chronological log of viral fragments—essentially addresses in DNA space. These fragments represent viral infections that both the individual cell and its ancestral lineage have survived. 
 The chronology is not just an artifact of the system, but is essential because by remembering which viruses are more recent, the cell can invest more energy in making guided nucleases that target them than ones which occurred long ago.
 
 ![CRISPR, better known for its use as a genome editing tool, is actually a temporal memory system.](crispr-memory.png)
