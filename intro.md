@@ -40,10 +40,10 @@ I was amused by how a simple phrase, [first introduced by Wei et al.](https://ar
 It was as if some psychological "effect" flipped them into a more rigorous and structured part of their state space, leading to dramatic improvement in performance, and encouraging the world's LLM whisperers to add this incantation to every time they saw models faltering.
 
 But theoretical analyses of transformers revealed something deeper than just a neat psychology trick.
-Transformers, in a single forward pass, are restricted to a class called TC0, basically a family of threshold circuits that can be computed in parallel with aggregation.
+[Transformers, in a single forward pass, are restricted to a class called TC0](https://arxiv.org/abs/2310.07923), basically a family of threshold circuits that can be computed in parallel with aggregation.
 TC0 systems are often called "bounded parallel".
 They can quickly match patterns, but can't count, do math, or follow a recipe unless the process can be encoded in a fixed set of circuits.
-_However_, if you use "chain-of-thought" or a series of recursive prompts—feeding each of the model's outputs back into its input—the combined system becomes capable of simulating a universal Turing machine.
+_However_, if you use "chain-of-thought" or a series of recursive prompts—feeding each of the model's outputs back into its input—[the combined system becomes capable of simulating a universal Turing machine](https://openreview.net/forum?id=NjNGlPh8Wh).
 The model’s expressivity, harnessed across multiple steps, blossoms into general computation.
 
 ## <a name="memory-requirement" href="#memory-requirement">Memory Makes Computation Universal</a>
