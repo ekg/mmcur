@@ -8,18 +8,17 @@ ESSENTIAL FIXES:
 - [x] Change "The Attention Tax" to "The Bitter Pill" (section title + TOC + anchor)
 
 KEY CITATIONS TO ADD:
-- [ ] Wei et al. 2022 for first "Let's think step by step" mention
-- [ ] Merrill & Sabharwal for TC0 limitations
-- [ ] Sutton's bitter lesson essay
-- [ ] Turing 1936 for computation foundations
-- [ ] Guan et al. for o3's MCMC approach
+- [ ] https://arxiv.org/abs/2205.11916 for first "Let's think step by step" mention
+- [ ] https://arxiv.org/abs/2310.07923 "The Expressive Power of Transformers with Chain of Thought" Merrill & Sabharwal for TC0 limitations / chain of thought capabilities (also https://openreview.net/forum?id=NjNGlPh8Wh for reviews and discussion... add inline somehow with a light touch)
+- [ ] https://arxiv.org/abs/2410.01201 "Were RNNs All We Needed?" if not already cited in closing
+- [ ] http://www.incompleteideas.net/IncIdeas/BitterLesson.html Sutton's bitter lesson essay
+- [ ] https://doi.org/10.1112/plms/s2-42.1.230 Turing 1936 for computation foundations
+- [ ] https://en.wikipedia.org/wiki/Markov_chain_Monte_Carlo for "MCMC"
 - [ ] Sadremomtaz for CRISPR memory
-- [ ] Kaplan et al. for scaling laws
-- [ ] "Were RNNs All We Needed?" paper
-- [ ] Turing's reaction-diffusion theory
-- [ ] Liu et al. for chain-of-thought limitations
-- [ ] Meta Llama 3 technical paper (if available)
-- [ ] Merrill & Sabharwal 2024 on transformer expressivity with chain of thought
+- [ ] https://arxiv.org/abs/2203.15556 "Training Compute-Optimal Large Language Models" by Hoffmann et. al for scaling laws ("Chinchilla optimal")
+- [ ] https://doi.org/10.1007/BF02459572 Turing's reaction-diffusion theory
+- [ ] https://arxiv.org/abs/2410.21333 "Mind Your Step (by Step): Chain-of-Thought can Reduce Performance on Tasks where Thinking Makes Humans Worse" Liu et al. for chain-of-thought limitations
+- [ ] https://arxiv.org/abs/2407.21783 add this Meta Llama 3 technical paper link in addition to the blog post one we have now
 
 FIGURE IMPROVEMENTS:
 - [ ] Add axes description to quadratic scaling figure caption
