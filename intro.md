@@ -36,7 +36,7 @@ So augmented with bronze age technology, we become "universal" computers in Turi
  For the sake of argument, let’s agree: general intelligence ≈ universal computer.
 
 That link has been on my mind for two years, ever since I first read the magic words "Let’s think step by step" in a groundbreaking machine learning paper.
-I was amused by how a simple phrase seemed to invoke a more deliberate, thoughtful mode in large language models (LLMs).
+I was amused by how a simple phrase, [first introduced by Wei et al.](https://arxiv.org/abs/2205.11916), seemed to invoke a more deliberate, thoughtful mode in large language models (LLMs).
 It was as if some psychological "effect" flipped them into a more rigorous and structured part of their state space, leading to dramatic improvement in performance, and encouraging the world's LLM whisperers to add this incantation to every time they saw models faltering.
 
 But theoretical analyses of transformers revealed something deeper than just a neat psychology trick.
