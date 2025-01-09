@@ -13,7 +13,7 @@ KEY CITATIONS TO ADD:
 - [x] https://arxiv.org/abs/2410.01201 "Were RNNs All We Needed?" if not already cited in closing
 - [x] http://www.incompleteideas.net/IncIdeas/BitterLesson.html Sutton's bitter lesson essay
 - [x] https://doi.org/10.1112/plms/s2-42.1.230 Turing 1936 for computation foundations
-- [ ] https://en.wikipedia.org/wiki/Markov_chain_Monte_Carlo for "MCMC"
+- [x] https://en.wikipedia.org/wiki/Markov_chain_Monte_Carlo for "MCMC"
 - [ ] Sadremomtaz for CRISPR memory
 - [ ] https://arxiv.org/abs/2203.15556 "Training Compute-Optimal Large Language Models" by Hoffmann et. al for scaling laws ("Chinchilla optimal")
 - [ ] https://doi.org/10.1007/BF02459572 Turing's reaction-diffusion theory
