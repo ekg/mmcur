@@ -7,10 +7,10 @@ TL;DR: universal intelligence—the ability to solve any problem—depends on th
 - [The Memphis Plume](#the-memphis-plume) - the race for artificial general intelligence made visible
 - [Universal Computation](#universal-computation) - human + pen + paper + sandwiches = universal computer
 - [Memory Makes Computation Universal](#memory-requirement) - two rules for general intelligence
-- [The Bitter Pill](#bitter-pill) - Why Thinking Longer Will Hit a Wall
-- [Nature's Solution](#natures-solution) - Learning from Biological Memory
-- [Beyond Brute Force](#beyond-brute-force) - What O3 Reveals
-- [A Path Forward](#path-forward) - Remembering Efficiently
+- [The Bitter Pill](#bitter-pill) - why making transformers think longer will hit a wall
+- [Nature's Solution](#natures-solution) - learning from biological memory
+- [Beyond Brute Force](#beyond-brute-force) - what o3 reveals
+- [A Path Forward](#path-forward) - remembering efficiently
 
 ---
 
