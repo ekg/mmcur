@@ -56,7 +56,7 @@ And OK, if you studied the theory of computation, yes, it is, but why did y'all 
 If you can remember, this perspective quickly takes us to some amazing places.
 
 The first place is an intuitive understanding of what LLMs are.
-[Machine learning got excited by the observation that adding more parameters and training tokens could yield "scaling laws" that took us to a place where intelligence "emerged"](https://en.wikipedia.org/wiki/Neural_scaling_law).
+[Machine learning got excited by the observation that adding more parameters and training tokens could yield "scaling laws" that took us to a place where intelligence "emerged"](https://arxiv.org/abs/2203.15556).
 Another interpretation is that LLMs are a quintessential example of transfer learning, where humans and our society is the model that's being transferred.
 By trying to predict what humans might say or do next, the models effectively learned patterns embedded in our writing—including the latent computational rules that shape human reasoning.
 They're not just modeling words but the programs behind those words (which might be human minds, or other models, or entire cryptographic protocols).
