@@ -103,8 +103,8 @@ Then, in late December 2024, along comes [OpenAI's o3](https://openai.com/index/
 If you let the model "think less"—what they call high-efficiency mode—it answers 400 tasks at 82.8% accuracy for around $6,600.
 But if you let it think 172 times longer, exploring many more possible solution paths in parallel, it climbs to 91.5%.
 That final push costs an estimated $1.15 million (≈ 172 × $6.6k) in total compute.
-[o3's authors describe this not primarily as an engineering hack but as an ethical one](https://openai.com/index/deliberative-alignment/), "deliberative alignment" wherein an overseer system that maintains the alignment of an kind of "forest of thought", MCMC sampled chains-of-thought which are kept in check.
-Their published numbers suggest that they pay a monstrous cost to keep all those partial reasoning traces in memory, to preserve consistency, and let the model think longer in pursuit of another apparent scaling law.
+[o3's authors describe this not primarily as an engineering hack but as an ethical one](https://openai.com/index/deliberative-alignment/), "deliberative alignment" wherein an overseer system that maintains the alignment of an kind of "forest of thought", [MCMC](https://en.wikipedia.org/wiki/Markov_chain_Monte_Carlo) sampled chains-of-thought which are kept in check.
+Their published numbers suggest that they pay a monstrous cost to keep all those partial reasoning traces in memory, to preserve consistency, and let the model think longer in pursuit of another apparent scaling law. Their published numbers suggest that they pay a monstrous cost to keep all those partial reasoning traces in memory, to preserve consistency, and let the model think longer in pursuit of another apparent scaling law.
 
 In effect, by brute-forcing memory into reliability, they show how easily you can approach universal computation if you're willing to burn a fortune on tokens.
 And this isn't like previous scaling laws that revealed new capabilities—it's paying an enormous price to achieve something that biological systems do routinely.
