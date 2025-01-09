@@ -128,7 +128,7 @@ They plan to scale up, spin more GPUs, and chase universal intelligence through 
 
 As a sandwich-eating universal intelligence, I'm not convinced.
 Humans got smarter not by growing our brains, but by distributing memory across society—spoken word, libraries, the internet—finding ways to preserve and share knowledge without a ruinous overhead.
-I'll bet on a resurgence of [recurrent approaches](https://arxiv.org/html/2410.01201v2) that drastically reduce inference costs by maintaining a [rolling hidden state, incrementally processing new information, thinking slowly and deeply when we need them to](https://arxiv.org/abs/2412.06769)).
+I'll bet on a resurgence of [recurrent approaches](https://arxiv.org/abs/2410.01201) that drastically reduce inference costs by maintaining a [rolling hidden state, incrementally processing new information, thinking slowly and deeply when we need them to](https://arxiv.org/abs/2412.06769).
 Yes, we might need specialized modules for robust memory access—but if biology, evolution, and a good pen-and-paper can do it, so can we.
 Generality doesn't require industrial-scale cooling towers and power plants.
 It just needs a reliable way to remember and recall what you've thought.
