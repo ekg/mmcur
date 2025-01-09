@@ -19,7 +19,7 @@ KEY CITATIONS TO ADD:
 - [x] https://arxiv.org/abs/2407.21783 add this Meta Llama 3 technical paper link in addition to the blog post one we have now ✓
 
 FIGURE IMPROVEMENTS:
-- [ ] Add axes description to quadratic scaling figure caption
+- [x] Add axes description to quadratic scaling figure caption
 - [ ] Check all image attributions/copyrights
 
 OPTIONAL REFINEMENTS:
