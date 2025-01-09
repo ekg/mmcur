@@ -16,13 +16,14 @@ TL;DR: universal intelligence—the ability to solve any problem—depends on th
 
 ## <a name="the-memphis-plume" href="#the-memphis-plume">The Memphis Plume</a>
 
-On a morning in early December 2024 I was running by the Mississippi when I saw a large industrial plume on the horizon.
+On a morning in early December 2024 I was running by the Mississippi when I saw a large industrial plume on the horizon:
+
+![xAI's cooling plume as seen from Mud Island in Memphis](xai-plume-memphis.jpg)
+
 The plume is water vapor and nitrous oxides from what is believed to be the largest supercomputer in the world, xAI's "Colossus".
 100k H100s are vaporizing 5 million liters of water a day from the Memphis sands aquifer.
 Dozens of portable methane generators feed the system with at least 100 MW—enough for 50,000 homes.
 xAI couldn't wait for the Tennessee Valley Authority to build new capacity; that delay might mean losing the race for a quantum leap in human capability.
-
-![xAI's cooling plume as seen from Mud Island in Memphis](xai-plume-memphis.jpg)
 
 This plume, now dominating Memphis's skyline, is compute's heat waste made visible in our rush to train an artificial general intelligence (AGI).
 [xAI's stated goal is a "1% shot at a Kardashev type 1 civilization"](https://www.capacitymedia.com/article/musks-xais-colossus-cluster-set-for-one-million-gpu-supercomputer-expansion)—a [society capable of harnessing all its planet's energy](https://en.wikipedia.org/wiki/Planetary_civilization), presumably enabled by the AGI they aim to bring into the world.
@@ -69,7 +70,7 @@ Part of the magic is that LLMs, most of which are Transformers, are forging a sh
 
 However, they have a costly flaw that makes them otherworldly in their resource demands: attention.
 In effect, attention is a learned function for memory and association across the input.
-But with n tokens, each must attend to every other token—an n × n explosion in both compute and memory.
+But with *n* tokens, each must attend to every other token—an *n* × *n* explosion in both compute and memory.
 Double your context length, quadruple the cost.
 Want to "think" four times longer?
 That's sixteen times more overhead.
