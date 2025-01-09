@@ -77,7 +77,7 @@ And because memory is the key to intelligence, model context length must be incr
 Attention demonstrates [the bitter lesson](http://www.incompleteideas.net/IncIdeas/BitterLesson.html): end-to-end learning beats architecture, but it also forces us to eat a bitter pill: a quadratic cost that we can't scale forever.
 A transformer's quadratic scaling hits a wall at 1M tokens:
 
-![Comparing linear, log-linear, and quadratic scaling vs. input.](quadratic-wall.png)
+![Comparing linear O(n), log-linear O(n log n), and quadratic O(n²) scaling vs. input sequence length (n). Top: Log-scaled y-axis shows relative growth. Bottom: Linear y-axis dramatically illustrates how quadratic costs dominate at scale.](quadratic-wall.png)
 
 ## <a name="natures-solution" href="#natures-solution">Nature's Solution</a>
 
