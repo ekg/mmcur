@@ -18,7 +18,7 @@ TL;DR: universal intelligence—the ability to solve any problem—depends on th
 
 On a crisp morning in early December 2024, I was running by the Mississippi when I caught sight of a colossal plume on the horizon:
 
-![The large plume seen here is primarily from the TVA Allen Combined Cycle Plant, which operates at around 1 gigawatt. xAI's "Colossus" facility is located just behind Allen; though currently smaller, xAI intends to scale up to a similar capacity in the near future.](xai-plume-memphis.jpg)
+![The large plume seen here is primarily from the TVA Allen Combined Cycle Plant, which operates at around 1 gigawatt. xAI's "Colossus" facility is located just behind Allen; though currently smaller, xAI intends to scale up to a similar capacity in the near future.](memphis-plume.jpg)
 
 The plume is mostly from the Tennessee Valley Authority's Allen Combined Cycle Plant—a 1-gigawatt behemoth powering Memphis. But xAI's "Colossus" supercomputer sits on the same site, already drawing around 150 MW and substantial cooling water. For now, that's only about 10% of Allen's power footprint, but xAI's plans call for scaling to a gigawatt in the coming year—potentially creating its own towering plume in the race toward artificial general intelligence.
 
