@@ -16,7 +16,7 @@ TL;DR: universal intelligence—the ability to solve any problem—depends on th
 
 ## <a name="the-memphis-plume" href="#the-memphis-plume">The Memphis Plume</a>
 
-On a morning in early December I was running by the Mississippi when I saw a large industrial plume on the horizon.
+On a morning in early December 2024 I was running by the Mississippi when I saw a large industrial plume on the horizon.
 The plume is water vapor and nitrous oxides from what is believed to be the largest supercomputer in the world, xAI's "Colossus".
 100k H100s are vaporizing 5 million liters of water a day from the Memphis sands aquifer.
 Dozens of portable methane generators feed the system with at least 100 MW—enough for 50,000 homes.
