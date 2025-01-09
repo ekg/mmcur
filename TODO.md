@@ -22,13 +22,6 @@ FIGURE IMPROVEMENTS:
 - [ ] Add axes description to quadratic scaling figure caption
 - [ ] Check all image attributions/copyrights
 
-LINK VERIFICATION:
-- [ ] Verify all URLs resolve correctly
-- [ ] Check xAI/Colossus news links are stable
-- [ ] Ensure paper links use consistent format
-
 OPTIONAL REFINEMENTS:
 - [ ] Add transition before Herculaneum image
-- [ ] Consider italicizing key terms on first use (e.g., _TC0_)
-- [ ] Review section transitions for flow
 - [ ] Check anchor tag consistency throughout
