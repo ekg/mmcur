@@ -18,11 +18,13 @@ TL;DR: universal intelligence—the ability to solve any problem—depends on th
 
 On a crisp morning in early December 2024, I was running by the Mississippi when I noticed a plume on the horizon:
 
-![The large plume seen here is primarily from the TVA Allen Combined Cycle Plant, which operates at around 1 gigawatt. xAI's "Colossus" facility is located just behind Allen; though currently smaller, xAI intends to scale up to a similar capacity in the near future.](memphis-plume.jpg)
+![A large industral plume over south Memphis.](memphis-plume.jpg)
 
-The plume is mostly from the Tennessee Valley Authority's Allen Combined Cycle Plant—a 1-gigawatt behemoth powering Memphis.
-xAI's "Colossus" supercomputer sits on the same site, already drawing around 150 MW and substantial cooling water.
-For now, that's only about 10% of Allen's power footprint, but xAI's plans call for scaling to a gigawatt in the coming year—potentially creating its own towering plume in the race toward artificial general intelligence.
+The plume is mostly from the Tennessee Valley Authority's Allen Combined Cycle Plant—a [1.1-gigawatt natural gas power plant powering Memphis](https://en.wikipedia.org/wiki/Allen_Combined_Cycle_Plant).
+[xAI's "Colossus" supercomputer](https://en.wikipedia.org/wiki/Colossus_(supercomputer)) sits on the same site.
+With 100,000 Nvidia H100 GPUs, it is believed to be the world's largest AI supercomputer.
+It's already drawing around 150 MW and substantial cooling water.
+For now, that's only a fraction of Allen's power footprint, but [xAI's plans call for scaling to a gigawatt in the coming year](https://www.cleanenergy.org/blog/will-memphis-pay-a-price-for-elon-musks-xai-colossus-bait-switch/)—potentially creating its own towering plume of the same scale in the race toward artificial general intelligence.
 
 This growing industrial footprint, now dominating Memphis's skyline, foreshadows compute's heat waste made visible in our rush to train an artificial general intelligence (AGI).
 [xAI's stated goal is a "1% shot at a Kardashev type 1 civilization"](https://www.capacitymedia.com/article/musks-xais-colossus-cluster-set-for-one-million-gpu-supercomputer-expansion)—a [society capable of harnessing all its planet's energy](https://en.wikipedia.org/wiki/Planetary_civilization), presumably enabled by the AGI they aim to bring into the world.
