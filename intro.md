@@ -47,7 +47,7 @@ But theoretical analyses of transformers revealed something deeper than just a n
 [Transformers, in a single forward pass, are restricted to a computational class called TC0](https://arxiv.org/abs/2310.07923), basically a family of threshold circuits that can be computed in parallel with aggregation.
 TC0 systems are often called "bounded parallel".
 They can quickly match patterns, but can't count, do math, or follow a recipe unless the process can be encoded in a fixed set of circuits.
-_However_, if you use "chain-of-thought" or a series of recursive prompts—feeding each of the model's outputs back into its input—[the combined system becomes capable of simulating a universal Turing machine](https://arxiv.org/abs/2310.07923).
+_However_, if you use "chain-of-thought" or a series of recursive prompts—feeding each of the model's outputs back into its input—[the combined system becomes capable of simulating a universal Turing machine](https://arxiv.org/abs/2305.15408).
 The model’s expressivity, harnessed across multiple steps, blossoms into general computation.
 
 ## <a name="memory-requirement" href="#memory-requirement">Memory Makes Computation Universal</a>
