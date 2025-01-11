@@ -20,9 +20,11 @@ On a crisp morning in early December 2024, I was running by the Mississippi when
 
 ![A large industral plume over south Memphis.](memphis-plume.jpg)
 
-The plume is mostly from the Tennessee Valley Authority's Allen Combined Cycle Plant—a [1.1-gigawatt natural gas power plant powering Memphis](https://en.wikipedia.org/wiki/Allen_Combined_Cycle_Plant).
-[xAI's "Colossus" supercomputer](https://en.wikipedia.org/wiki/Colossus_(supercomputer)) sits on the same site.
-With 100,000 Nvidia H100 GPUs, it is believed to be the world's largest AI supercomputer.
+At first, I thought it was [xAI's "Colossus" supercomputer](https://en.wikipedia.org/wiki/Colossus_(supercomputer)).
+However, the plume is mostly from the Tennessee Valley Authority's Allen Combined Cycle Plant—a [1.1-gigawatt natural gas power plant powering Memphis](https://en.wikipedia.org/wiki/Allen_Combined_Cycle_Plant), which sits on the same site.
+Nevertheless, let's take it as a vision of the future that lies on our current development path.
+
+With 100,000 Nvidia H100 GPUs, xAI is believed to be the world's largest AI supercomputer.
 It's already drawing around 150 MW and substantial cooling water.
 For now, that's only a fraction of Allen's power footprint, but [xAI's plans call for scaling to a gigawatt in the coming year](https://www.cleanenergy.org/blog/will-memphis-pay-a-price-for-elon-musks-xai-colossus-bait-switch/)—potentially creating its own towering plume of the same scale in the race toward artificial general intelligence.
 
@@ -38,7 +40,7 @@ So augmented with bronze age technology, we become ["universal" computers in Tur
 For the sake of argument, let’s agree: general intelligence ≈ universal computer.
 
 That link has been on my mind for two years, ever since I first read the magic words "Let’s think step by step" in a groundbreaking machine learning paper.
-I was amused by how a simple phrase, [first introduced by Wei et al.](https://arxiv.org/abs/2205.11916), seemed to invoke a more deliberate, thoughtful mode in large language models (LLMs).
+I was amused by how a simple phrase, [first introduced in "Large Language Models are Zero-Shot Reasoners"](https://arxiv.org/abs/2205.11916), seemed to invoke a more deliberate, thoughtful mode in large language models (LLMs).
 It was as if some psychological "effect" flipped them into a more rigorous and structured part of their state space, leading to dramatic improvement in performance, and encouraging the world's LLM whisperers to add this incantation to every time they saw models faltering.
 
 But theoretical analyses of transformers revealed something deeper than just a neat psychology trick.
