@@ -16,7 +16,7 @@ TL;DR: universal intelligence—the ability to solve any problem—depends on th
 
 ## <a name="the-memphis-plume" href="#the-memphis-plume">The Memphis Plume</a>
 
-On a crisp morning in early December 2024, I was running by the Mississippi when I caught sight of a colossal plume on the horizon:
+On a crisp morning in early December 2024, I was running by the Mississippi when I noticed a plume on the horizon:
 
 ![The large plume seen here is primarily from the TVA Allen Combined Cycle Plant, which operates at around 1 gigawatt. xAI's "Colossus" facility is located just behind Allen; though currently smaller, xAI intends to scale up to a similar capacity in the near future.](memphis-plume.jpg)
 
@@ -75,7 +75,7 @@ Want to "think" four times longer?
 That's sixteen times more overhead.
 And because memory is the key to intelligence, model context length must be increased, leading to quadratic increases in costs which I saw made visible in Memphis last month.
 Attention demonstrates [the bitter lesson](http://www.incompleteideas.net/IncIdeas/BitterLesson.html): end-to-end learning beats architecture, but it also forces us to eat a bitter pill: a quadratic cost that we can't scale forever.
-A transformer's quadratic scaling hits a wall at 1M tokens:
+A transformer's quadratic scaling hits a wall from 100k to 1M tokens:
 
 ![Comparing linear O(n), log-linear O(n log n), and quadratic O(n²) scaling vs. input sequence length (n). Top: Log-scaled y-axis shows relative growth. Bottom: Linear y-axis dramatically illustrates how quadratic costs dominate at scale.](quadratic-wall.png)
 
