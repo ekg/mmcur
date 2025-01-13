@@ -41,7 +41,7 @@ For the sake of argument, let’s agree: general intelligence ≈ universal comp
 
 That link has been on my mind for two years, ever since I first read the magic words "Let’s think step by step" in a groundbreaking machine learning paper.
 I was amused by how a simple phrase, [first introduced in "Large Language Models are Zero-Shot Reasoners"](https://arxiv.org/abs/2205.11916), seemed to invoke a more deliberate, thoughtful mode in large language models (LLMs).
-It was as if some psychological "effect" flipped them into a more rigorous and structured part of their state space, leading to dramatic improvement in performance, and encouraging the world's LLM whisperers to add this incantation to every time they saw models faltering.
+It was as if some [psychological effect](https://en.wikipedia.org/wiki/List_of_psychological_effects) flipped them into a more rigorous and structured part of their state space, leading to dramatic improvement in performance, and encouraging the world's LLM whisperers to add this incantation to every time they saw models faltering.
 
 But theoretical analyses of transformers revealed something deeper than just a neat psychology trick.
 [Transformers, in a single forward pass, are restricted to a computational class called TC0](https://arxiv.org/abs/2310.07923), basically a family of threshold circuits that can be computed in parallel with aggregation.
